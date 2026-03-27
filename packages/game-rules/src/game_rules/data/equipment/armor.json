@@ -1,0 +1,15 @@
+[
+  {"armor_id": "padded", "name": "Padded", "category": "light", "cost": "5 gp", "base_ac": 11, "dex_modifier": true, "max_dex_bonus": null, "strength_requirement": null, "stealth_disadvantage": true, "weight": "8 lb."},
+  {"armor_id": "leather", "name": "Leather", "category": "light", "cost": "10 gp", "base_ac": 11, "dex_modifier": true, "max_dex_bonus": null, "strength_requirement": null, "stealth_disadvantage": false, "weight": "10 lb."},
+  {"armor_id": "studded_leather", "name": "Studded Leather", "category": "light", "cost": "45 gp", "base_ac": 12, "dex_modifier": true, "max_dex_bonus": null, "strength_requirement": null, "stealth_disadvantage": false, "weight": "13 lb."},
+  {"armor_id": "hide", "name": "Hide", "category": "medium", "cost": "10 gp", "base_ac": 12, "dex_modifier": true, "max_dex_bonus": 2, "strength_requirement": null, "stealth_disadvantage": false, "weight": "12 lb."},
+  {"armor_id": "chain_shirt", "name": "Chain Shirt", "category": "medium", "cost": "50 gp", "base_ac": 13, "dex_modifier": true, "max_dex_bonus": 2, "strength_requirement": null, "stealth_disadvantage": false, "weight": "20 lb."},
+  {"armor_id": "scale_mail", "name": "Scale Mail", "category": "medium", "cost": "50 gp", "base_ac": 14, "dex_modifier": true, "max_dex_bonus": 2, "strength_requirement": null, "stealth_disadvantage": true, "weight": "45 lb."},
+  {"armor_id": "breastplate", "name": "Breastplate", "category": "medium", "cost": "400 gp", "base_ac": 14, "dex_modifier": true, "max_dex_bonus": 2, "strength_requirement": null, "stealth_disadvantage": false, "weight": "20 lb."},
+  {"armor_id": "half_plate", "name": "Half Plate", "category": "medium", "cost": "750 gp", "base_ac": 15, "dex_modifier": true, "max_dex_bonus": 2, "strength_requirement": null, "stealth_disadvantage": true, "weight": "40 lb."},
+  {"armor_id": "ring_mail", "name": "Ring Mail", "category": "heavy", "cost": "30 gp", "base_ac": 14, "dex_modifier": false, "max_dex_bonus": null, "strength_requirement": null, "stealth_disadvantage": true, "weight": "40 lb."},
+  {"armor_id": "chain_mail", "name": "Chain Mail", "category": "heavy", "cost": "75 gp", "base_ac": 16, "dex_modifier": false, "max_dex_bonus": null, "strength_requirement": 13, "stealth_disadvantage": true, "weight": "55 lb."},
+  {"armor_id": "splint", "name": "Splint", "category": "heavy", "cost": "200 gp", "base_ac": 17, "dex_modifier": false, "max_dex_bonus": null, "strength_requirement": 15, "stealth_disadvantage": true, "weight": "60 lb."},
+  {"armor_id": "plate", "name": "Plate", "category": "heavy", "cost": "1500 gp", "base_ac": 18, "dex_modifier": false, "max_dex_bonus": null, "strength_requirement": 15, "stealth_disadvantage": true, "weight": "65 lb."},
+  {"armor_id": "shield", "name": "Shield", "category": "shield", "cost": "10 gp", "base_ac": 2, "dex_modifier": false, "max_dex_bonus": null, "strength_requirement": null, "stealth_disadvantage": false, "weight": "6 lb."}
+]

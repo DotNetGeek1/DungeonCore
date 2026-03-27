@@ -1,0 +1,32 @@
+[
+  {
+    "race_id": "half_elf",
+    "name": "Half-Elf",
+    "ability_score_increase": {
+      "CHA": 2,
+      "FLEX_PLUS_ONE_COUNT": 2
+    },
+    "size": "Medium",
+    "speed": 30,
+    "languages": ["Common", "Elvish", "One extra language of your choice"],
+    "traits": [
+      {
+        "trait_id": "darkvision",
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "trait_id": "fey_ancestry",
+        "name": "Fey Ancestry",
+        "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+      },
+      {
+        "trait_id": "skill_versatility",
+        "name": "Skill Versatility",
+        "description": "You gain proficiency in two skills of your choice."
+      }
+    ],
+    "subraces": [],
+    "source_reference": "PHB p.39"
+  }
+]

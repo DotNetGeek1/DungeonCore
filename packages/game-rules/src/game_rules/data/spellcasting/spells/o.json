@@ -1,0 +1,93 @@
+[
+  {
+    "spell_id": "otilukes_freezing_sphere",
+    "name": "Otiluke's Freezing Sphere",
+    "level": 6,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 300, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small crystal sphere",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature in the area must make a Constitution saving throw, taking 10d6 cold damage on a failed save, or half as much on a successful one. Alternatively you can create a small globe that can be thrown; it detonates as above when shattered or at the end of your next turn.",
+      "damage_dice": "10d6",
+      "damage_type": "cold",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 60,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th.",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.243"
+  },
+  {
+    "spell_id": "otilukes_resilient_sphere",
+    "name": "Otiluke's Resilient Sphere",
+    "level": 4,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "A sphere of shimmering force encloses a Large or smaller creature or object within range. An unwilling creature must succeed on a Dexterity saving throw or be enclosed. Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, and the enclosed creature cannot damage the sphere from within. The creature can breathe normally inside and has total cover against attacks and other effects outside the sphere. The sphere is weightless and can be moved by others.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.244"
+  },
+  {
+    "spell_id": "ottos_irresistible_dance",
+    "name": "Otto's Irresistible Dance",
+    "level": 6,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Choose one creature that you can see within range. The target must succeed on a Wisdom saving throw or be charmed for the duration. While charmed, it is incapacitated, its speed is 0, and it has disadvantage on Dexterity saving throws and attack rolls. Other creatures have advantage on attack rolls against it. At the end of each of its turns, the target can repeat the Wisdom saving throw, ending the effect on itself on a success.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.264"
+  }
+]

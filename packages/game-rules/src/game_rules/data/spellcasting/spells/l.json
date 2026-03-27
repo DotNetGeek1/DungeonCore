@@ -1,0 +1,352 @@
+[
+  {
+    "spell_id": "legend_lore",
+    "name": "Legend Lore",
+    "level": 5,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": { "value": 10, "unit": "minute" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Incense worth at least 250 gp, which the spell consumes, and four ivory strips",
+        "cost": "250 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Name or describe a person, place, or object. The spell brings to your mind a brief summary of the significant lore about that thing, as stories known to civilization. The lore might consist of current tales, forgotten stories, or even secret lore that has never been widely known. If the thing you named isn't of legendary importance, you gain no information. The more information you already have about the thing, the more precise and detailed the information you receive is.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "wizard"],
+    "source_reference": "PHB p.254"
+  },
+  {
+    "spell_id": "leomunds_secret_chest",
+    "name": "Leomund's Secret Chest",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "An exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica of the chest made from the same materials worth at least 50 gp",
+        "cost": "5050 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You hide a chest and all its contents on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material. While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["wizard"],
+    "source_reference": "PHB p.254"
+  },
+  {
+    "spell_id": "leomunds_tiny_hut",
+    "name": "Leomund's Tiny Hut",
+    "level": 3,
+    "school": "evocation",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A small crystal bead" }
+    },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. Nine creatures of Medium size or smaller can fit inside with you. The spell fails if its area includes a larger creature or more than nine creatures. The atmosphere inside the space is comfortable and dry. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The interior is opaque from the outside and of any color you choose, but transparent from the inside. The dome can be lit as you choose, is opaque from outside, and shelters against weather.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "hemisphere",
+      "area_size": 10,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.255"
+  },
+  {
+    "spell_id": "lesser_restoration",
+    "name": "Lesser Restoration",
+    "level": 2,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger"],
+    "source_reference": "PHB p.255"
+  },
+  {
+    "spell_id": "levitate",
+    "name": "Levitate",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end"
+      }
+    },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "One creature or loose object of your choice that you can see within range rises vertically up to 20 feet and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected. You can change the target's altitude by up to 20 feet in either direction on your turn. You can move yourself as if you were using levitate on yourself. When the spell ends, the target floats gently to the ground if it is still aloft.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.255"
+  },
+  {
+    "spell_id": "light",
+    "name": "Light",
+    "level": 0,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": { "description": "A firefly or phosphorescent moss" }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Covering the object with something opaque blocks the light. If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "DEX",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "sorcerer", "wizard"],
+    "source_reference": "PHB p.255"
+  },
+  {
+    "spell_id": "lightning_arrow",
+    "name": "Lightning Arrow",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "The next time you make a ranged weapon attack during the spell's duration, the weapon's ammunition or the weapon itself (if thrown) transforms into a bolt of lightning. Make the attack roll as normal. On a hit, the target takes 4d8 lightning damage instead of the weapon's normal damage, and each creature within 10 feet of the target must make a Dexterity saving throw, taking 2d8 lightning damage on a failed save, or half as much on a successful one. Whether you hit or miss, ammunition is consumed and the spell ends.",
+      "damage_dice": "4d8",
+      "damage_type": "lightning",
+      "healing_dice": null,
+      "area_shape": "radius",
+      "area_size": 10,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": "ranged_weapon_attack"
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage (both initial and secondary) increases by 1d8 for each slot level above 3rd.",
+    "classes": ["ranger"],
+    "source_reference": "PHB p.255"
+  },
+  {
+    "spell_id": "lightning_bolt",
+    "name": "Lightning Bolt",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A bit of fur and a rod of amber, crystal, or glass" }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried.",
+      "damage_dice": "8d6",
+      "damage_type": "lightning",
+      "healing_dice": null,
+      "area_shape": "line",
+      "area_size": 100,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.255"
+  },
+  {
+    "spell_id": "locate_animals_or_plants",
+    "name": "Locate Animals or Plants",
+    "level": 2,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A bit of fur from a bloodhound" }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "druid", "ranger"],
+    "source_reference": "PHB p.256"
+  },
+  {
+    "spell_id": "locate_creature",
+    "name": "Locate Creature",
+    "level": 4,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A bit of fur from a bloodhound" }
+    },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Describe or name a creature that is familiar to you. Until the spell ends, you learn the direction of the creature's movement if it is within 1,000 feet of you. If the creature is in motion, you know the direction of its movement. The spell can locate a specific creature you know or the nearest creature of a specific kind (such as a human or a unicorn) if you have seen such a creature up close—within 30 feet—at least once. Running water blocks the spell, as does a thin sheet of lead.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger", "wizard"],
+    "source_reference": "PHB p.256"
+  },
+  {
+    "spell_id": "locate_object",
+    "name": "Locate Object",
+    "level": 2,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A forked twig" }
+    },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Describe or name an object that is familiar to you. You sense the direction to the object's location if that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement. The spell can locate a specific object you have seen within 30 feet; alternatively, the nearest object of a particular kind. The spell fails if there is more than 3 feet of stone, dirt, wood, or similar blocking path, or thin lead.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger", "wizard"],
+    "source_reference": "PHB p.256"
+  },
+  {
+    "spell_id": "longstrider",
+    "name": "Longstrider",
+    "level": 1,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A pinch of dirt" }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+    "classes": ["bard", "druid", "ranger", "wizard"],
+    "source_reference": "PHB p.256"
+  }
+]

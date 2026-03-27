@@ -1,0 +1,86 @@
+[
+  {
+    "action_id": "attack",
+    "name": "Attack",
+    "cost": "action",
+    "description": "Make a melee or ranged attack. With Extra Attack feature, you can make multiple attacks with this action."
+  },
+  {
+    "action_id": "cast_spell",
+    "name": "Cast a Spell",
+    "cost": "action",
+    "description": "Cast a spell with a casting time of 1 action. Bonus action spells use the bonus action instead."
+  },
+  {
+    "action_id": "dash",
+    "name": "Dash",
+    "cost": "action",
+    "description": "Gain extra movement equal to your speed (after modifiers) for the current turn."
+  },
+  {
+    "action_id": "disengage",
+    "name": "Disengage",
+    "cost": "action",
+    "description": "Your movement does not provoke opportunity attacks for the rest of the turn."
+  },
+  {
+    "action_id": "dodge",
+    "name": "Dodge",
+    "cost": "action",
+    "description": "Until the start of your next turn, attack rolls against you have disadvantage (if you can see the attacker), and you make DEX saving throws with advantage. Lost if incapacitated or speed drops to 0."
+  },
+  {
+    "action_id": "help",
+    "name": "Help",
+    "cost": "action",
+    "description": "Give an ally advantage on their next ability check for the task you are helping with, or give advantage on the next attack roll against a creature within 5 feet of you."
+  },
+  {
+    "action_id": "hide",
+    "name": "Hide",
+    "cost": "action",
+    "description": "Make a DEX (Stealth) check to become hidden. You must be unseen and unheard to attempt hiding."
+  },
+  {
+    "action_id": "ready",
+    "name": "Ready",
+    "cost": "action",
+    "description": "Prepare to act in response to a trigger. When the trigger occurs, use your reaction to take the readied action. Readied spells require concentration and use the spell slot whether triggered or not."
+  },
+  {
+    "action_id": "search",
+    "name": "Search",
+    "cost": "action",
+    "description": "Make a WIS (Perception) or INT (Investigation) check to find something."
+  },
+  {
+    "action_id": "use_object",
+    "name": "Use an Object",
+    "cost": "action",
+    "description": "Interact with a second object on your turn (first interaction is free), or use an object that requires an action such as a healer's kit."
+  },
+  {
+    "action_id": "grapple",
+    "name": "Grapple",
+    "cost": "action",
+    "description": "Replace one attack with a grapple attempt. Contested STR (Athletics) vs target's STR (Athletics) or DEX (Acrobatics). Target must be no more than one size larger. Success: target is grappled (speed 0)."
+  },
+  {
+    "action_id": "shove",
+    "name": "Shove",
+    "cost": "action",
+    "description": "Replace one attack with a shove. Contested STR (Athletics) vs target's STR (Athletics) or DEX (Acrobatics). Target must be no more than one size larger. Success: knock prone or push 5 feet away."
+  },
+  {
+    "action_id": "opportunity_attack",
+    "name": "Opportunity Attack",
+    "cost": "reaction",
+    "description": "When a hostile creature you can see moves out of your reach, make one melee attack as a reaction. Does not trigger on teleportation, forced movement, or Disengage."
+  },
+  {
+    "action_id": "two_weapon_fighting",
+    "name": "Two-Weapon Fighting",
+    "cost": "bonus_action",
+    "description": "When you take the Attack action with a light melee weapon, you can use a bonus action to attack with a different light melee weapon in the other hand. Do not add ability modifier to bonus attack damage unless modifier is negative."
+  }
+]

@@ -1,0 +1,31 @@
+[project]
+name = "dungeoncore-game-rules"
+version = "0.1.0"
+description = "D&D 5e rule catalogs for DungeonCore game engine."
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.9,<3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.11,<2.0",
+  "pytest>=8.3,<9.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+game_rules = ["data/**/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = [
+  "tests",
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+mypy_path = "src"

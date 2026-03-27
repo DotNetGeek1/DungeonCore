@@ -1,0 +1,65 @@
+[
+  {
+    "race_id": "gnome",
+    "name": "Gnome",
+    "ability_score_increase": {
+      "INT": 2
+    },
+    "size": "Small",
+    "speed": 25,
+    "languages": ["Common", "Gnomish"],
+    "traits": [
+      {
+        "trait_id": "darkvision_gnome",
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray."
+      },
+      {
+        "trait_id": "gnome_cunning",
+        "name": "Gnome Cunning",
+        "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+      }
+    ],
+    "subraces": [
+      {
+        "subrace_id": "forest_gnome",
+        "name": "Forest Gnome",
+        "ability_score_increase": {
+          "DEX": 1
+        },
+        "traits": [
+          {
+            "trait_id": "natural_illusionist",
+            "name": "Natural Illusionist",
+            "description": "You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
+          },
+          {
+            "trait_id": "speak_with_small_beasts",
+            "name": "Speak with Small Beasts",
+            "description": "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts."
+          }
+        ]
+      },
+      {
+        "subrace_id": "rock_gnome",
+        "name": "Rock Gnome",
+        "ability_score_increase": {
+          "CON": 1
+        },
+        "traits": [
+          {
+            "trait_id": "artificers_lore",
+            "name": "Artificer's Lore",
+            "description": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus instead of any proficiency bonus you would normally apply."
+          },
+          {
+            "trait_id": "tinker",
+            "name": "Tinker",
+            "description": "You have proficiency with artisan's tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours unless you spend 1 hour repairing it, or when you use your action to dismantle it; at that moment you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the options from the Player's Handbook (e.g. toy, fire starter, music box)."
+          }
+        ]
+      }
+    ],
+    "source_reference": "PHB pp.35-37"
+  }
+]

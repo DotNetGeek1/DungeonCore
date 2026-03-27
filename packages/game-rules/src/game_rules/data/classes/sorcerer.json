@@ -1,0 +1,143 @@
+[
+  {
+    "class_id": "sorcerer",
+    "name": "Sorcerer",
+    "hit_die": "d6",
+    "primary_ability": ["CHA"],
+    "saving_throws": ["CON", "CHA"],
+    "armor_proficiencies": [],
+    "weapon_proficiencies": [
+      "daggers",
+      "darts",
+      "slings",
+      "quarterstaffs",
+      "light crossbows"
+    ],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "Arcana",
+      "Deception",
+      "Insight",
+      "Intimidation",
+      "Persuasion",
+      "Religion"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "sorcerer_spellcasting",
+        "name": "Spellcasting",
+        "level": 1,
+        "description": "You can cast sorcerer spells; your spellcasting ability is Charisma. You know a limited number of spells and cantrips and use your Charisma for attack rolls and save DCs."
+      },
+      {
+        "feature_id": "sorcerous_origin",
+        "name": "Sorcerous Origin",
+        "level": 1,
+        "description": "Choose a Sorcerous Origin that grants you features at 1st, 6th, 14th, and 18th level."
+      },
+      {
+        "feature_id": "font_of_magic",
+        "name": "Font of Magic",
+        "level": 2,
+        "description": "You have sorcery points equal to your sorcerer level. You can spend them to create spell slots or fuel other sorcerer features, and you can convert sorcery points into spell slots or break down spell slots into sorcery points using flexible casting rules."
+      },
+      {
+        "feature_id": "metamagic",
+        "name": "Metamagic",
+        "level": 3,
+        "description": "You learn two Metamagic options of your choice (Careful, Distant, Empowered, Extended, Heightened, Quickened, Subtle, Twinned). You learn one more at 10th and 17th level. You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
+      },
+      {
+        "feature_id": "sorcerous_restoration",
+        "name": "Sorcerous Restoration",
+        "level": 20,
+        "description": "You regain 4 expended sorcery points whenever you finish a short rest."
+      }
+    ],
+    "subclass_label": "Sorcerous Origin",
+    "subclass_level": 1,
+    "subclasses": [
+      {
+        "subclass_id": "draconic_bloodline",
+        "name": "Draconic Bloodline",
+        "description": "Your innate magic comes from draconic magic mingled with your blood or that of your ancestors.",
+        "features": [
+          {
+            "feature_id": "dragon_ancestor",
+            "name": "Dragon Ancestor",
+            "level": 1,
+            "description": "Choose one type of dragon as your ancestor; the damage type associated with that dragon is used by your later features (such as Elemental Affinity). You can speak, read, and write Draconic. When you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check."
+          },
+          {
+            "feature_id": "draconic_resilience",
+            "name": "Draconic Resilience",
+            "level": 1,
+            "description": "When determining your hit points at each level, increase by 1 per sorcerer level. Your scales harden: while you are not wearing armor, your AC equals 13 + your Dexterity modifier. You can use a shield and still gain this benefit."
+          },
+          {
+            "feature_id": "elemental_affinity",
+            "name": "Elemental Affinity",
+            "level": 6,
+            "description": "When you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell. In addition, you can spend 1 sorcery point to gain resistance to that damage type until the end of the turn."
+          },
+          {
+            "feature_id": "dragon_wings",
+            "name": "Dragon Wings",
+            "level": 14,
+            "description": "As a bonus action on your turn, you can sprout a pair of dragon wings from your back, gaining a flying speed equal to your current walking speed. They last until you dismiss them as a bonus action."
+          },
+          {
+            "feature_id": "draconic_presence",
+            "name": "Draconic Presence",
+            "level": 18,
+            "description": "As an action, you channel the dread presence of your dragon ancestor, causing each creature of your choice within 60 feet that is aware of you to make a Wisdom saving throw against your sorcerer spell save DC. On a failed save, it becomes charmed or frightened (your choice) for 1 minute. Once you use this feature, you cannot use it again until you finish a long rest."
+          }
+        ]
+      },
+      {
+        "subclass_id": "wild_magic",
+        "name": "Wild Magic",
+        "description": "Your innate magic comes from the wild forces of chaos that underlie the order of creation.",
+        "features": [
+          {
+            "feature_id": "wild_magic_surge",
+            "name": "Wild Magic Surge",
+            "level": 1,
+            "description": "After you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. On a 1, you roll on the Wild Magic Surge table to create a random magical effect."
+          },
+          {
+            "feature_id": "tides_of_chaos",
+            "name": "Tides of Chaos",
+            "level": 1,
+            "description": "You can gain advantage on one attack roll, ability check, or saving throw. After you do, the DM can have you roll for Wild Magic Surge immediately after you cast a sorcerer spell of 1st level or higher; if you roll on the table, you regain your use of Tides of Chaos."
+          },
+          {
+            "feature_id": "bend_luck",
+            "name": "Bend Luck",
+            "level": 6,
+            "description": "When another creature you can see makes an attack roll, ability check, or saving throw, you can spend 2 sorcery points after the roll to roll 1d4 and apply the result as a bonus or penalty (your choice) to the creature's roll."
+          },
+          {
+            "feature_id": "controlled_chaos",
+            "name": "Controlled Chaos",
+            "level": 14,
+            "description": "When you roll on the Wild Magic Surge table, you can roll twice and use either number."
+          },
+          {
+            "feature_id": "spell_bombardment",
+            "name": "Spell Bombardment",
+            "level": 18,
+            "description": "Once per turn when you roll damage for a spell, you can reroll one damage die that rolled its maximum value."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "CHA",
+      "type": "known",
+      "cantrips": true
+    },
+    "source_reference": "PHB p.99-104"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "spell_id": "nondetection",
+    "name": "Nondetection",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes",
+        "cost": "25 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature, a place, or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "ranger", "wizard"],
+    "source_reference": "PHB p.263"
+  },
+  {
+    "spell_id": "nystuls_magic_aura",
+    "name": "Nystul's Magic Aura",
+    "level": 2,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small square of silk",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the object's apparent school of magic. You can likewise alter the appearance of a creature's creature type or alignment registers to divination. If you target a creature, it can make an Intelligence (Investigation) check against your spell save DC to discern the illusion.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "If you cast this spell every day for 30 days on the same creature or object, the illusion lasts until it is dispelled.",
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.263"
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "class_id": "bard",
+    "name": "Bard",
+    "hit_die": "d8",
+    "primary_ability": ["CHA"],
+    "saving_throws": ["DEX", "CHA"],
+    "armor_proficiencies": ["light"],
+    "weapon_proficiencies": ["simple", "hand_crossbow", "longsword", "rapier", "shortsword"],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "acrobatics",
+      "animal_handling",
+      "arcana",
+      "athletics",
+      "deception",
+      "history",
+      "insight",
+      "intimidation",
+      "investigation",
+      "medicine",
+      "nature",
+      "perception",
+      "performance",
+      "persuasion",
+      "religion",
+      "sleight_of_hand",
+      "stealth",
+      "survival"
+    ],
+    "num_skill_choices": 3,
+    "features": [
+      {
+        "feature_id": "spellcasting_bard",
+        "name": "Spellcasting",
+        "level": 1,
+        "description": "You know cantrips and spells from the bard list, using Charisma as your spellcasting ability. You use a musical instrument as a spellcasting focus."
+      },
+      {
+        "feature_id": "bardic_inspiration",
+        "name": "Bardic Inspiration",
+        "level": 1,
+        "description": "You can inspire others through stirring words or music. A creature that has a Bardic Inspiration die from you can add it to one ability check, attack roll, or saving throw. The die starts as a d6 and increases at 5th (d8), 10th (d10), and 15th (d12) level. Uses per long rest equal to your Charisma modifier (minimum one).",
+        "usage": {
+          "resource": "bardic_inspiration_uses",
+          "cost": 1,
+          "recharge": "long_rest"
+        }
+      },
+      {
+        "feature_id": "jack_of_all_trades",
+        "name": "Jack of All Trades",
+        "level": 2,
+        "description": "You can add half your proficiency bonus, rounded down, to any ability check you make that does not already include your proficiency bonus."
+      },
+      {
+        "feature_id": "song_of_rest",
+        "name": "Song of Rest",
+        "level": 2,
+        "description": "If you use Bardic Performance during a short rest, each ally who regains hit points from spending Hit Dice regains an extra 1d6. The die increases at higher levels (d8 at 9th, d10 at 13th, d12 at 17th)."
+      },
+      {
+        "feature_id": "expertise",
+        "name": "Expertise",
+        "level": 3,
+        "description": "Choose two of your skill proficiencies (or one skill and thieves' tools). Your proficiency bonus is doubled for any ability check using either chosen proficiency."
+      },
+      {
+        "feature_id": "font_of_inspiration",
+        "name": "Font of Inspiration",
+        "level": 5,
+        "description": "You regain all expended uses of Bardic Inspiration when you finish a short or long rest."
+      },
+      {
+        "feature_id": "countercharm",
+        "name": "Countercharm",
+        "level": 6,
+        "description": "As an action, you can start a performance that lasts until the end of your next turn. During that time, you and friendly creatures within 30 feet have advantage on saving throws against being frightened or charmed."
+      },
+      {
+        "feature_id": "magical_secrets",
+        "name": "Magical Secrets",
+        "level": 10,
+        "description": "You learn two spells from any class's spell list and count them as bard spells. You learn two more at 14th level and again at 18th level."
+      },
+      {
+        "feature_id": "superior_inspiration",
+        "name": "Superior Inspiration",
+        "level": 20,
+        "description": "When you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
+      }
+    ],
+    "subclass_label": "Bard College",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "college_of_lore",
+        "name": "College of Lore",
+        "description": "Bards of the College of Lore collect knowledge and secrets, using wit and cutting words to confound foes.",
+        "features": [
+          {
+            "feature_id": "lore_bonus_proficiencies",
+            "name": "Bonus Proficiencies",
+            "level": 3,
+            "description": "You gain proficiency with three additional skills of your choice."
+          },
+          {
+            "feature_id": "cutting_words",
+            "name": "Cutting Words",
+            "level": 3,
+            "description": "When a creature you can see within 60 feet makes an attack roll, ability check, or damage roll, you can use your reaction to expend one use of Bardic Inspiration and roll a Bardic Inspiration die. You subtract the number rolled from the creature's roll."
+          },
+          {
+            "feature_id": "additional_magical_secrets",
+            "name": "Additional Magical Secrets",
+            "level": 6,
+            "description": "You learn two spells from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip."
+          },
+          {
+            "feature_id": "peerless_skill",
+            "name": "Peerless Skill",
+            "level": 14,
+            "description": "When you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check."
+          }
+        ]
+      },
+      {
+        "subclass_id": "college_of_valor",
+        "name": "College of Valor",
+        "description": "Bards of the College of Valor are daring skalds and knights who inspire others through martial prowess.",
+        "features": [
+          {
+            "feature_id": "valor_bonus_proficiencies",
+            "name": "Bonus Proficiencies",
+            "level": 3,
+            "description": "You gain proficiency with medium armor, shields, and martial weapons."
+          },
+          {
+            "feature_id": "combat_inspiration",
+            "name": "Combat Inspiration",
+            "level": 3,
+            "description": "A creature with Bardic Inspiration from you can roll the die and add it to a weapon damage roll, or use the reaction to add it to AC after being hit by an attack."
+          },
+          {
+            "feature_id": "valor_extra_attack",
+            "name": "Extra Attack",
+            "level": 6,
+            "description": "You can attack twice whenever you take the Attack action on your turn."
+          },
+          {
+            "feature_id": "battle_magic",
+            "name": "Battle Magic",
+            "level": 14,
+            "description": "When you use your action to cast a bard spell, you can make one weapon attack as a bonus action."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "CHA",
+      "type": "known",
+      "cantrips": true
+    },
+    "source_reference": "PHB p.51-57"
+  }
+]

@@ -1,0 +1,867 @@
+[
+  {
+    "spell_id": "mage_armor",
+    "name": "Mage Armor",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A piece of cured leather" }
+    },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.256"
+  },
+  {
+    "spell_id": "mage_hand",
+    "name": "Mage Hand",
+    "level": 0,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can't attack, activate magic items, or carry more than 10 pounds.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.256"
+  },
+  {
+    "spell_id": "magic_circle",
+    "name": "Magic Circle",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 10, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Holy water or powdered silver and iron worth at least 100 gp, which the spell consumes",
+        "cost": "100 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You create a 10-foot-radius, 20-foot-tall cylinder of magical energy on the ground. Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways: it can't willingly enter the cylinder by nonmagical means; it has disadvantage on attack rolls against targets within the cylinder; targets within can't be charmed, frightened, or possessed by it. When you cast this spell, you can elect to cause its magic to operate in the reverse direction, trapping a creature of the chosen type inside.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 20,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric", "paladin", "warlock", "wizard"],
+    "source_reference": "PHB p.256"
+  },
+  {
+    "spell_id": "magic_jar",
+    "name": "Magic Jar",
+    "level": 6,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A gem, crystal, reliquary, or other ornamental container worth at least 500 gp",
+        "cost": "500 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "until_dispelled", "concentration": false },
+    "effect": {
+      "description": "Your body falls into a catatonic state as your soul enters the container. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or use reactions. The only action you can take is to project your soul up to 100 feet out to attempt to possess a humanoid. The target must succeed on a Charisma saving throw or be possessed; if it succeeds, it is immune to this attempt for 24 hours. If you possess a body, your game statistics are replaced by the host's except for mental scores. If the host body dies, you must return to the jar or die. Destroying the jar while your soul is in it kills you.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CHA",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["wizard"],
+    "source_reference": "PHB p.257"
+  },
+  {
+    "spell_id": "magic_missile",
+    "name": "Magic Missile",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+      "damage_dice": "1d4+1",
+      "damage_type": "force",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.257"
+  },
+  {
+    "spell_id": "magic_mouth",
+    "name": "Magic Mouth",
+    "level": 2,
+    "school": "illusion",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small bit of honeycomb and jade dust worth at least 10 gp, which the spell consumes",
+        "cost": "10 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "until_dispelled", "concentration": false },
+    "effect": {
+      "description": "You implant a message within an object in range, a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or less, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message. When that trigger occurs, a magical mouth appears on the object and speaks your message in your voice at the same volume you spoke. If the object you chose has a mouth or something that looks like a mouth (for example, the mouth of a statue), the magical mouth appears there.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.257"
+  },
+  {
+    "spell_id": "magic_weapon",
+    "name": "Magic Weapon",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.",
+    "classes": ["paladin", "sorcerer", "wizard"],
+    "source_reference": "PHB p.257"
+  },
+  {
+    "spell_id": "major_image",
+    "name": "Major Image",
+    "level": 3,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A bit of fleece" }
+    },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted, but physical interaction reveals it as an illusion. If a creature uses its action to examine the image, it can determine it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, it can see through the image, and other sensory qualities become faint.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 20,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.",
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.258"
+  },
+  {
+    "spell_id": "mass_cure_wounds",
+    "name": "Mass Cure Wounds",
+    "level": 5,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "3d8",
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.",
+    "classes": ["bard", "cleric"],
+    "source_reference": "PHB p.258"
+  },
+  {
+    "spell_id": "mass_heal",
+    "name": "Mass Heal",
+    "level": 9,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric"],
+    "source_reference": "PHB p.258"
+  },
+  {
+    "spell_id": "mass_healing_word",
+    "name": "Mass Healing Word",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "As you call out words of restoration, up to six creatures of your choice that you can see within range each regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "1d4",
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.",
+    "classes": ["cleric"],
+    "source_reference": "PHB p.258"
+  },
+  {
+    "spell_id": "mass_suggestion",
+    "name": "Mass Suggestion",
+    "level": 6,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": { "description": "A snake's tongue and either a bit of honeycomb or a drop of sweet oil" }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear you. Creatures that can't be charmed are immune. Each target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course can continue for the entire duration. If the activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do. You can also specify conditions that trigger a special activity during the duration.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.258"
+  },
+  {
+    "spell_id": "maze",
+    "name": "Maze",
+    "level": 8,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there until the spell ends or until it escapes the maze. The target can use its action to attempt to escape. When it does so, it makes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends. When the spell ends, the target reappears in the space it left or, if occupied, in the nearest unoccupied space.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["wizard"],
+    "source_reference": "PHB p.258"
+  },
+  {
+    "spell_id": "meld_into_stone",
+    "name": "Meld into Stone",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or detectable by nonmagical senses. Minor physical damage to the stone doesn't harm you, but its partial destruction ends the spell and deals 6d6 bludgeoning damage. The stone's complete destruction expels you and deals 50 bludgeoning damage. You can use an action to leave; if you do so, you appear in an unoccupied space closest to where you entered.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric", "druid"],
+    "source_reference": "PHB p.259"
+  },
+  {
+    "spell_id": "melfs_acid_arrow",
+    "name": "Melf's Acid Arrow",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 90, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Powdered rhubarb leaf and an adder's stomach"
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.",
+      "damage_dice": "4d4",
+      "damage_type": "acid",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.259"
+  },
+  {
+    "spell_id": "mending",
+    "name": "Mending",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "Two lodestones" }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. This spell can physically repair a magic item or construct, but can't restore magic to such an object.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "druid", "sorcerer", "wizard"],
+    "source_reference": "PHB p.259"
+  },
+  {
+    "spell_id": "message",
+    "name": "Message",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A short piece of copper wire" }
+    },
+    "duration": { "value": 1, "unit": "round", "concentration": false },
+    "effect": {
+      "description": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.259"
+  },
+  {
+    "spell_id": "meteor_swarm",
+    "name": "Meteor Swarm",
+    "level": 9,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 1, "unit": "mile" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point must make a Dexterity saving throw. A creature takes 20d6 fire damage and 20d6 bludgeoning damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one fiery burst is affected only once.",
+      "damage_dice": "20d6+20d6",
+      "damage_type": "fire",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 40,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.259"
+  },
+  {
+    "spell_id": "mind_blank",
+    "name": "Mind Blank",
+    "level": 8,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils wish spells and spells or effects of similar power used to affect the target's mind or to gain information about the target.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.259"
+  },
+  {
+    "spell_id": "minor_illusion",
+    "name": "Minor Illusion",
+    "level": 0,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": false,
+      "somatic": true,
+      "material": { "description": "A bit of fleece" }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "You create a sound or an image of an object within range that lasts for the duration. If a creature uses its action to examine the sound or image, it can determine it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint. Sound: volume from a whisper to a scream. Image: no larger than a 5-foot cube, can't create sensory effects, and can't move.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 5,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.260"
+  },
+  {
+    "spell_id": "mirage_arcane",
+    "name": "Mirage Arcane",
+    "level": 7,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 10, "unit": "minute" },
+    "range": { "value": null, "unit": "sight" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "day", "concentration": false },
+    "effect": {
+      "description": "You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. Manufactured structures, equipment, and creatures within the area aren't changed. Any piece of the illusory terrain that is removed from the area disappears. If the difference isn't obvious by touch, a creature examining the illusion can use its action to make an Intelligence (Investigation) check against your spell save DC to disbelieve it. True sight can see through the illusion to the terrain's true form; however, physical interaction still reveals the illusion for what it is.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "square",
+      "area_size": 5280,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "druid", "wizard"],
+    "source_reference": "PHB p.260"
+  },
+  {
+    "spell_id": "mirror_image",
+    "name": "Mirror Image",
+    "level": 2,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. Each time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates. If you have three duplicates, you must roll a 6 or higher; with two, 8 or higher; with one, 11 or higher. A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. Duplicates ignore all other damage and effects.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.260"
+  },
+  {
+    "spell_id": "mislead",
+    "name": "Mislead",
+    "level": 5,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell. You can use your action to move your illusory double up to twice your speed and make it gesture, speak, and behave in whatever way you choose. You can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch between using its senses and using your own, or use its senses while you aren't blinded or deafened.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.260"
+  },
+  {
+    "spell_id": "misty_step",
+    "name": "Misty Step",
+    "level": 2,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.260"
+  },
+  {
+    "spell_id": "modify_memory",
+    "name": "Modify Memory",
+    "level": 5,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You attempt to reshape another creature's memories. One creature that you can see within range must make a Wisdom saving throw. If you are fighting the creature, it has advantage. On a failed save, the target is charmed by you for the duration. While charmed, the target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes damage or is targeted by another spell, this spell ends. While the charm lasts, you can affect its memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity, change its memory of the details, or create a memory of some other event. A modified memory doesn't necessarily affect how a creature behaves.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "If you cast this spell using a spell slot of 6th level or higher, you can alter the target's memories of an event that took place up to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th level), or any time in the creature's past (9th level).",
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.261"
+  },
+  {
+    "spell_id": "moonbeam",
+    "name": "Moonbeam",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Several seeds of any moonseed plant and a piece of opalescent feldspar"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much on a successful one. A shapechanger makes its saving throw with disadvantage. On each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction.",
+      "damage_dice": "2d10",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 40,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
+    "classes": ["druid"],
+    "source_reference": "PHB p.261"
+  },
+  {
+    "spell_id": "mordenkainens_faithful_hound",
+    "name": "Mordenkainen's Faithful Hound",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A tiny silver whistle, a piece of bone, and a thread" }
+    },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You conjure a phantom watchdog in an unoccupied space that you can see within range. The hound remains for the duration until dismissed, and can't be harmed. It is invisible except to you and can't be seen by creatures that can see invisible creatures. It barks loudly at intruders within 30 feet of it (unless you command it not to). At the end of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus equals your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.",
+      "damage_dice": "4d8",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["wizard"],
+    "source_reference": "PHB p.261"
+  },
+  {
+    "spell_id": "mordenkainens_magnificent_mansion",
+    "name": "Mordenkainen's Magnificent Mansion",
+    "level": 7,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 300, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp"
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its entrance is: a faint door on a flat solid surface. Only you and creatures you designate can open or close the door. Beyond the portal is a magnificent foyer with numerous chambers furnished as you decide, including a banquet hall for 100. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is staffed by 100 near-transparent servants. Furnishings and other objects created by this spell vanish if removed from the mansion. When the spell ends, any creatures inside are expelled into the open spaces nearest to the entrance.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.261"
+  },
+  {
+    "spell_id": "mordenkainens_private_sanctum",
+    "name": "Mordenkainen's Private Sanctum",
+    "level": 4,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 10, "unit": "minute" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite"
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it. Choose one or more: sound can't pass through the barrier; the barrier is dark; sensors can't perceive anything in the area; creatures in the area can't be targeted by divination magic; nothing can teleport into or out of the area; planar travel is blocked. Even wish can't bypass these effects.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 100,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.262"
+  },
+  {
+    "spell_id": "mordenkainens_sword",
+    "name": "Mordenkainen's Sword",
+    "level": 7,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp",
+        "cost": "250 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.",
+      "damage_dice": "3d10",
+      "damage_type": "force",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "melee_spell_attack"
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.262"
+  },
+  {
+    "spell_id": "move_earth",
+    "name": "Move Earth",
+    "level": 6,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "An iron blade and a small bag containing a mixture of clay, loam, and sand"
+      }
+    },
+    "duration": { "value": 2, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration, raising or lowering the area's elevation, creating or filling in a trench, erecting or flattening a wall, or forming a pillar. The extent of any such changes can't exceed half the area's largest dimension. Because the terrain's transformation occurs slowly, creatures in the area can't usually be trapped or injured by the movement. This spell can't manipulate natural stone or stone construction. Creatures and structures can't be lifted or moved. The spell's effects don't last beyond its duration.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "square",
+      "area_size": 40,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid", "sorcerer", "wizard"],
+    "source_reference": "PHB p.262"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "race_id": "halfling",
+    "name": "Halfling",
+    "ability_score_increase": { "DEX": 2 },
+    "size": "Small",
+    "speed": 25,
+    "languages": ["Common", "Halfling"],
+    "traits": [
+      {
+        "trait_id": "lucky",
+        "name": "Lucky",
+        "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+      },
+      {
+        "trait_id": "brave",
+        "name": "Brave",
+        "description": "You have advantage on saving throws against being frightened."
+      },
+      {
+        "trait_id": "halfling_nimbleness",
+        "name": "Halfling Nimbleness",
+        "description": "You can move through the space of any creature that is of a size larger than yours."
+      }
+    ],
+    "subraces": [
+      {
+        "subrace_id": "lightfoot_halfling",
+        "name": "Lightfoot",
+        "ability_score_increase": { "CHA": 1 },
+        "traits": [
+          {
+            "trait_id": "naturally_stealthy",
+            "name": "Naturally Stealthy",
+            "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+          }
+        ]
+      },
+      {
+        "subrace_id": "stout_halfling",
+        "name": "Stout",
+        "ability_score_increase": { "CON": 1 },
+        "traits": [
+          {
+            "trait_id": "stout_resilience",
+            "name": "Stout Resilience",
+            "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+          }
+        ]
+      }
+    ],
+    "source_reference": "PHB p.26"
+  }
+]

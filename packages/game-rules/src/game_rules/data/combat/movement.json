@@ -1,0 +1,68 @@
+[
+  {
+    "rule_id": "difficult_terrain",
+    "name": "Difficult Terrain",
+    "description": "Every foot of movement in difficult terrain costs 1 extra foot. This applies even with extra movement from Dash.",
+    "cost_multiplier": 2.0
+  },
+  {
+    "rule_id": "prone_movement",
+    "name": "Prone Movement",
+    "description": "Crawling while prone costs 1 extra foot of movement per foot. Standing up from prone costs half your movement speed.",
+    "cost_multiplier": 2.0
+  },
+  {
+    "rule_id": "climbing",
+    "name": "Climbing",
+    "description": "Each foot of climbing costs 1 extra foot of movement (2 extra in difficult terrain) unless you have a climbing speed.",
+    "cost_multiplier": 2.0
+  },
+  {
+    "rule_id": "swimming",
+    "name": "Swimming",
+    "description": "Each foot of swimming costs 1 extra foot of movement (2 extra in difficult terrain) unless you have a swimming speed.",
+    "cost_multiplier": 2.0
+  },
+  {
+    "rule_id": "long_jump",
+    "name": "Long Jump",
+    "description": "Running long jump covers feet equal to STR score. Standing long jump covers half that distance. May require DC 10 Athletics to clear low obstacles.",
+    "cost_multiplier": null
+  },
+  {
+    "rule_id": "high_jump",
+    "name": "High Jump",
+    "description": "Running high jump: 3 + STR modifier feet. Standing high jump: half that distance. Arms can reach 1.5x height above jump.",
+    "cost_multiplier": null
+  },
+  {
+    "rule_id": "squeezing",
+    "name": "Squeezing",
+    "description": "A creature can squeeze through a space one size smaller. While squeezing, movement costs 1 extra foot, has disadvantage on attacks and DEX saves, and attacks against have advantage.",
+    "cost_multiplier": 2.0
+  },
+  {
+    "rule_id": "flying",
+    "name": "Flying Movement",
+    "description": "If a flying creature is knocked prone, has speed reduced to 0, or is otherwise deprived of ability to move, it falls unless it can hover or is held aloft by magic.",
+    "cost_multiplier": null
+  },
+  {
+    "rule_id": "mounted_mounting",
+    "name": "Mounting and Dismounting",
+    "description": "Mounting or dismounting costs half your movement speed. If an effect moves your mount against its will, make a DC 10 DEX save or fall prone within 5 feet.",
+    "cost_multiplier": null
+  },
+  {
+    "rule_id": "underwater_melee",
+    "name": "Underwater Melee",
+    "description": "Melee weapon attacks have disadvantage unless the weapon is a dagger, javelin, shortsword, spear, or trident.",
+    "cost_multiplier": null
+  },
+  {
+    "rule_id": "underwater_ranged",
+    "name": "Underwater Ranged",
+    "description": "Ranged weapon attacks automatically miss beyond normal range. Even against a target in normal range, attack roll has disadvantage unless weapon is a crossbow, net, or thrown weapon (javelin, spear, trident, dart).",
+    "cost_multiplier": null
+  }
+]

@@ -1,0 +1,681 @@
+[
+  {
+    "spell_id": "acid_splash",
+    "name": "Acid Splash",
+    "level": 0,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You hurl acid at one creature, or two creatures within 5 feet of each other. On a failed Dexterity save, a target takes 1d6 acid damage.",
+      "damage_dice": "1d6",
+      "damage_type": "acid",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.211"
+  },
+  {
+    "spell_id": "aid",
+    "name": "Aid",
+    "level": 2,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A tiny strip of white cloth",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "Up to three creatures within range gain +5 to hit point maximum and current hit points for 8 hours.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.",
+    "classes": ["bard", "cleric", "paladin"],
+    "source_reference": "PHB p.211"
+  },
+  {
+    "spell_id": "alarm",
+    "name": "Alarm",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A tiny bell and a piece of fine silver wire",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You ward a door, window, or area up to a 20-foot cube for 8 hours. You are alerted when a Tiny or larger creature enters unless excluded; the alarm is mental or audible, as you choose.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 20,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["ranger", "wizard"],
+    "source_reference": "PHB p.211"
+  },
+  {
+    "spell_id": "alter_self",
+    "name": "Alter Self",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "For up to 1 hour (concentration), you alter yourself: aquatic form (breathe water, swim speed), change appearance (cosmetic only), or natural weapons (1d6 magical unarmed, +1 to hit and damage). You can switch options using an action.",
+      "damage_dice": "1d6",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.211"
+  },
+  {
+    "spell_id": "animal_friendship",
+    "name": "Animal Friendship",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A morsel of food",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "A beast (Intelligence 3 or less) that can see and hear you must succeed on a Wisdom save or be charmed for 24 hours; the spell fails on smarter beasts and ends if you harm the target.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.",
+    "classes": ["bard", "druid", "ranger"],
+    "source_reference": "PHB p.212"
+  },
+  {
+    "spell_id": "animal_messenger",
+    "name": "Animal Messenger",
+    "level": 2,
+    "school": "enchantment",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A morsel of food",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "A Tiny beast carries up to 25 words to a person you describe at a place you have visited, traveling ~50 mi/day (fly) or 25 mi/day (other). The message is lost if duration expires before delivery.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+    "classes": ["bard", "druid", "ranger"],
+    "source_reference": "PHB p.212"
+  },
+  {
+    "spell_id": "animal_shapes",
+    "name": "Animal Shapes",
+    "level": 8,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 24, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "Willing creatures within range become Large-or-smaller beasts of CR 4 or lower for up to 24 hours (concentration); you can reshape them on later turns. They use the beast's stats and revert at 0 HP or when the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["druid"],
+    "source_reference": "PHB p.212"
+  },
+  {
+    "spell_id": "animate_dead",
+    "name": "Animate Dead",
+    "level": 3,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 10, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A drop of blood, a piece of flesh, and a pinch of bone dust",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You animate bones into a skeleton or a corpse into a zombie (Medium/Small humanoid). You command it with a bonus action within 60 feet for 24 hours; recasting maintains control on up to four such undead.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a separate corpse or pile of bones.",
+    "classes": ["cleric", "wizard"],
+    "source_reference": "PHB p.212"
+  },
+  {
+    "spell_id": "animate_objects",
+    "name": "Animate Objects",
+    "level": 5,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Up to ten nonmagical unattended objects (size counts toward a 10-object budget) animate as constructs under your command for 1 minute (concentration); you command them with a bonus action within 500 feet.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th.",
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.213"
+  },
+  {
+    "spell_id": "antilife_shell",
+    "name": "Antilife Shell",
+    "level": 5,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "A 10-foot-radius shell moves with you for 1 hour (concentration), blocking living creatures (not undead or constructs) from passing through; forced movement through it ends the spell.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 10,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["druid"],
+    "source_reference": "PHB p.213"
+  },
+  {
+    "spell_id": "antimagic_field",
+    "name": "Antimagic Field",
+    "level": 8,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of powdered iron or iron filings",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "A 10-foot antimagic sphere moves with you for 1 hour (concentration), suppressing magic inside it; spells cannot be cast there and summoned creatures and ongoing effects are suppressed.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 10,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "wizard"],
+    "source_reference": "PHB p.213"
+  },
+  {
+    "spell_id": "antipathy_sympathy",
+    "name": "Antipathy/Sympathy",
+    "level": 8,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 10, "unit": "day", "concentration": false },
+    "effect": {
+      "description": "For 10 days, a Huge-or-smaller target or 200-foot-cube area attracts or repels a chosen kind of creature; those creatures that fail Wisdom saves must move toward or away from the target as the aura dictates.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 200,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "druid", "wizard"],
+    "source_reference": "PHB p.214"
+  },
+  {
+    "spell_id": "arcane_eye",
+    "name": "Arcane Eye",
+    "level": 4,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A bit of bat fur",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "An invisible eye within 30 feet relays vision (including 30-foot darkvision) for 1 hour (concentration). You move it 30 feet per action; it fits through a 1-inch opening.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.214"
+  },
+  {
+    "spell_id": "arcane_gate",
+    "name": "Arcane Gate",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 500, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Two linked 10-foot-diameter portals (one within 10 feet of you, one within 500 feet) stay open for 10 minutes (concentration); travel between them is instantaneous. You can rotate portal faces as a bonus action.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.214"
+  },
+  {
+    "spell_id": "arcane_lock",
+    "name": "Arcane Lock",
+    "level": 2,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Gold dust worth at least 25 gp, which the spell consumes",
+        "cost": "25 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "special", "concentration": false },
+    "effect": {
+      "description": "You magically lock a touched closure until dispelled; opening DCs increase by 10, and you, chosen allies, or a password can bypass it. Knock suppresses it for 10 minutes.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.215"
+  },
+  {
+    "spell_id": "armor_of_agathys",
+    "name": "Armor of Agathys",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A cup of water",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You gain 5 temporary hit points for 1 hour; a creature that hits you with a melee attack while any remain takes 5 cold damage. The spell ends when the temp HP are gone.",
+      "damage_dice": "5",
+      "damage_type": "cold",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st.",
+    "classes": ["warlock"],
+    "source_reference": "PHB p.215"
+  },
+  {
+    "spell_id": "arms_of_hadar",
+    "name": "Arms of Hadar",
+    "level": 1,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self_10ft_sphere" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Dark tendrils lash every creature within 10 feet. On a failed Strength save they take 2d6 necrotic damage and cannot take reactions until their next turn; on a success they take half damage only.",
+      "damage_dice": "2d6",
+      "damage_type": "necrotic",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 10,
+      "save_ability": "STR",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+    "classes": ["warlock"],
+    "source_reference": "PHB p.215"
+  },
+  {
+    "spell_id": "astral_projection",
+    "name": "Astral Projection",
+    "level": 9,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": 10, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "For each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes",
+        "cost": "1100 gp per creature",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "special", "concentration": false },
+    "effect": {
+      "description": "You and up to eight willing creatures project into the Astral Plane while your bodies lie in suspended animation. Astral and physical forms have separate HP; the spell ends if either body hits 0 HP or is dispelled.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "warlock", "wizard"],
+    "source_reference": "PHB p.215"
+  },
+  {
+    "spell_id": "augury",
+    "name": "Augury",
+    "level": 2,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Specially marked sticks, bones, or similar tokens worth at least 25 gp",
+        "cost": "25 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You learn a brief omen (weal, woe, both, or nothing) about a planned course of action within 30 minutes. Repeated castings before a long rest risk random readings.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric"],
+    "source_reference": "PHB p.215"
+  },
+  {
+    "spell_id": "aura_of_life",
+    "name": "Aura of Life",
+    "level": 4,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "For 10 minutes (concentration), allies within 30 feet gain necrotic resistance and immunity to max-HP reduction; living allies at 0 HP gain 1 HP at the start of their turn.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "1",
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["paladin"],
+    "source_reference": "PHB p.216"
+  },
+  {
+    "spell_id": "aura_of_purity",
+    "name": "Aura of Purity",
+    "level": 4,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "For 10 minutes (concentration), allies within 30 feet cannot catch diseases, resist poison damage, and have advantage on saves against several debilitating conditions.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["paladin"],
+    "source_reference": "PHB p.216"
+  },
+  {
+    "spell_id": "aura_of_vitality",
+    "name": "Aura of Vitality",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "For 1 minute (concentration), you can use a bonus action to heal one creature in a 30-foot aura (including yourself) for 2d6 hit points.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "2d6",
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["paladin"],
+    "source_reference": "PHB p.216"
+  },
+  {
+    "spell_id": "awaken",
+    "name": "Awaken",
+    "level": 5,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 8, "unit": "hour" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "An agate worth at least 1,000 gp, which the spell consumes",
+        "cost": "1000 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "After an 8-hour ritual, a Huge-or-smaller beast or plant (Int 3 or less or no Int) gains Int 10, speech in a language you know, and mobility if a plant. It is charmed for 30 days unless harmed.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "druid"],
+    "source_reference": "PHB p.216"
+  }
+]

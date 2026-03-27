@@ -1,0 +1,210 @@
+[
+  {
+    "class_id": "paladin",
+    "name": "Paladin",
+    "hit_die": "d10",
+    "primary_ability": ["STR", "CHA"],
+    "saving_throws": ["WIS", "CHA"],
+    "armor_proficiencies": ["light", "medium", "heavy", "shields"],
+    "weapon_proficiencies": ["simple", "martial"],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "athletics",
+      "insight",
+      "intimidation",
+      "medicine",
+      "persuasion",
+      "religion"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "divine_sense",
+        "name": "Divine Sense",
+        "level": 1,
+        "description": "As an action, you can open your awareness to detect celestials, fiends, and undead. Until the end of your next turn, you know the location of any such creature within 60 feet that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. You can use this feature a number of times equal to 1 + your Charisma modifier per long rest."
+      },
+      {
+        "feature_id": "lay_on_hands",
+        "name": "Lay on Hands",
+        "level": 1,
+        "description": "Your pool of healing power can restore a total number of hit points equal to 5 × your paladin level. As an action, you can touch a creature and restore hit points from that pool, or expend 5 hit points from the pool to cure one disease or neutralize one poison affecting the creature. You regain all expended hit points when you finish a long rest."
+      },
+      {
+        "feature_id": "fighting_style",
+        "name": "Fighting Style",
+        "level": 2,
+        "description": "You adopt a particular style of fighting as your specialty. Choose one option such as Defense, Dueling, Great Weapon Fighting, or Protection (see PHB)."
+      },
+      {
+        "feature_id": "spellcasting",
+        "name": "Spellcasting",
+        "level": 2,
+        "description": "You learn to cast paladin spells, drawing on divine magic through prayer and meditation. You prepare spells from the paladin list using Charisma; spellcasting begins at 2nd level (no cantrips)."
+      },
+      {
+        "feature_id": "divine_smite",
+        "name": "Divine Smite",
+        "level": 2,
+        "description": "When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level slot, plus 1d8 for each slot level above 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8."
+      },
+      {
+        "feature_id": "divine_health",
+        "name": "Divine Health",
+        "level": 3,
+        "description": "The divine magic flowing through you makes you immune to disease."
+      },
+      {
+        "feature_id": "extra_attack",
+        "name": "Extra Attack",
+        "level": 5,
+        "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn."
+      },
+      {
+        "feature_id": "aura_of_protection",
+        "name": "Aura of Protection",
+        "level": 6,
+        "description": "If you are not incapacitated, you and friendly creatures within 10 feet of you add your Charisma modifier (minimum +1) to saving throws while you are conscious. At 18th level, the range increases to 30 feet."
+      },
+      {
+        "feature_id": "aura_of_courage",
+        "name": "Aura of Courage",
+        "level": 10,
+        "description": "You and friendly creatures within 10 feet of you cannot be frightened while you are conscious. At 18th level, the range increases to 30 feet."
+      },
+      {
+        "feature_id": "improved_divine_smite",
+        "name": "Improved Divine Smite",
+        "level": 11,
+        "description": "You are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage."
+      },
+      {
+        "feature_id": "cleansing_touch",
+        "name": "Cleansing Touch",
+        "level": 14,
+        "description": "You can use your action to end one spell on yourself or on one willing creature that you touch. You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain expended uses when you finish a long rest."
+      }
+    ],
+    "subclass_label": "Sacred Oath",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "oath_of_devotion",
+        "name": "Oath of Devotion",
+        "description": "The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order.",
+        "features": [
+          {
+            "feature_id": "sacred_weapon",
+            "name": "Sacred Weapon",
+            "level": 3,
+            "description": "As an action, you can imbue one weapon you are holding with positive energy using Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (minimum +1), and the weapon emits bright light in a 20-foot radius and dim light for an additional 20 feet."
+          },
+          {
+            "feature_id": "turn_the_unholy",
+            "name": "Turn the Unholy",
+            "level": 3,
+            "description": "As an action, you present your holy symbol and speak a prayer censuring fiends and undead. Each fiend or undead that can see or hear you within 30 feet must make a Wisdom saving throw. On a failed save, it is turned for 1 minute or until it takes damage (as Turn Undead)."
+          },
+          {
+            "feature_id": "aura_of_devotion",
+            "name": "Aura of Devotion",
+            "level": 7,
+            "description": "You and friendly creatures within 10 feet of you cannot be charmed while you are conscious. At 18th level, the range increases to 30 feet."
+          },
+          {
+            "feature_id": "purity_of_spirit",
+            "name": "Purity of Spirit",
+            "level": 15,
+            "description": "You are always under the effects of a Protection from Evil and Good spell."
+          },
+          {
+            "feature_id": "holy_nimbus",
+            "name": "Holy Nimbus",
+            "level": 20,
+            "description": "As an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and you gain advantage on saving throws against spells cast by fiends or undead. Fiends and undead that start their turn in the bright light take 10 radiant damage."
+          }
+        ]
+      },
+      {
+        "subclass_id": "oath_of_the_ancients",
+        "name": "Oath of the Ancients",
+        "description": "The Oath of the Ancients emphasizes the light of joy and kindness to oppose the encroaching darkness.",
+        "features": [
+          {
+            "feature_id": "natures_wrath",
+            "name": "Nature's Wrath",
+            "level": 3,
+            "description": "As an action, you can cause spectral vines to spring up and reach out to ensnare a creature within 10 feet that you can see using Channel Divinity. The creature must succeed on a Strength saving throw or be restrained for 1 minute or until you use this feature again."
+          },
+          {
+            "feature_id": "turn_the_faithless",
+            "name": "Turn the Faithless",
+            "level": 3,
+            "description": "As an action, you present your holy symbol and speak a vow of enmity against fey and fiends. Each fey or fiend within 30 feet that can see or hear you must make a Wisdom saving throw. On a failed save, it is turned for 1 minute or until it takes damage."
+          },
+          {
+            "feature_id": "aura_of_warding",
+            "name": "Aura of Warding",
+            "level": 7,
+            "description": "You and friendly creatures within 10 feet of you have resistance to damage from spells. At 18th level, the range increases to 30 feet."
+          },
+          {
+            "feature_id": "undying_sentinel",
+            "name": "Undying Sentinel",
+            "level": 15,
+            "description": "When you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you cannot use it again until you finish a long rest."
+          },
+          {
+            "feature_id": "elder_champion",
+            "name": "Elder Champion",
+            "level": 20,
+            "description": "As an action, you can assume the form of an ancient force of nature for 1 minute. You regain 10 hit points at the start of each of your turns, you can cast paladin spells as a bonus action, and enemies within 10 feet have disadvantage on saving throws against your spells and Channel Divinity options."
+          }
+        ]
+      },
+      {
+        "subclass_id": "oath_of_vengeance",
+        "name": "Oath of Vengeance",
+        "description": "The Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts.",
+        "features": [
+          {
+            "feature_id": "abjure_enemy",
+            "name": "Abjure Enemy",
+            "level": 3,
+            "description": "As an action, you present your holy symbol and speak a vow of enmity against one creature you can see within 60 feet using Channel Divinity. The creature must make a Wisdom saving throw. On a failed save, it is frightened for 1 minute or until it takes damage. On a successful save, its speed is halved for 1 minute or until it takes damage."
+          },
+          {
+            "feature_id": "vow_of_enmity",
+            "name": "Vow of Enmity",
+            "level": 3,
+            "description": "As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet using Channel Divinity. For 1 minute, you have advantage on attack rolls against the creature."
+          },
+          {
+            "feature_id": "relentless_avenger",
+            "name": "Relentless Avenger",
+            "level": 7,
+            "description": "When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction, provided the movement does not use up your normal movement on your next turn."
+          },
+          {
+            "feature_id": "soul_of_vengeance",
+            "name": "Soul of Vengeance",
+            "level": 15,
+            "description": "When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range."
+          },
+          {
+            "feature_id": "avenging_angel",
+            "name": "Avenging Angel",
+            "level": 20,
+            "description": "As an action, you sprout spectral wings for 1 hour or until you dismiss them. Your flying speed equals your walking speed. Once on each of your turns, you can cause radiance to erupt from you; each creature of your choice within 30 feet takes radiant damage and is frightened until the end of your next turn."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "CHA",
+      "type": "prepared",
+      "cantrips": false
+    },
+    "source_reference": "PHB p.82-97"
+  }
+]

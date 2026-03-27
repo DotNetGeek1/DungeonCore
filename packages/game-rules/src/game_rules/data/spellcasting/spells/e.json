@@ -1,0 +1,326 @@
+[
+  {
+    "spell_id": "earthquake",
+    "name": "Earthquake",
+    "level": 8,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 500, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of dirt, a piece of rock, and a lump of clay"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Intense tremors shake a 100-foot-radius area on the ground; creatures may be knocked prone, fissures open, and structures may collapse.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 100,
+      "save_ability": "con",
+      "save_effect_on_success": "Not knocked prone by the tremor (other effects may still apply)",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric", "druid", "sorcerer"],
+    "source_reference": "PHB p.236"
+  },
+  {
+    "spell_id": "eldritch_blast",
+    "name": "Eldritch Blast",
+    "level": 0,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Ranged spell attack for 1d10 force damage; creates additional beams at higher character levels.",
+      "damage_dice": "1d10",
+      "damage_type": "force",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "Two beams at 5th level, three at 11th, four at 17th (character level, not spell slot).",
+    "classes": ["warlock"],
+    "source_reference": "PHB p.237"
+  },
+  {
+    "spell_id": "elemental_weapon",
+    "name": "Elemental Weapon",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A pinch of powdered iron" }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "Nonmagical weapon becomes magic with +1 to attack and damage; choose an element for an extra 1d4 damage of that type on a hit.",
+      "damage_dice": "1d4",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "5th–6th slot: +2 attack/damage and 2d4 extra; 7th+ slot: +3 and 3d4.",
+    "classes": ["paladin"],
+    "source_reference": "PHB p.237"
+  },
+  {
+    "spell_id": "enhance_ability",
+    "name": "Enhance Ability",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "Fur or a feather from a beast" }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "Target gains advantage on ability checks with one chosen ability; Bear's Endurance also grants 2d6 temporary HP.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "One additional creature per slot level above 2nd.",
+    "classes": ["bard", "cleric", "druid", "sorcerer"],
+    "source_reference": "PHB p.237"
+  },
+  {
+    "spell_id": "enlarge_reduce",
+    "name": "Enlarge/Reduce",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A pinch of powdered iron" }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Enlarge: size up one step, advantage on STR checks/saves, weapon attacks +1d4 damage. Reduce: size down, disadvantage on STR checks/saves, weapon attacks −1d4 (min 1).",
+      "damage_dice": "1d4",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "con",
+      "save_effect_on_success": "Spell has no effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.237"
+  },
+  {
+    "spell_id": "ensnaring_strike",
+    "name": "Ensnaring Strike",
+    "level": 1,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Next weapon hit: vines may restrain; restrained target takes 1d6 piercing at the start of each of its turns until freed.",
+      "damage_dice": "1d6",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "str",
+      "save_effect_on_success": "Not restrained",
+      "attack_type": null
+    },
+    "at_higher_levels": "+1d6 piercing per turn per slot level above 1st.",
+    "classes": ["ranger"],
+    "source_reference": "PHB p.237"
+  },
+  {
+    "spell_id": "entangle",
+    "name": "Entangle",
+    "level": 1,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 90, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Plants in a 20-foot square create difficult terrain; creatures in the area may be restrained (STR save).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "square",
+      "area_size": 20,
+      "save_ability": "str",
+      "save_effect_on_success": "Not restrained",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid", "ranger"],
+    "source_reference": "PHB p.238"
+  },
+  {
+    "spell_id": "enthrall",
+    "name": "Enthrall",
+    "level": 2,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "Chosen creatures that hear you save with WIS or have disadvantage on Perception to notice anyone other than you.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "wis",
+      "save_effect_on_success": "No effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "warlock"],
+    "source_reference": "PHB p.238"
+  },
+  {
+    "spell_id": "etherealness",
+    "name": "Etherealness",
+    "level": 7,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You enter the Border Ethereal, can move in any direction, and perceive your origin plane in gray out to 60 feet.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "8th+ slot: target up to three willing creatures per slot level above 7th within 10 feet.",
+    "classes": ["bard", "cleric", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.238"
+  },
+  {
+    "spell_id": "evards_black_tentacles",
+    "name": "Evard's Black Tentacles",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 90, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A piece of tentacle from a giant octopus or a giant squid"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "20-foot square of difficult terrain; creatures entering or starting turn there take 3d6 bludgeoning and may be restrained (DEX save).",
+      "damage_dice": "3d6",
+      "damage_type": "bludgeoning",
+      "healing_dice": null,
+      "area_shape": "square",
+      "area_size": 20,
+      "save_ability": "dex",
+      "save_effect_on_success": "No damage or restraint from that entry",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["wizard"],
+    "source_reference": "PHB p.238"
+  },
+  {
+    "spell_id": "expeditious_retreat",
+    "name": "Expeditious Retreat",
+    "level": 1,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "When you cast the spell and as a bonus action on later turns, you can take the Dash action.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.238"
+  },
+  {
+    "spell_id": "eyebite",
+    "name": "Eyebite",
+    "level": 6,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Each turn, one creature within 60 feet that you can see: WIS save or suffer asleep, panicked (must Dash away), or sickened until your next turn; repeat save at end of target's turns.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "wis",
+      "save_effect_on_success": "No effect that turn",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.238"
+  }
+]

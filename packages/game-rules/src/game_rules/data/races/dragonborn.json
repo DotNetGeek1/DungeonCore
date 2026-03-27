@@ -1,0 +1,32 @@
+[
+  {
+    "race_id": "dragonborn",
+    "name": "Dragonborn",
+    "ability_score_increase": {
+      "STR": 2,
+      "CHA": 1
+    },
+    "size": "Medium",
+    "speed": 30,
+    "languages": ["Common", "Draconic"],
+    "traits": [
+      {
+        "trait_id": "draconic_ancestry",
+        "name": "Draconic Ancestry",
+        "description": "You choose one draconic ancestry. Your breath weapon and damage resistance use the damage type associated with that ancestry. Black: acid, 5 by 30 ft. line, Dexterity saving throw. Blue: lightning, 5 by 30 ft. line, Dexterity saving throw. Brass: fire, 5 by 30 ft. line, Dexterity saving throw. Bronze: lightning, 5 by 30 ft. line, Dexterity saving throw. Copper: acid, 5 by 30 ft. line, Dexterity saving throw. Gold: fire, 15 ft. cone, Dexterity saving throw. Green: poison, 15 ft. cone, Constitution saving throw. Red: fire, 15 ft. cone, Dexterity saving throw. Silver: cold, 15 ft. cone, Constitution saving throw. White: cold, 15 ft. cone, Constitution saving throw."
+      },
+      {
+        "trait_id": "breath_weapon",
+        "name": "Breath Weapon",
+        "description": "You can use an action to exhale destructive energy. Each creature in the area of the exhalation must make a saving throw, the type of which is determined by your Draconic Ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you cannot use it again until you complete a short or long rest."
+      },
+      {
+        "trait_id": "damage_resistance_dragonborn",
+        "name": "Damage Resistance",
+        "description": "You have resistance to the damage type associated with your Draconic Ancestry (see Draconic Ancestry for the mapping of dragon color to damage type)."
+      }
+    ],
+    "subraces": [],
+    "source_reference": "PHB pp.32-34"
+  }
+]

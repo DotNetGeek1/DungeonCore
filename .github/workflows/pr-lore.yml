@@ -1,0 +1,38 @@
+name: DungeonCore PR Lore
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  greet-party:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Leave a lore-flavored welcome comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const author = context.payload.pull_request.user.login;
+            const title = context.payload.pull_request.title;
+            const body = [
+              `🧙 A new quest has been posted by @${author}.`,
+              '',
+              `**Quest Title:** ${title}`,
+              '',
+              'Before this enters the dungeon, the party should confirm:',
+              '- state changes are deterministic',
+              '- schemas are updated if contracts changed',
+              '- private information stays private',
+              '- docs and Docker setup still make sense',
+              '',
+              'May your tests pass and your merge conflicts be few.'
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });

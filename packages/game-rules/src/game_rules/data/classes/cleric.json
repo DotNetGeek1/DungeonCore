@@ -1,0 +1,350 @@
+[
+  {
+    "class_id": "cleric",
+    "name": "Cleric",
+    "hit_die": "d8",
+    "primary_ability": ["WIS"],
+    "saving_throws": ["WIS", "CHA"],
+    "armor_proficiencies": ["light", "medium", "shields"],
+    "weapon_proficiencies": ["simple"],
+    "tool_proficiencies": [],
+    "skill_choices": ["history", "insight", "medicine", "persuasion", "religion"],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "spellcasting_cleric",
+        "name": "Spellcasting",
+        "level": 1,
+        "description": "You prepare cleric spells daily from the cleric spell list. Wisdom is your spellcasting ability. You can use a holy symbol as a spellcasting focus."
+      },
+      {
+        "feature_id": "divine_domain",
+        "name": "Divine Domain",
+        "level": 1,
+        "description": "You choose a Divine Domain associated with your deity, granting domain spells and features at 1st, 2nd, 6th, 8th, and 17th levels."
+      },
+      {
+        "feature_id": "channel_divinity",
+        "name": "Channel Divinity",
+        "level": 2,
+        "description": "You can channel divine energy to fuel magical effects. You start with Turn Undead and a domain feature. Uses refresh on a short or long rest; uses per rest scale with level.",
+        "usage": {
+          "resource": "channel_divinity_uses",
+          "cost": 1,
+          "recharge": "short_rest"
+        }
+      },
+      {
+        "feature_id": "destroy_undead",
+        "name": "Destroy Undead",
+        "level": 5,
+        "description": "When an undead fails its saving throw against your Turn Undead feature, the creature is destroyed if its challenge rating is at or below a threshold that increases at 8th, 11th, 14th, and 17th level."
+      },
+      {
+        "feature_id": "divine_intervention",
+        "name": "Divine Intervention",
+        "level": 10,
+        "description": "You can call on your deity to intervene on your behalf. Roll percentile dice; if you roll a number equal to or lower than your cleric level, your deity intervenes (as decided by the DM). After a successful intervention, you cannot use this feature again for 7 days. At 20th level, your call succeeds automatically without a roll."
+      }
+    ],
+    "subclass_label": "Divine Domain",
+    "subclass_level": 1,
+    "subclasses": [
+      {
+        "subclass_id": "knowledge_domain",
+        "name": "Knowledge Domain",
+        "description": "The gods of knowledge value learning and understanding above all, granting insight into secrets and lore.",
+        "features": [
+          {
+            "feature_id": "blessings_of_knowledge",
+            "name": "Blessings of Knowledge",
+            "level": 1,
+            "description": "You learn two languages and become proficient in two skills from Arcana, History, Nature, or Religion; your proficiency bonus is doubled for those two skills."
+          },
+          {
+            "feature_id": "knowledge_of_ages",
+            "name": "Knowledge of Ages",
+            "level": 2,
+            "description": "Channel Divinity: You can touch one willing creature and give it advantage on Intelligence ability checks for 10 minutes."
+          },
+          {
+            "feature_id": "read_thoughts",
+            "name": "Read Thoughts",
+            "level": 6,
+            "description": "You can cast Detect Thoughts at will, without expending a spell slot, targeting creatures you can see within 60 feet."
+          },
+          {
+            "feature_id": "potent_spellcasting_knowledge",
+            "name": "Potent Spellcasting",
+            "level": 8,
+            "description": "You add your Wisdom modifier to the damage you deal with any cleric cantrip."
+          },
+          {
+            "feature_id": "visions_of_the_past",
+            "name": "Visions of the Past",
+            "level": 17,
+            "description": "After meditating for 1 minute, you can cast Legend Lore without material components, without expending a spell slot, once per rest."
+          }
+        ]
+      },
+      {
+        "subclass_id": "life_domain",
+        "name": "Life Domain",
+        "description": "The Life domain focuses on the vibrant positive energy that sustains all life.",
+        "features": [
+          {
+            "feature_id": "life_bonus_proficiency",
+            "name": "Bonus Proficiency",
+            "level": 1,
+            "description": "You gain proficiency with heavy armor."
+          },
+          {
+            "feature_id": "disciple_of_life",
+            "name": "Disciple of Life",
+            "level": 1,
+            "description": "Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+          },
+          {
+            "feature_id": "preserve_life",
+            "name": "Preserve Life",
+            "level": 2,
+            "description": "Channel Divinity: As an action, you restore hit points divided among creatures within 30 feet, up to 5 × your cleric level total, not above half their hit point maximum."
+          },
+          {
+            "feature_id": "blessed_healer",
+            "name": "Blessed Healer",
+            "level": 6,
+            "description": "When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
+          },
+          {
+            "feature_id": "divine_strike_life",
+            "name": "Divine Strike",
+            "level": 8,
+            "description": "Once per turn when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage; this increases to 2d8 at 14th level."
+          },
+          {
+            "feature_id": "supreme_healing",
+            "name": "Supreme Healing",
+            "level": 17,
+            "description": "When you would normally roll dice to restore hit points with a spell, you use the maximum possible result for each die instead."
+          }
+        ]
+      },
+      {
+        "subclass_id": "light_domain",
+        "name": "Light Domain",
+        "description": "Gods of light promote the ideals of rebirth and renewal, truth and vigilance.",
+        "features": [
+          {
+            "feature_id": "light_bonus_cantrip",
+            "name": "Bonus Cantrip",
+            "level": 1,
+            "description": "You learn the Light cantrip if you do not already know it; it does not count against your cantrip total."
+          },
+          {
+            "feature_id": "warding_flare",
+            "name": "Warding Flare",
+            "level": 1,
+            "description": "When you are attacked by a creature you can see within 30 feet, you can use your reaction to impose disadvantage on the attack roll. Uses per day equal to your Wisdom modifier (minimum once)."
+          },
+          {
+            "feature_id": "radiance_of_dawn",
+            "name": "Radiance of the Dawn",
+            "level": 2,
+            "description": "Channel Divinity: As an action, any magical darkness within 30 feet that you created ends, and each hostile creature within 30 feet must make a Constitution save or take radiant damage and be blinded briefly."
+          },
+          {
+            "feature_id": "improved_flare",
+            "name": "Improved Flare",
+            "level": 6,
+            "description": "You can also use Warding Flare when an ally you can see within 30 feet is attacked."
+          },
+          {
+            "feature_id": "potent_spellcasting_light",
+            "name": "Potent Spellcasting",
+            "level": 8,
+            "description": "You add your Wisdom modifier to the damage you deal with any cleric cantrip."
+          },
+          {
+            "feature_id": "corona_of_light",
+            "name": "Corona of Light",
+            "level": 17,
+            "description": "You emit bright light in a 60-foot radius; you have advantage on saving throws against spells that deal fire or radiant damage."
+          }
+        ]
+      },
+      {
+        "subclass_id": "nature_domain",
+        "name": "Nature Domain",
+        "description": "Gods of nature are as varied as the natural world itself, from inscrutable gods of the deep forest to deities of harvest.",
+        "features": [
+          {
+            "feature_id": "acolyte_of_nature",
+            "name": "Acolyte of Nature",
+            "level": 1,
+            "description": "You learn one druid cantrip and gain proficiency in one skill from Animal Handling, Nature, or Survival."
+          },
+          {
+            "feature_id": "nature_bonus_proficiency",
+            "name": "Bonus Proficiency",
+            "level": 1,
+            "description": "You gain proficiency with heavy armor."
+          },
+          {
+            "feature_id": "charm_animals_and_plants",
+            "name": "Charm Animals and Plants",
+            "level": 2,
+            "description": "Channel Divinity: As an action, each beast or plant creature that can see you within 30 feet makes a Wisdom save or is charmed by you for 1 minute."
+          },
+          {
+            "feature_id": "dampen_elements",
+            "name": "Dampen Elements",
+            "level": 6,
+            "description": "When you or a creature within 30 feet takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to that instance of damage."
+          },
+          {
+            "feature_id": "divine_strike_nature",
+            "name": "Divine Strike",
+            "level": 8,
+            "description": "Once per turn when you hit with a weapon attack, you can deal an extra 1d8 cold, fire, or lightning damage (your choice); this becomes 2d8 at 14th level."
+          },
+          {
+            "feature_id": "master_of_nature",
+            "name": "Master of Nature",
+            "level": 17,
+            "description": "When you charm creatures with Charm Animals and Plants, you can also affect elementals; charmed creatures obey your verbal commands."
+          }
+        ]
+      },
+      {
+        "subclass_id": "tempest_domain",
+        "name": "Tempest Domain",
+        "description": "Gods of the storm send thunder and lightning to smite those who oppose them.",
+        "features": [
+          {
+            "feature_id": "tempest_bonus_proficiencies",
+            "name": "Bonus Proficiencies",
+            "level": 1,
+            "description": "You gain proficiency with martial weapons and heavy armor."
+          },
+          {
+            "feature_id": "wrath_of_the_storm",
+            "name": "Wrath of the Storm",
+            "level": 1,
+            "description": "When a creature within 5 feet hits you with an attack, you can use your reaction to deal lightning or thunder damage. Uses per day equal to your Wisdom modifier."
+          },
+          {
+            "feature_id": "destructive_wrath",
+            "name": "Destructive Wrath",
+            "level": 2,
+            "description": "Channel Divinity: When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage instead of rolling."
+          },
+          {
+            "feature_id": "thunderbolt_strike",
+            "name": "Thunderbolt Strike",
+            "level": 6,
+            "description": "When you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you."
+          },
+          {
+            "feature_id": "divine_strike_tempest",
+            "name": "Divine Strike",
+            "level": 8,
+            "description": "Once per turn when you hit with a weapon attack, you deal an extra 1d8 thunder damage; this becomes 2d8 at 14th level."
+          },
+          {
+            "feature_id": "stormborn",
+            "name": "Stormborn",
+            "level": 17,
+            "description": "You have a flying speed equal to your walking speed whenever you are not underground or indoors."
+          }
+        ]
+      },
+      {
+        "subclass_id": "trickery_domain",
+        "name": "Trickery Domain",
+        "description": "Gods of trickery are mischief-makers and instigators who value and uphold the letter of the law more than its spirit.",
+        "features": [
+          {
+            "feature_id": "blessing_of_the_trickster",
+            "name": "Blessing of the Trickster",
+            "level": 1,
+            "description": "As an action, you touch a willing creature other than yourself and give it advantage on Dexterity (Stealth) checks; this lasts for 1 hour or until you use this feature again."
+          },
+          {
+            "feature_id": "invoke_duplicity",
+            "name": "Invoke Duplicity",
+            "level": 2,
+            "description": "Channel Divinity: As an action, you create an illusory duplicate of yourself within 30 feet for 1 minute. You can cast spells as if you were in the duplicate's space, and you gain advantage on attacks if you and the duplicate flank a target."
+          },
+          {
+            "feature_id": "cloak_of_shadows",
+            "name": "Cloak of Shadows",
+            "level": 6,
+            "description": "Channel Divinity: As an action, you become invisible until the end of your next turn or until you attack or cast a spell."
+          },
+          {
+            "feature_id": "divine_strike_trickery",
+            "name": "Divine Strike",
+            "level": 8,
+            "description": "Once per turn when you hit with a weapon attack, you deal an extra 1d8 poison damage; this becomes 2d8 at 14th level."
+          },
+          {
+            "feature_id": "improved_duplicity",
+            "name": "Improved Duplicity",
+            "level": 17,
+            "description": "You can create up to four duplicates with Invoke Duplicity instead of one, and as a bonus action you can move any number of them up to 30 feet to a point you can see within 120 feet."
+          }
+        ]
+      },
+      {
+        "subclass_id": "war_domain",
+        "name": "War Domain",
+        "description": "War gods watch over warriors and reward acts of martial prowess.",
+        "features": [
+          {
+            "feature_id": "war_bonus_proficiencies",
+            "name": "Bonus Proficiencies",
+            "level": 1,
+            "description": "You gain proficiency with martial weapons and heavy armor."
+          },
+          {
+            "feature_id": "war_priest",
+            "name": "War Priest",
+            "level": 1,
+            "description": "When you use the Attack action, you can make one weapon attack as a bonus action. You can use this a number of times per day equal to your Wisdom modifier."
+          },
+          {
+            "feature_id": "guided_strike",
+            "name": "Guided Strike",
+            "level": 2,
+            "description": "Channel Divinity: When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll after rolling but before knowing the outcome."
+          },
+          {
+            "feature_id": "war_gods_blessing",
+            "name": "War God's Blessing",
+            "level": 6,
+            "description": "When a creature within 30 feet of you makes an attack roll, you can use your reaction to grant a +10 bonus to that roll."
+          },
+          {
+            "feature_id": "divine_strike_war",
+            "name": "Divine Strike",
+            "level": 8,
+            "description": "Once per turn when you hit with a weapon attack, you deal an extra 1d8 damage of the same type as the weapon; this becomes 2d8 at 14th level."
+          },
+          {
+            "feature_id": "avatar_of_battle",
+            "name": "Avatar of Battle",
+            "level": 17,
+            "description": "You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "WIS",
+      "type": "prepared",
+      "cantrips": true
+    },
+    "source_reference": "PHB p.56-63"
+  }
+]

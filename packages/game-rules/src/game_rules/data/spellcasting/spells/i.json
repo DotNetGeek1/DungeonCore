@@ -1,0 +1,238 @@
+[
+  {
+    "spell_id": "ice_storm",
+    "name": "Ice Storm",
+    "level": 4,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 300, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A pinch of dust and a few drops of water" }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one. Hail turns the storm's area of ground into difficult terrain until the end of your next turn.",
+      "damage_dice": "2d8+4d6",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 40,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+    "classes": ["druid", "sorcerer", "wizard"],
+    "source_reference": "PHB p.252"
+  },
+  {
+    "spell_id": "identify",
+    "name": "Identify",
+    "level": 1,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pearl worth at least 100 gp and an owl feather",
+        "cost": "100 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement, how many charges it has (if any), and which spells affect it. If the item was created by a spell, you learn which spell. If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.252"
+  },
+  {
+    "spell_id": "illusory_script",
+    "name": "Illusory Script",
+    "level": 1,
+    "school": "illusion",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": false,
+      "somatic": true,
+      "material": {
+        "description": "A lead-based ink worth at least 10 gp, which the spell consumes",
+        "cost": "10 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 10, "unit": "day", "concentration": false },
+    "effect": {
+      "description": "You write on parchment, paper, or some other suitable writing material and imbue it with an illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know. If the spell is dispelled, the original script and the illusion both disappear. A creature with truesight can read the hidden message.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "warlock", "wizard"],
+    "source_reference": "PHB p.252"
+  },
+  {
+    "spell_id": "imprisonment",
+    "name": "Imprisonment",
+    "level": 9,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A vellum depiction or carved statuette in the likeness of the target and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target",
+        "cost": "500 gp+",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "until_dispelled", "concentration": false },
+    "effect": {
+      "description": "You create a magical restraint to hold a creature that you can see within range. The target must succeed on a Wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected, the creature doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the target. You choose one of burial, chaining, hedged prison, minimus containment, or slumber; the effect is permanent until ended by freedom or wish, or until the special condition for that form is met.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["warlock", "wizard"],
+    "source_reference": "PHB p.252"
+  },
+  {
+    "spell_id": "incendiary_cloud",
+    "name": "Incendiary Cloud",
+    "level": 8,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 150, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed disperses it. When the cloud appears, each creature in it must make a Dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much on a successful one. A creature must also make this save when it enters the spell's area for the first time on a turn or ends its turn there. The cloud moves 10 feet away from you in a direction you choose at the start of each of your turns.",
+      "damage_dice": "10d8",
+      "damage_type": "fire",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.253"
+  },
+  {
+    "spell_id": "inflict_wounds",
+    "name": "Inflict Wounds",
+    "level": 1,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.",
+      "damage_dice": "3d10",
+      "damage_type": "necrotic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "melee_spell_attack"
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
+    "classes": ["cleric"],
+    "source_reference": "PHB p.253"
+  },
+  {
+    "spell_id": "insect_plague",
+    "name": "Insect Plague",
+    "level": 5,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 300, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A few grains of sugar, some kernels of grain, and a smear of fat" }
+    },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The cloud's area is difficult terrain. When the area appears, each creature in it must make a Constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much on a successful one. A creature must also make this save when it enters the spell's area for the first time on a turn or ends its turn there.",
+      "damage_dice": "4d10",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.",
+    "classes": ["cleric", "druid", "sorcerer"],
+    "source_reference": "PHB p.253"
+  },
+  {
+    "spell_id": "invisibility",
+    "name": "Invisibility",
+    "level": 2,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "An eyelash encased in gum arabic" }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.254"
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "spell_id": "zone_of_truth",
+    "name": "Zone of Truth",
+    "level": 2,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You create a magical zone that wards against deception. A creature that enters or starts its turn in a 15-foot-radius sphere must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the area.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 15,
+      "save_ability": "CHA",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.289"
+  }
+]

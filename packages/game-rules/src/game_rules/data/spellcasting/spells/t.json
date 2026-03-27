@@ -1,0 +1,826 @@
+[
+  {
+    "spell_id": "tashas_hideous_laughter",
+    "name": "Tasha's Hideous Laughter",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Tiny tarts and a feather waved in the air"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A creature of your choice perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand. At the end of each of its turns and when it takes damage, it can repeat the save. Creatures with Intelligence 4 or less aren't affected.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "wizard"
+    ],
+    "source_reference": "PHB p.280"
+  },
+  {
+    "spell_id": "telekinesis",
+    "name": "Telekinesis",
+    "level": 5,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You gain the ability to move or manipulate creatures or objects by thought. As an action, you can exert fine control on objects or attempt to move a Huge or smaller creature. The target can contest with a Strength check against your spellcasting ability check.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.280"
+  },
+  {
+    "spell_id": "telepathy",
+    "name": "Telepathy",
+    "level": 8,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "unlimited_same_plane"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pair of linked silver rings"
+      }
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You create a telepathic link between yourself and a willing creature with which you are familiar. The creature can be anywhere on the same plane of existence. Until the spell ends, you and the target can communicate telepathically across any distance.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.281"
+  },
+  {
+    "spell_id": "teleport",
+    "name": "Teleport",
+    "level": 7,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 10,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You and up to eight willing creatures are instantly transported. Accuracy depends on familiarity with the destination; mishaps can occur on failure.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.281"
+  },
+  {
+    "spell_id": "teleportation_circle",
+    "name": "Teleportation Circle",
+    "level": 5,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 10,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Rare chalks and inks infused with precious gems worth 50 gp, which the spell consumes"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You draw a 10-foot-diameter circle that links to a permanent teleportation circle whose sequence you know. Any creature that enters the circle instantly appears within 5 feet of the destination circle.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.282"
+  },
+  {
+    "spell_id": "tensers_floating_disk",
+    "name": "Tenser's Floating Disk",
+    "level": 1,
+    "school": "conjuration",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A drop of mercury"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A 3-foot-diameter horizontal disk of force hovers 3 feet above the ground and can hold up to 500 pounds. It moves to stay within 20 feet of you and vanishes if you move more than 100 feet away.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.282"
+  },
+  {
+    "spell_id": "thaumaturgy",
+    "name": "Thaumaturgy",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You manifest a minor wonder: amplify voice, flicker lights, open/close doors, create tremors, create sound, or alter flame appearance.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.282"
+  },
+  {
+    "spell_id": "thorn_whip",
+    "name": "Thorn Whip",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You create a long vine-like whip covered in thorns that lashes out at your command. Make a melee spell attack against a creature within range. On a hit, the target takes 1d6 piercing damage, and if it is Large or smaller, you pull it up to 10 feet closer.",
+      "damage_dice": "1d6",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "melee_spell_attack"
+    },
+    "at_higher_levels": "Damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.",
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.282"
+  },
+  {
+    "spell_id": "thunderous_smite",
+    "name": "Thunderous Smite",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "The first time you hit with a melee weapon attack during this spell's duration, your weapon rings with thunder audible out to 300 feet, dealing an extra 2d6 thunder damage. The target must succeed on a Strength saving throw or be pushed 10 feet away from you and knocked prone.",
+      "damage_dice": "2d6",
+      "damage_type": "thunder",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "STR",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.282"
+  },
+  {
+    "spell_id": "thunderwave",
+    "name": "Thunderwave",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw, taking 2d8 thunder damage on a failed save or half on a success, and is pushed 10 feet away from you on a failed save.",
+      "damage_dice": "2d8",
+      "damage_type": "thunder",
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 15,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 1st.",
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.282"
+  },
+  {
+    "spell_id": "time_stop",
+    "name": "Time Stop",
+    "level": 9,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "special",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You briefly stop the flow of time for everyone but yourself. You take 1d4 + 1 turns in a row, during which you can use actions and move freely. The spell ends if you affect another creature or an object worn or carried by someone else.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.283"
+  },
+  {
+    "spell_id": "tongues",
+    "name": "Tongues",
+    "level": 3,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small clay model of a ziggurat"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "This spell grants a willing creature you touch the ability to understand any spoken language it hears and lets any creature that hears it understand what it says when it speaks any language.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.283"
+  },
+  {
+    "spell_id": "transport_via_plants",
+    "name": "Transport via Plants",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 10,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You enter a Large or larger living plant, instantly transporting to any other Large or larger plant of the same kind within range on the same plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.283"
+  },
+  {
+    "spell_id": "tree_stride",
+    "name": "Tree Stride",
+    "level": 5,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet, using 5 feet of movement. You appear within 5 feet of the destination tree.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.283"
+  },
+  {
+    "spell_id": "true_polymorph",
+    "name": "True Polymorph",
+    "level": 9,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A drop of mercury, a dollop of gum arabic, and a wisp of smoke"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Choose one creature or nonmagical object you can see. A creature becomes a different creature (CR/level limits apply) or an object; an object becomes a creature or a different object. If you concentrate for the full duration, the transformation lasts until dispelled.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.283"
+  },
+  {
+    "spell_id": "true_resurrection",
+    "name": "True Resurrection",
+    "level": 9,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "hour"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes",
+        "cost": "25,000 gp",
+        "consumed": true
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the soul is free and willing, the creature is restored to life with all its hit points.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "source_reference": "PHB p.284"
+  },
+  {
+    "spell_id": "true_seeing",
+    "name": "True Seeing",
+    "level": 6,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "An ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell",
+        "cost": "25 gp",
+        "consumed": true
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "For the duration, the willing creature has truesight out to 120 feet, notices secret doors hidden by magic, and can see into the Ethereal Plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.284"
+  },
+  {
+    "spell_id": "true_strike",
+    "name": "True Strike",
+    "level": 0,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.284"
+  },
+  {
+    "spell_id": "tsunami",
+    "name": "Tsunami",
+    "level": 8,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 300,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 6,
+      "unit": "round",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A wall of water springs into existence. It is up to 300 feet long, 300 feet high, and 50 feet thick, and deals 6d10 bludgeoning damage to creatures it slams into (Dexterity save for half). The wall then rushes forward 50 feet per round for 5 rounds, shrinking until it vanishes.",
+      "damage_dice": "6d10",
+      "damage_type": "bludgeoning",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.284"
+  }
+]

@@ -1,0 +1,703 @@
+[
+  {
+    "spell_id": "wall_of_fire",
+    "name": "Wall of Fire",
+    "level": 4,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small piece of phosphorus"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create a wall of fire on a solid surface within range. You can form it as a ringed wall up to 20 feet high, 60 feet long, and 1 foot thick, or a ringed wall of the same dimensions. One side deals 5d8 fire damage to creatures that start their turn within 10 feet of that side or inside the wall (Dexterity save for half).",
+      "damage_dice": "5d8",
+      "damage_type": "fire",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 4th.",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.285"
+  },
+  {
+    "spell_id": "wall_of_force",
+    "name": "Wall of Force",
+    "level": 5,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of powder made by crushing a clear gem"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "An invisible wall of force springs into existence. It can be a flat surface or a hemispherical dome, is immune to damage, and blocks ethereal travel and spells.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.285"
+  },
+  {
+    "spell_id": "wall_of_ice",
+    "name": "Wall of Ice",
+    "level": 6,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small piece of quartz"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create a wall of ice or a hemisphere. A creature in the area when the wall appears takes 10d6 cold damage (Dexterity save for half). Each 10-foot section has AC 12 and 30 hit points and is vulnerable to fire damage.",
+      "damage_dice": "10d6",
+      "damage_type": "cold",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.285"
+  },
+  {
+    "spell_id": "wall_of_stone",
+    "name": "Wall of Stone",
+    "level": 5,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small block of granite"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A nonmagical wall of solid stone springs into existence. The wall is 6 inches thick and made of ten 10-foot-by-10-foot panels. Each panel has AC 15 and 30 hit points per inch of thickness.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.287"
+  },
+  {
+    "spell_id": "wall_of_thorns",
+    "name": "Wall of Thorns",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A handful of thorns"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create a wall of tough, pliable thorns. A creature can move through the wall, but every foot moved through the wall costs 4 extra feet of movement, and the creature takes 7d8 piercing damage (Dexterity save for half).",
+      "damage_dice": "7d8",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.287"
+  },
+  {
+    "spell_id": "warding_bond",
+    "name": "Warding Bond",
+    "level": 2,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration",
+        "cost": "50 gp",
+        "consumed": false
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You touch a willing creature. While the target is within 60 feet, it gains a +1 bonus to AC and saving throws and resistance to all damage, and you take the same damage it takes each time it takes damage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.287"
+  },
+  {
+    "spell_id": "water_breathing",
+    "name": "Water Breathing",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A short reed or piece of straw"
+      }
+    },
+    "duration": {
+      "value": 24,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.287"
+  },
+  {
+    "spell_id": "water_walk",
+    "name": "Water Walk",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A piece of cork"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "This spell grants up to ten willing creatures you can see within range the ability to move across any liquid surface as if it were harmless solid ground.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid",
+      "ranger",
+      "sorcerer"
+    ],
+    "source_reference": "PHB p.287"
+  },
+  {
+    "spell_id": "web",
+    "name": "Web",
+    "level": 2,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A bit of spiderweb"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You conjure a mass of sticky webs in a 20-foot cube. The webs are difficult terrain and lightly obscure the area. Each creature that starts its turn in the webs or enters them must make a Dexterity saving throw or be restrained. A restrained creature can use its action to make a Strength check to escape.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 20,
+      "save_ability": "DEX",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.287"
+  },
+  {
+    "spell_id": "weird",
+    "name": "Weird",
+    "level": 9,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds. Each target in a 30-foot-radius sphere must make a Wisdom saving throw. On a failure, the creature is frightened for the duration, and at the end of each of its turns it takes 4d10 psychic damage.",
+      "damage_dice": "4d10",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.288"
+  },
+  {
+    "spell_id": "wind_walk",
+    "name": "Wind Walk",
+    "level": 6,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Fire and holy water"
+      }
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You and up to ten willing creatures assume gaseous forms for the duration, with a flying speed of 300 feet and resistance to damage from nonmagical weapons.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.288"
+  },
+  {
+    "spell_id": "wind_wall",
+    "name": "Wind Wall",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 300,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A tiny fan and a feather of exotic origin"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A wall of strong wind rises. It can be up to 50 feet long, 15 feet high, and 1 foot thick. Creatures take 3d8 bludgeoning damage on a failed Strength save when passing through, and ranged weapon attacks and gases can't pass through.",
+      "damage_dice": "3d8",
+      "damage_type": "bludgeoning",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "STR",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.288"
+  },
+  {
+    "spell_id": "wish",
+    "name": "Wish",
+    "level": 9,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Wish is the mightiest spell a mortal can cast. You duplicate any 8th-level or lower spell, or produce other powerful effects at the GM's discretion, with stress and risk if used to do more than duplicate a spell.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.288"
+  },
+  {
+    "spell_id": "witch_bolt",
+    "name": "Witch Bolt",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A twig from a tree struck by lightning"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A beam of crackling blue energy lances toward a creature. Make a ranged spell attack. On a hit, the target takes 1d12 lightning damage, and on each of your subsequent turns you can use your action to deal 1d12 lightning damage to the target automatically if it remains in range.",
+      "damage_dice": "1d12",
+      "damage_type": "lightning",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "Initial damage increases by 1d12 for each slot level above 1st.",
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.289"
+  },
+  {
+    "spell_id": "word_of_recall",
+    "name": "Word of Recall",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 5,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You and up to five willing creatures within 5 feet are instantly transported to a previously designated sanctuary.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.289"
+  },
+  {
+    "spell_id": "wrathful_smite",
+    "name": "Wrathful Smite",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage, and the target must make a Wisdom saving throw or be frightened of you until the spell ends.",
+      "damage_dice": "1d6",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.289"
+  }
+]

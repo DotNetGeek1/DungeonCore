@@ -1,0 +1,163 @@
+[
+  {
+    "class_id": "ranger",
+    "name": "Ranger",
+    "hit_die": "d10",
+    "primary_ability": ["DEX", "WIS"],
+    "saving_throws": ["STR", "DEX"],
+    "armor_proficiencies": ["light", "medium", "shields"],
+    "weapon_proficiencies": ["simple", "martial"],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "animal_handling",
+      "athletics",
+      "insight",
+      "investigation",
+      "nature",
+      "perception",
+      "stealth",
+      "survival"
+    ],
+    "num_skill_choices": 3,
+    "features": [
+      {
+        "feature_id": "favored_enemy",
+        "name": "Favored Enemy",
+        "level": 1,
+        "description": "You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them. You choose one or more types of favored enemies at certain levels (see PHB)."
+      },
+      {
+        "feature_id": "natural_explorer",
+        "name": "Natural Explorer",
+        "level": 1,
+        "description": "You are adept at traveling and surviving in certain terrain types. Your group is not slowed by difficult terrain, you ignore nonmagical difficult terrain, you have advantage on initiative rolls, and you gain other benefits while in a favored terrain (see PHB)."
+      },
+      {
+        "feature_id": "fighting_style",
+        "name": "Fighting Style",
+        "level": 2,
+        "description": "You adopt a particular style of fighting as your specialty. Choose Archery, Defense, Dueling, or Two-Weapon Fighting (see PHB)."
+      },
+      {
+        "feature_id": "spellcasting",
+        "name": "Spellcasting",
+        "level": 2,
+        "description": "You learn to cast ranger spells. You know a fixed set of spells and learn new ones as you gain levels; spellcasting begins at 2nd level (no cantrips by default)."
+      },
+      {
+        "feature_id": "primeval_awareness",
+        "name": "Primeval Awareness",
+        "level": 3,
+        "description": "As an action, you can focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you sense whether favored enemy types are present within 1 mile (or 6 miles outdoors) of you."
+      },
+      {
+        "feature_id": "extra_attack",
+        "name": "Extra Attack",
+        "level": 5,
+        "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn."
+      },
+      {
+        "feature_id": "lands_stride",
+        "name": "Land's Stride",
+        "level": 8,
+        "description": "Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed and without taking damage from thorns, spines, or similar hazards. You have advantage on saving throws against plants that are magically created or manipulated to impede movement."
+      },
+      {
+        "feature_id": "hide_in_plain_sight",
+        "name": "Hide in Plain Sight",
+        "level": 10,
+        "description": "You can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain motionless, silent, and camouflaged in this way."
+      },
+      {
+        "feature_id": "vanish",
+        "name": "Vanish",
+        "level": 14,
+        "description": "You can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means unless you choose to leave a trail."
+      },
+      {
+        "feature_id": "feral_senses",
+        "name": "Feral Senses",
+        "level": 18,
+        "description": "You gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided the creature isn't hidden from you and you aren't blinded or deafened."
+      },
+      {
+        "feature_id": "foe_slayer",
+        "name": "Foe Slayer",
+        "level": 20,
+        "description": "Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose before or after the roll, but before any effects of the roll are applied."
+      }
+    ],
+    "subclass_label": "Ranger Archetype",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "hunter",
+        "name": "Hunter",
+        "description": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness.",
+        "features": [
+          {
+            "feature_id": "hunters_prey",
+            "name": "Hunter's Prey",
+            "level": 3,
+            "description": "Choose one: Colossus Slayer (extra 1d8 once per turn to a creature below max HP), Giant Killer (attack Large+ creature that hit you as reaction), or Horde Breaker (attack second creature within 5 ft of first target once per turn)."
+          },
+          {
+            "feature_id": "defensive_tactics",
+            "name": "Defensive Tactics",
+            "level": 7,
+            "description": "Choose one: Escape the Horde (opportunity attacks against you have disadvantage), Multiattack Defense (+4 AC vs second+ hit from same creature), or Steel Will (advantage on saves vs frightened)."
+          },
+          {
+            "feature_id": "multiattack",
+            "name": "Multiattack",
+            "level": 11,
+            "description": "Choose one: Volley (ranged attack against creatures in a 10-foot-radius area) or Whirlwind Attack (melee attack against each creature within 5 feet)."
+          },
+          {
+            "feature_id": "superior_hunters_defense",
+            "name": "Superior Hunter's Defense",
+            "level": 15,
+            "description": "Choose one: Evasion, Stand Against the Tide (redirect missed melee attack to another creature), or Uncanny Dodge (halve damage from attacker you can see)."
+          }
+        ]
+      },
+      {
+        "subclass_id": "beast_master",
+        "name": "Beast Master",
+        "description": "The Beast Master forms a mystical bond with an animal that fights at your side.",
+        "features": [
+          {
+            "feature_id": "rangers_companion",
+            "name": "Ranger's Companion",
+            "level": 3,
+            "description": "You gain a beast companion: a beast of challenge rating 1/4 or lower. It obeys your commands and gains special benefits while bonded. If it dies, you can obtain another with 8 hours and 25 gp of rare herbs and incense."
+          },
+          {
+            "feature_id": "exceptional_training",
+            "name": "Exceptional Training",
+            "level": 7,
+            "description": "On any turn you do not command your companion, it can use its reaction to make a melee attack. Additionally, when you take the Attack action, you can forgo one attack to command the beast to Dash, Disengage, Dodge, or Help as a bonus action."
+          },
+          {
+            "feature_id": "bestial_fury",
+            "name": "Bestial Fury",
+            "level": 11,
+            "description": "Your companion can make two attacks when you command it to use the Attack action, or it can make two attacks if it uses its reaction to attack."
+          },
+          {
+            "feature_id": "share_spells",
+            "name": "Share Spells",
+            "level": 15,
+            "description": "When you cast a spell targeting yourself, you can also affect your beast companion with the spell if it is within 30 feet of you."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "WIS",
+      "type": "known",
+      "cantrips": false
+    },
+    "source_reference": "PHB p.89-93"
+  }
+]

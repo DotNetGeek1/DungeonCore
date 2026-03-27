@@ -1,0 +1,37 @@
+[
+  {
+    "race_id": "half_orc",
+    "name": "Half-Orc",
+    "ability_score_increase": {
+      "STR": 2,
+      "CON": 1
+    },
+    "size": "Medium",
+    "speed": 30,
+    "languages": ["Common", "Orc"],
+    "traits": [
+      {
+        "trait_id": "darkvision",
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "trait_id": "menacing",
+        "name": "Menacing",
+        "description": "You gain proficiency in the Intimidation skill."
+      },
+      {
+        "trait_id": "relentless_endurance",
+        "name": "Relentless Endurance",
+        "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't use it again until you finish a long rest."
+      },
+      {
+        "trait_id": "savage_attacks",
+        "name": "Savage Attacks",
+        "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+      }
+    ],
+    "subraces": [],
+    "source_reference": "PHB p.40"
+  }
+]

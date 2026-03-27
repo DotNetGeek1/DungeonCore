@@ -1,0 +1,174 @@
+[
+  {
+    "class_id": "barbarian",
+    "name": "Barbarian",
+    "hit_die": "d12",
+    "primary_ability": ["STR"],
+    "saving_throws": ["STR", "CON"],
+    "armor_proficiencies": ["light", "medium", "shields"],
+    "weapon_proficiencies": ["simple", "martial"],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "animal_handling",
+      "athletics",
+      "intimidation",
+      "nature",
+      "perception",
+      "survival"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "rage",
+        "name": "Rage",
+        "level": 1,
+        "description": "Enter a rage as a bonus action. For 1 minute you have advantage on STR checks and saving throws (not attacks), bonus damage on STR melee weapon attacks, and resistance to bludgeoning, piercing, and slashing damage. You cannot cast or concentrate on spells while raging. Uses per long rest scale with level.",
+        "usage": {
+          "resource": "rage_uses",
+          "cost": 1,
+          "recharge": "long_rest"
+        }
+      },
+      {
+        "feature_id": "unarmored_defense",
+        "name": "Unarmored Defense",
+        "level": 1,
+        "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+      },
+      {
+        "feature_id": "reckless_attack",
+        "name": "Reckless Attack",
+        "level": 2,
+        "description": "When you make your first attack on your turn, you can decide to attack recklessly. Until your next turn, you have advantage on melee attack rolls using Strength, but attack rolls against you have advantage."
+      },
+      {
+        "feature_id": "danger_sense",
+        "name": "Danger Sense",
+        "level": 2,
+        "description": "You have advantage on Dexterity saving throws against effects you can see, such as traps and spells. You cannot use this if you are blinded, deafened, or incapacitated."
+      },
+      {
+        "feature_id": "extra_attack",
+        "name": "Extra Attack",
+        "level": 5,
+        "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn."
+      },
+      {
+        "feature_id": "fast_movement",
+        "name": "Fast Movement",
+        "level": 5,
+        "description": "Your speed increases by 10 feet while you are not wearing heavy armor."
+      },
+      {
+        "feature_id": "feral_instinct",
+        "name": "Feral Instinct",
+        "level": 7,
+        "description": "You have advantage on initiative rolls. If you are surprised at the start of combat and are not incapacitated, you can act normally on your first turn if you enter your rage before doing anything else."
+      },
+      {
+        "feature_id": "brutal_critical",
+        "name": "Brutal Critical",
+        "level": 9,
+        "description": "You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three at 17th level."
+      },
+      {
+        "feature_id": "relentless_rage",
+        "name": "Relentless Rage",
+        "level": 11,
+        "description": "If you drop to 0 hit points while raging and do not die outright, you can make a DC 10 Constitution saving throw. On a success, you stay at 1 hit point instead. The DC increases by 5 each time you use this after the first until you finish a short or long rest."
+      },
+      {
+        "feature_id": "persistent_rage",
+        "name": "Persistent Rage",
+        "level": 15,
+        "description": "Your rage is so fierce that it ends early only if you fall unconscious or choose to end it."
+      },
+      {
+        "feature_id": "indomitable_might",
+        "name": "Indomitable Might",
+        "level": 18,
+        "description": "If your total for a Strength check is less than your Strength score, you can use that score in place of the total."
+      },
+      {
+        "feature_id": "primal_champion",
+        "name": "Primal Champion",
+        "level": 20,
+        "description": "You embody primal power. Your Strength and Constitution scores increase by 4, and your maximum for those scores becomes 24."
+      }
+    ],
+    "subclass_label": "Primal Path",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "berserker",
+        "name": "Path of the Berserker",
+        "description": "Barbarians who walk the Path of the Berserker direct their rage into a frenzy of reckless, bloodthirsty violence.",
+        "features": [
+          {
+            "feature_id": "frenzy",
+            "name": "Frenzy",
+            "level": 3,
+            "description": "When you rage, you can go into a frenzy. While frenzied, you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion."
+          },
+          {
+            "feature_id": "mindless_rage",
+            "name": "Mindless Rage",
+            "level": 6,
+            "description": "You cannot be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage."
+          },
+          {
+            "feature_id": "intimidating_presence",
+            "name": "Intimidating Presence",
+            "level": 10,
+            "description": "As an action, you can frighten a creature within 30 feet that can see or hear you. The target makes a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). On a failure, it is frightened of you until the end of your next turn."
+          },
+          {
+            "feature_id": "retaliation",
+            "name": "Retaliation",
+            "level": 14,
+            "description": "When you take damage from a creature within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature."
+          }
+        ]
+      },
+      {
+        "subclass_id": "totem_warrior",
+        "name": "Path of the Totem Warrior",
+        "description": "Barbarians who follow the Path of the Totem Warrior commune with a spirit animal and gain supernatural boons tied to that totem.",
+        "features": [
+          {
+            "feature_id": "spirit_seeker",
+            "name": "Spirit Seeker",
+            "level": 3,
+            "description": "Yours is a path that seeks attunement with the natural world, granting you the Beast Sense and Speak with Animals spells, which you can cast as rituals."
+          },
+          {
+            "feature_id": "totem_spirit",
+            "name": "Totem Spirit",
+            "level": 3,
+            "description": "You choose a totem spirit (Bear, Eagle, or Wolf) and gain its feature while raging. Bear: resistance to all damage except psychic. Eagle: opportunity attacks against you have disadvantage; you can Dash as a bonus action. Wolf: allies have advantage on melee attacks against creatures within 5 feet of you."
+          },
+          {
+            "feature_id": "aspect_of_the_beast",
+            "name": "Aspect of the Beast",
+            "level": 6,
+            "description": "You gain a magical benefit based on your totem (Bear, Eagle, or Wolf), such as doubled carrying capacity, superior vision, or tracking while traveling at a fast pace."
+          },
+          {
+            "feature_id": "spirit_walker",
+            "name": "Spirit Walker",
+            "level": 10,
+            "description": "You can cast Commune with Nature as a ritual. When you do, a spiritual version of your totem animal appears to deliver information."
+          },
+          {
+            "feature_id": "totemic_attunement",
+            "name": "Totemic Attunement",
+            "level": 14,
+            "description": "You gain a powerful combat benefit tied to your totem while raging (Bear: knock Large or smaller creatures prone; Eagle: fly briefly; Wolf: knock a creature prone with a melee hit)."
+          }
+        ]
+      }
+    ],
+    "spellcasting": null,
+    "source_reference": "PHB p.46-50"
+  }
+]

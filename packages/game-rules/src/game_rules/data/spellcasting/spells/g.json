@@ -1,0 +1,524 @@
+[
+  {
+    "spell_id": "gaseous_form",
+    "name": "Gaseous Form",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A bit of gauze and a wisp of smoke" }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "Willing creature becomes mist; fly 10 ft, pass through 1-inch gaps, resistance to nonmagical damage, cannot attack or cast spells.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.244"
+  },
+  {
+    "spell_id": "gate",
+    "name": "Gate",
+    "level": 9,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A diamond worth at least 5,000 gp",
+        "cost": "5000 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Portal to another plane or call a named extraplanar creature (CHA save to resist summoning).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "cha",
+      "save_effect_on_success": "Not summoned (if calling a creature)",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric", "sorcerer"],
+    "source_reference": "PHB p.244"
+  },
+  {
+    "spell_id": "geas",
+    "name": "Geas",
+    "level": 5,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 30, "unit": "day", "concentration": false },
+    "effect": {
+      "description": "Magical command; disobedience causes 5d10 psychic damage (WIS save for half on each violation).",
+      "damage_dice": "5d10",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "wis",
+      "save_effect_on_success": "Not charmed (8th+ slot only; see spell text)",
+      "attack_type": null
+    },
+    "at_higher_levels": "Duration becomes 1 year (7th slot) or until dispelled (8th+); WIS save immunity at 8th+.",
+    "classes": ["bard", "cleric", "druid", "paladin", "wizard"],
+    "source_reference": "PHB p.244"
+  },
+  {
+    "spell_id": "gentle_repose",
+    "name": "Gentle Repose",
+    "level": 2,
+    "school": "necromancy",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration"
+      }
+    },
+    "duration": { "value": 10, "unit": "day", "concentration": false },
+    "effect": {
+      "description": "Protects corpse from decay and undead; extends time limit for raising dead.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric", "wizard"],
+    "source_reference": "PHB p.245"
+  },
+  {
+    "spell_id": "giant_insect",
+    "name": "Giant Insect",
+    "level": 4,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Transforms up to ten centipedes, three spiders, five wasps, or one scorpion into giant versions under your verbal command.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid"],
+    "source_reference": "PHB p.245"
+  },
+  {
+    "spell_id": "glibness",
+    "name": "Glibness",
+    "level": 8,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "Treat any Charisma roll of 9 or lower as 10; magic that would detect lies indicates you are truthful.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "warlock"],
+    "source_reference": "PHB p.245"
+  },
+  {
+    "spell_id": "globe_of_invulnerability",
+    "name": "Globe of Invulnerability",
+    "level": 6,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A glass or crystal bead that shatters when the spell ends"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "10-foot-radius immobile barrier; spells of 5th level or lower cannot pass into or out of the globe.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 10,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "Blocks spells using a slot one level higher per slot above 6th.",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.245"
+  },
+  {
+    "spell_id": "glyph_of_warding",
+    "name": "Glyph of Warding",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Incense and powdered diamond worth at least 200 gp, which the spell consumes",
+        "cost": "200 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "until_dispelled", "concentration": false },
+    "effect": {
+      "description": "Explosive runes deal 5d8 acid/cold/fire/lightning/thunder on trigger, or store a spell of 3rd level or lower.",
+      "damage_dice": "5d8",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "dex",
+      "save_effect_on_success": "Half damage (explosive glyph)",
+      "attack_type": null
+    },
+    "at_higher_levels": "Stored spell slot level increases with slot used.",
+    "classes": ["bard", "cleric", "wizard"],
+    "source_reference": "PHB p.245"
+  },
+  {
+    "spell_id": "goodberry",
+    "name": "Goodberry",
+    "level": 1,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A sprig of mistletoe"
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Create ten berries; each restores 1 HP and sustains a creature for one day.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "1",
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid", "ranger"],
+    "source_reference": "PHB p.246"
+  },
+  {
+    "spell_id": "grasping_vine",
+    "name": "Grasping Vine",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "bonus_action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Conjure vine; use bonus action to pull a Large or smaller creature 20 feet toward the vine (DEX save negates).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "dex",
+      "save_effect_on_success": "Not moved",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid", "ranger"],
+    "source_reference": "PHB p.246"
+  },
+  {
+    "spell_id": "grease",
+    "name": "Grease",
+    "level": 1,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A bit of pork rind or butter"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "10-foot square becomes slick; DEX save or fall prone when entering or starting turn in the area.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "square",
+      "area_size": 10,
+      "save_ability": "dex",
+      "save_effect_on_success": "Not prone from grease",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["wizard"],
+    "source_reference": "PHB p.246"
+  },
+  {
+    "spell_id": "greater_invisibility",
+    "name": "Greater Invisibility",
+    "level": 4,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "An eyelash encased in gum arabic"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Target is invisible until the spell ends; attacking or casting does not end it.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.246"
+  },
+  {
+    "spell_id": "greater_restoration",
+    "name": "Greater Restoration",
+    "level": 5,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Diamond dust worth at least 100 gp, which the spell consumes",
+        "cost": "100 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "End one charm, petrification, curse, ability score reduction, or hit point maximum reduction on a creature.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "cleric", "druid"],
+    "source_reference": "PHB p.246"
+  },
+  {
+    "spell_id": "guardian_of_faith",
+    "name": "Guardian of Faith",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 8, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "Spectral guardian in 10-foot space; hostile creatures entering for first time on a turn take 20 radiant (DEX save half), max 60 total damage.",
+      "damage_dice": null,
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": "square",
+      "area_size": 10,
+      "save_ability": "dex",
+      "save_effect_on_success": "Half damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric"],
+    "source_reference": "PHB p.246"
+  },
+  {
+    "spell_id": "guards_and_wards",
+    "name": "Guards and Wards",
+    "level": 6,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a silver rod worth at least 10 gp",
+        "cost": "10 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "Create multiple ward effects (alarm, arcane lock, gust of wind, suggestion, web, stinking cloud, etc.) in a large area you can walk through during casting.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.247"
+  },
+  {
+    "spell_id": "guidance",
+    "name": "Guidance",
+    "level": 0,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Target can roll a d4 and add the number to one ability check of its choice before the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["cleric", "druid"],
+    "source_reference": "PHB p.248"
+  },
+  {
+    "spell_id": "guiding_bolt",
+    "name": "Guiding Bolt",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "round", "concentration": false },
+    "effect": {
+      "description": "Ranged spell attack for 4d6 radiant; next attack roll against the target before your next turn has advantage.",
+      "damage_dice": "4d6",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "+1d6 damage per slot level above 1st.",
+    "classes": ["cleric"],
+    "source_reference": "PHB p.248"
+  },
+  {
+    "spell_id": "gust_of_wind",
+    "name": "Gust of Wind",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A legume seed"
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "60-foot line of strong wind; creatures moving against it spend extra movement; STR save or be pushed 15 feet away from you.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "line",
+      "area_size": 60,
+      "save_ability": "str",
+      "save_effect_on_success": "Not pushed",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid", "ranger", "sorcerer", "wizard"],
+    "source_reference": "PHB p.248"
+  }
+]

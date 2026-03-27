@@ -1,0 +1,217 @@
+[
+  {
+    "class_id": "rogue",
+    "name": "Rogue",
+    "hit_die": "d8",
+    "primary_ability": ["DEX"],
+    "saving_throws": ["DEX", "INT"],
+    "armor_proficiencies": ["light"],
+    "weapon_proficiencies": [
+      "simple",
+      "hand_crossbow",
+      "longsword",
+      "rapier",
+      "shortsword"
+    ],
+    "tool_proficiencies": ["thieves_tools"],
+    "skill_choices": [
+      "acrobatics",
+      "athletics",
+      "deception",
+      "insight",
+      "intimidation",
+      "investigation",
+      "perception",
+      "performance",
+      "persuasion",
+      "sleight_of_hand",
+      "stealth"
+    ],
+    "num_skill_choices": 4,
+    "features": [
+      {
+        "feature_id": "expertise",
+        "name": "Expertise",
+        "level": 1,
+        "description": "Choose two of your skill proficiencies, or one skill proficiency and proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check using either chosen proficiency. At 6th level, you can choose two more proficiencies to gain this benefit."
+      },
+      {
+        "feature_id": "sneak_attack",
+        "name": "Sneak Attack",
+        "level": 1,
+        "description": "Once per turn, you can deal extra damage to one creature you hit with a finesse or ranged weapon if you have advantage on the attack or another enemy of the target is within 5 feet of it. The extra damage starts at 1d6 and increases at odd rogue levels (see PHB). You don't need advantage if no disadvantage and an ally is within 5 feet of the target."
+      },
+      {
+        "feature_id": "thieves_cant",
+        "name": "Thieves' Cant",
+        "level": 1,
+        "description": "You know thieves' cant, a secret mix of dialect, jargon, and code that lets you hide messages in normal conversation."
+      },
+      {
+        "feature_id": "cunning_action",
+        "name": "Cunning Action",
+        "level": 2,
+        "description": "You can take a bonus action on each of your turns in combat to take the Dash, Disengage, or Hide action."
+      },
+      {
+        "feature_id": "uncanny_dodge",
+        "name": "Uncanny Dodge",
+        "level": 5,
+        "description": "When an attacker you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+      },
+      {
+        "feature_id": "evasion",
+        "name": "Evasion",
+        "level": 7,
+        "description": "When you are subjected to an effect that allows a Dexterity saving throw to take only half damage, you take no damage on a success, and only half damage on a failure."
+      },
+      {
+        "feature_id": "reliable_talent",
+        "name": "Reliable Talent",
+        "level": 11,
+        "description": "Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10."
+      },
+      {
+        "feature_id": "blindsense",
+        "name": "Blindsense",
+        "level": 14,
+        "description": "If you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
+      },
+      {
+        "feature_id": "slippery_mind",
+        "name": "Slippery Mind",
+        "level": 15,
+        "description": "You gain proficiency in Wisdom saving throws."
+      },
+      {
+        "feature_id": "elusive",
+        "name": "Elusive",
+        "level": 18,
+        "description": "No attack roll has advantage against you while you aren't incapacitated."
+      },
+      {
+        "feature_id": "stroke_of_luck",
+        "name": "Stroke of Luck",
+        "level": 20,
+        "description": "If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20. Once you use this feature, you can't use it again until you finish a short or long rest."
+      }
+    ],
+    "subclass_label": "Roguish Archetype",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "thief",
+        "name": "Thief",
+        "description": "Burglars, bandits, cutpurses, and other criminals who use stealth and theft to survive.",
+        "features": [
+          {
+            "feature_id": "fast_hands",
+            "name": "Fast Hands",
+            "level": 3,
+            "description": "You can use the bonus action granted by Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or use an object."
+          },
+          {
+            "feature_id": "second_story_work",
+            "name": "Second-Story Work",
+            "level": 3,
+            "description": "Climbing no longer costs you extra movement. You also add your Dexterity modifier to the distance of any long jump or high jump you make."
+          },
+          {
+            "feature_id": "supreme_sneak",
+            "name": "Supreme Sneak",
+            "level": 9,
+            "description": "You have advantage on Dexterity (Stealth) checks if you move no more than half your speed on the same turn."
+          },
+          {
+            "feature_id": "use_magic_device",
+            "name": "Use Magic Device",
+            "level": 13,
+            "description": "You ignore all class, race, and level requirements on the use of magic items."
+          },
+          {
+            "feature_id": "thiefs_reflexes",
+            "name": "Thief's Reflexes",
+            "level": 17,
+            "description": "You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10."
+          }
+        ]
+      },
+      {
+        "subclass_id": "assassin",
+        "name": "Assassin",
+        "description": "You focus your training on the grim art of death, relying on stealth, poison, and disguise.",
+        "features": [
+          {
+            "feature_id": "bonus_proficiencies_assassin",
+            "name": "Bonus Proficiencies",
+            "level": 3,
+            "description": "You gain proficiency with the disguise kit and the poisoner's kit."
+          },
+          {
+            "feature_id": "assassinate",
+            "name": "Assassinate",
+            "level": 3,
+            "description": "You have advantage on attack rolls against creatures that haven't taken a turn in combat yet. Any hit you score against a surprised creature is a critical hit."
+          },
+          {
+            "feature_id": "infiltration_expertise",
+            "name": "Infiltration Expertise",
+            "level": 9,
+            "description": "You can unfailingly create false identities. It takes 7 days and 25 gp to establish history, profession, and affiliations; thereafter you have advantage on Deception to maintain the identity."
+          },
+          {
+            "feature_id": "impostor",
+            "name": "Impostor",
+            "level": 13,
+            "description": "You can mimic the speech, writing, and behavior of another creature. You have advantage on checks to avoid detection."
+          },
+          {
+            "feature_id": "death_strike",
+            "name": "Death Strike",
+            "level": 17,
+            "description": "When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double all damage from your attack against the creature."
+          }
+        ]
+      },
+      {
+        "subclass_id": "arcane_trickster",
+        "name": "Arcane Trickster",
+        "description": "Some rogues enhance their skills in stealth and agility with magic, learning tricks of enchantment and illusion.",
+        "features": [
+          {
+            "feature_id": "spellcasting_arcane_trickster",
+            "name": "Spellcasting",
+            "level": 3,
+            "description": "You learn to cast wizard spells using Intelligence as your spellcasting ability. You use the wizard spell list with restrictions: most spells must be enchantment or illusion; a few any-school spells are allowed at certain levels (see PHB). This subclass grants cantrips and known spells in place of the base rogue's lack of spellcasting."
+          },
+          {
+            "feature_id": "mage_hand_legerdemain",
+            "name": "Mage Hand Legerdemain",
+            "level": 3,
+            "description": "When you cast Mage Hand, you can make the spectral hand invisible, stow or retrieve objects as a bonus action, and use thieves' tools at range. You can also use the hand to disarm traps and use Sleight of Hand."
+          },
+          {
+            "feature_id": "magical_ambush",
+            "name": "Magical Ambush",
+            "level": 9,
+            "description": "If you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw against the spell this turn."
+          },
+          {
+            "feature_id": "versatile_trickster",
+            "name": "Versatile Trickster",
+            "level": 13,
+            "description": "You gain advantage on attack rolls against a creature if you are within 5 feet of it and Mage Hand is also within 5 feet of it."
+          },
+          {
+            "feature_id": "spell_thief",
+            "name": "Spell Thief",
+            "level": 17,
+            "description": "When a creature casts a spell that targets only you, you can use your reaction to force a saving throw against your spell save DC. On a failed save, you negate the effect against you and learn the spell if it is at least 1st level and of a level you can cast. You can cast it using your spell slots until the end of your next long rest."
+          }
+        ]
+      }
+    ],
+    "spellcasting": null,
+    "source_reference": "PHB p.94-98"
+  }
+]

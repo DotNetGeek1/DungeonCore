@@ -1,0 +1,59 @@
+[
+  {
+    "race_id": "dwarf",
+    "name": "Dwarf",
+    "ability_score_increase": { "CON": 2 },
+    "size": "Medium",
+    "speed": 25,
+    "languages": ["Common", "Dwarvish"],
+    "traits": [
+      {
+        "trait_id": "darkvision",
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "trait_id": "dwarven_resilience",
+        "name": "Dwarven Resilience",
+        "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+      },
+      {
+        "trait_id": "dwarven_combat_training",
+        "name": "Dwarven Combat Training",
+        "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer."
+      },
+      {
+        "trait_id": "stonecunning",
+        "name": "Stonecunning",
+        "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+      }
+    ],
+    "subraces": [
+      {
+        "subrace_id": "hill_dwarf",
+        "name": "Hill Dwarf",
+        "ability_score_increase": { "WIS": 1 },
+        "traits": [
+          {
+            "trait_id": "dwarven_toughness",
+            "name": "Dwarven Toughness",
+            "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+          }
+        ]
+      },
+      {
+        "subrace_id": "mountain_dwarf",
+        "name": "Mountain Dwarf",
+        "ability_score_increase": { "STR": 2 },
+        "traits": [
+          {
+            "trait_id": "dwarven_armor_training",
+            "name": "Dwarven Armor Training",
+            "description": "You have proficiency with light and medium armor."
+          }
+        ]
+      }
+    ],
+    "source_reference": "PHB p.18"
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "class_id": "wizard",
+    "name": "Wizard",
+    "hit_die": "d6",
+    "primary_ability": ["INT"],
+    "saving_throws": ["INT", "WIS"],
+    "armor_proficiencies": [],
+    "weapon_proficiencies": [
+      "daggers",
+      "darts",
+      "slings",
+      "quarterstaffs",
+      "light crossbows"
+    ],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "Arcana",
+      "History",
+      "Insight",
+      "Investigation",
+      "Medicine",
+      "Religion"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "wizard_spellcasting",
+        "name": "Spellcasting",
+        "level": 1,
+        "description": "You have a spellbook containing wizard spells you have learned; you prepare a subset each day and cast spells using Intelligence as your spellcasting ability."
+      },
+      {
+        "feature_id": "arcane_recovery",
+        "name": "Arcane Recovery",
+        "level": 1,
+        "description": "Once per day when you finish a short rest, you can recover expended spell slots with combined levels equal to or less than half your wizard level (rounded up), none above 6th level."
+      },
+      {
+        "feature_id": "spell_mastery",
+        "name": "Spell Mastery",
+        "level": 18,
+        "description": "Choose one 1st-level and one 2nd-level wizard spell in your spellbook. You can cast each at will at its lowest level without expending a spell slot."
+      },
+      {
+        "feature_id": "signature_spells",
+        "name": "Signature Spells",
+        "level": 20,
+        "description": "Choose two 3rd-level wizard spells in your spellbook as signature spells. You always have them prepared, and once per short rest you can cast each once at 3rd level without a spell slot. When you cast them with a slot, you can cast them at a higher level."
+      }
+    ],
+    "subclass_label": "Arcane Tradition",
+    "subclass_level": 2,
+    "subclasses": [
+      {
+        "subclass_id": "school_of_abjuration",
+        "name": "School of Abjuration",
+        "description": "Abjurers specialize in spells that block, banish, or protect, and they weave wards of magical energy.",
+        "features": [
+          {
+            "feature_id": "abjuration_savant",
+            "name": "Abjuration Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying an abjuration spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "arcane_ward",
+            "name": "Arcane Ward",
+            "level": 2,
+            "description": "When you cast an abjuration spell of 1st level or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself that lasts until you finish a long rest. The ward has hit points equal to twice your wizard level + your Intelligence modifier. When you take damage, the ward takes the damage instead. When the ward has 0 hit points, it can't absorb damage until you cast an abjuration spell of 1st level or higher."
+          },
+          {
+            "feature_id": "projected_ward",
+            "name": "Projected Ward",
+            "level": 6,
+            "description": "When a creature you can see within 30 feet of you takes damage, you can use your reaction to cause your Arcane Ward to absorb that damage. If this damage reduces the ward to 0 hit points, the warded creature takes any remaining damage."
+          },
+          {
+            "feature_id": "improved_abjuration",
+            "name": "Improved Abjuration",
+            "level": 10,
+            "description": "When you cast an abjuration spell that requires you to make an ability check as part of casting that spell, you add your proficiency bonus to that ability check."
+          },
+          {
+            "feature_id": "spell_resistance_abjurer",
+            "name": "Spell Resistance",
+            "level": 14,
+            "description": "You have advantage on saving throws against spells."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_conjuration",
+        "name": "School of Conjuration",
+        "description": "Conjurers summon creatures and objects from thin air and learn to teleport with precision.",
+        "features": [
+          {
+            "feature_id": "conjuration_savant",
+            "name": "Conjuration Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying a conjuration spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "minor_conjuration",
+            "name": "Minor Conjuration",
+            "level": 2,
+            "description": "As an action, you conjure an inanimate object in your hand or on a surface; it must be no larger than 10 feet in any dimension, and it must be of a form you've seen. It radiates magic and disappears after 1 hour, when you use this feature again, or if it takes or deals damage."
+          },
+          {
+            "feature_id": "benign_transposition",
+            "name": "Benign Transposition",
+            "level": 6,
+            "description": "As an action, you can teleport up to 30 feet to an unoccupied space you can see, or swap places with a Small or Medium willing creature within 30 feet. You can use this feature a number of times equal to your Intelligence modifier per long rest."
+          },
+          {
+            "feature_id": "focused_conjuration",
+            "name": "Focused Conjuration",
+            "level": 10,
+            "description": "While you are concentrating on a conjuration spell, your concentration cannot be broken as a result of taking damage."
+          },
+          {
+            "feature_id": "durable_summons",
+            "name": "Durable Summons",
+            "level": 14,
+            "description": "Creatures you conjure with conjuration spells have 30 temporary hit points."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_divination",
+        "name": "School of Divination",
+        "description": "Diviners peer through time and fate, glimpsing the future and bending luck.",
+        "features": [
+          {
+            "feature_id": "divination_savant",
+            "name": "Divination Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying a divination spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "portent",
+            "name": "Portent",
+            "level": 2,
+            "description": "After a long rest, roll two d20s and record the results. You can replace any attack roll, saving throw, or ability check you or a creature you can see makes with one of those foretelling rolls. You must choose to do so before the roll. Each foretelling roll can be used only once."
+          },
+          {
+            "feature_id": "expert_divination",
+            "name": "Expert Divination",
+            "level": 6,
+            "description": "When you cast a divination spell of 2nd level or higher using a spell slot, you regain one expended spell slot of a level lower than the spell you cast (the slot cannot be 6th level or higher)."
+          },
+          {
+            "feature_id": "the_third_eye",
+            "name": "The Third Eye",
+            "level": 10,
+            "description": "As an action, you gain one of the following benefits until you end it as an action or finish a short or long rest: darkvision 120 feet, ethereal sight out to 60 feet, read thoughts as the spell, or see invisibility in a 10-foot radius."
+          },
+          {
+            "feature_id": "greater_portent",
+            "name": "Greater Portent",
+            "level": 14,
+            "description": "You roll three d20s for your Portent feature instead of two."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_enchantment",
+        "name": "School of Enchantment",
+        "description": "Enchanters weave magic that enthralls and beguiles the minds of others.",
+        "features": [
+          {
+            "feature_id": "enchantment_savant",
+            "name": "Enchantment Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying an enchantment spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "hypnotic_gaze",
+            "name": "Hypnotic Gaze",
+            "level": 2,
+            "description": "As an action, choose one creature you can see within 5 feet. If it can see you and is not immune to being charmed, it must succeed on a Wisdom saving throw against your wizard spell save DC or be charmed by you until the end of your next turn. You can extend the effect on subsequent turns until the creature succeeds on the save or you look away."
+          },
+          {
+            "feature_id": "instinctive_charm",
+            "name": "Instinctive Charm",
+            "level": 6,
+            "description": "When a creature you can see within 30 feet makes an attack roll against you, you can use your reaction to divert the attack if another creature is within range. The attacker must succeed on a Wisdom saving throw against your spell save DC or target the other creature instead."
+          },
+          {
+            "feature_id": "split_enchantment",
+            "name": "Split Enchantment",
+            "level": 10,
+            "description": "When you cast an enchantment spell of 1st level or higher that targets only one creature, you can choose a second target for that spell."
+          },
+          {
+            "feature_id": "alter_memories",
+            "name": "Alter Memories",
+            "level": 14,
+            "description": "When you cast an enchantment spell on a creature, you can alter one creature's understanding of time spent charmed, create false memories, or wipe memories of being charmed, as described in the feature."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_evocation",
+        "name": "School of Evocation",
+        "description": "Evokers sculpt raw magical energy into explosive and destructive spells.",
+        "features": [
+          {
+            "feature_id": "evocation_savant",
+            "name": "Evocation Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying an evocation spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "sculpt_spells",
+            "name": "Sculpt Spells",
+            "level": 2,
+            "description": "When you cast an evocation spell that affects other creatures you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half on a successful save."
+          },
+          {
+            "feature_id": "potent_cantrip",
+            "name": "Potent Cantrip",
+            "level": 6,
+            "description": "Your cantrips that require a saving throw deal half damage on a successful save."
+          },
+          {
+            "feature_id": "empowered_evocation",
+            "name": "Empowered Evocation",
+            "level": 10,
+            "description": "You can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast."
+          },
+          {
+            "feature_id": "overchannel",
+            "name": "Overchannel",
+            "level": 14,
+            "description": "When you cast a wizard evocation spell of 5th level or lower, you can deal maximum damage instead of rolling. Once you use this feature, you cannot use it again until you finish a short or long rest."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_illusion",
+        "name": "School of Illusion",
+        "description": "Illusionists craft sensory figments that fool the senses and, at their peak, blur illusion and reality.",
+        "features": [
+          {
+            "feature_id": "illusion_savant",
+            "name": "Illusion Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying an illusion spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "improved_minor_illusion",
+            "name": "Improved Minor Illusion",
+            "level": 2,
+            "description": "When you cast minor illusion, you can create both a sound and an image with a single casting of the spell."
+          },
+          {
+            "feature_id": "malleable_illusions",
+            "name": "Malleable Illusions",
+            "level": 6,
+            "description": "When you cast an illusion spell that has a duration of at least 1 minute, you can use your action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided you can see the illusion."
+          },
+          {
+            "feature_id": "illusory_self",
+            "name": "Illusory Self",
+            "level": 10,
+            "description": "When a creature makes an attack roll against you, you can use your reaction to interpose an illusory duplicate; if the attack misses, the illusion dissipates."
+          },
+          {
+            "feature_id": "illusory_reality",
+            "name": "Illusory Reality",
+            "level": 14,
+            "description": "When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real for 1 minute."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_necromancy",
+        "name": "School of Necromancy",
+        "description": "Necromancers explore the energies of life, death, and undeath.",
+        "features": [
+          {
+            "feature_id": "necromancy_savant",
+            "name": "Necromancy Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying a necromancy spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "grim_harvest",
+            "name": "Grim Harvest",
+            "level": 2,
+            "description": "Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell's level, or three times if it is a necromancy spell."
+          },
+          {
+            "feature_id": "undead_thralls",
+            "name": "Undead Thralls",
+            "level": 6,
+            "description": "When you cast animate dead, you can target one additional corpse or pile of bones, and each undead you create with the spell gains bonus hit points and your proficiency bonus to weapon damage rolls."
+          },
+          {
+            "feature_id": "inured_to_undeath",
+            "name": "Inured to Undeath",
+            "level": 10,
+            "description": "You have resistance to necrotic damage, and your hit point maximum cannot be reduced."
+          },
+          {
+            "feature_id": "command_undead",
+            "name": "Command Undead",
+            "level": 14,
+            "description": "As an action, choose one undead that you can see within 60 feet. The target must make a Charisma saving throw against your wizard spell save DC. If it fails and its challenge rating is below a threshold, it becomes friendly to you and obeys your commands for 24 hours or until you use this feature again."
+          }
+        ]
+      },
+      {
+        "subclass_id": "school_of_transmutation",
+        "name": "School of Transmutation",
+        "description": "Transmuters change matter and energy, reshaping the physical world.",
+        "features": [
+          {
+            "feature_id": "transmutation_savant",
+            "name": "Transmutation Savant",
+            "level": 2,
+            "description": "Gold and time you spend copying a transmutation spell into your spellbook are halved."
+          },
+          {
+            "feature_id": "minor_alchemy",
+            "name": "Minor Alchemy",
+            "level": 2,
+            "description": "As an action, you perform a minor alchemical transformation on one object of a specified size composed entirely of wood, stone, iron, copper, or silver, changing it from one of those materials to another for 1 hour."
+          },
+          {
+            "feature_id": "transmuters_stone",
+            "name": "Transmuter's Stone",
+            "level": 6,
+            "description": "You create a magic transmuter's stone that grants a benefit you choose (darkvision 60 feet, +10 feet speed while unarmored, proficiency in Constitution saving throws, or resistance to a damage type you choose when you create the stone). You can benefit from your own stone."
+          },
+          {
+            "feature_id": "shapechanger_transmuter",
+            "name": "Shapechanger",
+            "level": 10,
+            "description": "You add polymorph to your spellbook if it is not there. You can cast polymorph on yourself without expending a spell slot, though you may expend a slot to cast it on others."
+          },
+          {
+            "feature_id": "master_transmuter",
+            "name": "Master Transmuter",
+            "level": 14,
+            "description": "You can destroy your transmuter's stone to heal, restore youth, remove curses, or transmute part of your body into another substance for 24 hours, as detailed in the feature."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "INT",
+      "type": "prepared",
+      "cantrips": true
+    },
+    "source_reference": "PHB p.112-119"
+  }
+]

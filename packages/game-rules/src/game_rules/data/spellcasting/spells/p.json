@@ -1,0 +1,699 @@
+[
+  {
+    "spell_id": "pass_without_trace",
+    "name": "Pass without Trace",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Ashes from a burned leaf of mistletoe and a sprig of spruce",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "radius",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["druid", "ranger"],
+    "source_reference": "PHB p.264"
+  },
+  {
+    "spell_id": "passwall",
+    "name": "Passwall",
+    "level": 5,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of sesame seeds",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "A passage appears at a point you choose on a wooden, plaster, or stone surface (such as a wall, ceiling, or floor) within range. The opening is 5 feet wide, 8 feet tall, and up to 20 feet deep, creating a clear path through the barrier. When the spell ends, creatures inside the passage are ejected.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.264"
+  },
+  {
+    "spell_id": "phantasmal_force",
+    "name": "Phantasmal Force",
+    "level": 2,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A bit of fleece",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You craft an illusion that takes root in the mind of a creature you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other phenomenon within 10 feet of the target that only the target can perceive. The phantasm includes sound, temperature, and other stimuli. The target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC; a success ends the spell. While affected, the target treats the phantasm as real and rationalizes illogical outcomes. Each round the phantasm deals 1d6 psychic damage if it harms the target.",
+      "damage_dice": "1d6",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 10,
+      "save_ability": "INT",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the damage of the phantasm increases by 1d6 for each slot level above 2nd.",
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.264"
+  },
+  {
+    "spell_id": "phantasmal_killer",
+    "name": "Phantasmal Killer",
+    "level": 4,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears. The target must make a Wisdom saving throw. On a failed save, it becomes frightened for the duration. At the end of each of the target's turns before the spell ends, it must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.",
+      "damage_dice": "4d10",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.265"
+  },
+  {
+    "spell_id": "phantom_steed",
+    "name": "Phantom Steed",
+    "level": 3,
+    "school": "illusion",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "A Large quasi-real, horselike creature appears on the ground in an unoccupied space within range. You decide its appearance; it has AC 13, 10 hit points, and disappears if reduced to 0 hit points. It uses the statistics for a riding horse except it has a speed of 100 feet and can travel 13 miles per hour. It vanishes if you dismiss it as an action, if you cast the spell again, or after 1 minute if it takes any damage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.265"
+  },
+  {
+    "spell_id": "planar_ally",
+    "name": "Planar Ally",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 10, "unit": "minute" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You beseech an otherworldly entity for aid. A celestial, elemental, or fiend that is at least as powerful as a challenge rating 6 creature appears in an unoccupied space within range. The being is under no compulsion to behave in any particular way and is typically hostile unless you offer appropriate payment for a service you negotiate; the DM has the creature's statistics.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric"],
+    "source_reference": "PHB p.265"
+  },
+  {
+    "spell_id": "planar_binding",
+    "name": "Planar Binding",
+    "level": 5,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A jewel worth at least 1,000 gp, which the spell consumes",
+        "cost": "1,000 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 24, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You attempt to bind a celestial, elemental, fey, or fiend to your service. The creature must be within range for the entire casting. At completion it must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the binding.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CHA",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot.",
+    "classes": ["bard", "cleric", "druid", "wizard"],
+    "source_reference": "PHB p.265"
+  },
+  {
+    "spell_id": "plane_shift",
+    "name": "Plane Shift",
+    "level": 7,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A forked, metal rod worth at least 250 gp, attuned to a particular plane of existence",
+        "cost": "250 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You and up to eight willing creatures who link hands are transported to a different plane, or you can make a melee spell attack against one creature within reach. On a hit, the creature must succeed on a Charisma saving throw or be banished to a harmless demiplane until the spell ends; at the end of each of its turns it repeats the save, returning on a success.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CHA",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "druid", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.266"
+  },
+  {
+    "spell_id": "plant_growth",
+    "name": "Plant Growth",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 150, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius become thick and overgrown; a creature moving through the area must spend 4 feet of movement for every 1 foot moved. Alternatively, if you cast this spell over 8 hours, you enrich plants in a 1-mile radius for a year, doubling their food yield.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "radius",
+      "area_size": 100,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "druid", "ranger"],
+    "source_reference": "PHB p.266"
+  },
+  {
+    "spell_id": "poison_spray",
+    "name": "Poison Spray",
+    "level": 0,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 10, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You extend your hand toward a creature you can see within range and project a puff of noxious gas. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.",
+      "damage_dice": "1d12",
+      "damage_type": "poison",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+    "classes": ["sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.266"
+  },
+  {
+    "spell_id": "polymorph",
+    "name": "Polymorph",
+    "level": 4,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A caterpillar cocoon",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "You transform a creature that you can see within range into a beast. The target's game statistics are replaced by those of the chosen beast whose challenge rating is equal to or less than the target's level, or the target's challenge rating if it doesn't have levels. An unwilling creature must succeed on a Wisdom saving throw to avoid the effect. The target assumes the beast's hit points; when it reverts it returns to its previous hit points. If it drops to 0 hit points as a beast, excess damage carries over.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "druid", "sorcerer", "wizard"],
+    "source_reference": "PHB p.266"
+  },
+  {
+    "spell_id": "power_word_heal",
+    "name": "Power Word Heal",
+    "level": 9,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A wave of healing energy washes over the creature you touch. The target regains all its hit points. If the creature is charmed, frightened, paralyzed, or stunned, those conditions end. If the creature is prone, it can use its reaction to stand up.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "power_word_kill",
+    "name": "Power Word Kill",
+    "level": 9,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "power_word_stun",
+    "name": "Power Word Stun",
+    "level": 8,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 0, "unit": "special", "concentration": false },
+    "effect": {
+      "description": "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned until the spell ends. At the end of each of its turns, the target can make a Constitution saving throw; on a success, the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "prayer_of_healing",
+    "name": "Prayer of Healing",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 10, "unit": "minute" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "2d8",
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.",
+    "classes": ["cleric"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "prestidigitation",
+    "name": "Prestidigitation",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 10, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "This spell is a minor magical trick: create a sensory effect, light/snuff a candle, clean/soil a small object, chill/warm/flavor nonliving material, make a symbol or mark, or create a nonmagical trinket or illusory image that fits in your hand. Some effects last up to 1 hour.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "sorcerer", "warlock", "wizard"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "prismatic_spray",
+    "name": "Prismatic Spray",
+    "level": 7,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Eight multicolored rays flash from your hand in a 60-foot cone. Each ray has a different power; roll a d8 to determine which ray each creature in the area is affected by. Effects include fire damage (Dex save half), acid, lightning, poison, cold, and other outcomes on a failed save; some rays use Constitution saves instead. Each creature takes 10d6 damage of the appropriate type or suffers the listed condition based on the ray.",
+      "damage_dice": "10d6",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cone",
+      "area_size": 60,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "prismatic_wall",
+    "name": "Prismatic Wall",
+    "level": 9,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "A shimmering, multicolored plane of light forms a vertical opaque wall up to 90 feet long, 30 feet high, and 1 inch thick, or a sphere up to 30 feet in diameter centered on a point. The wall has seven layers, each a different color; passing through a layer inflicts that layer's effect (ranging from damage to petrification) and ends that layer. The wall can be destroyed layer by layer in specific ways described in the spell.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "wall",
+      "area_size": 90,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "spell_id": "produce_flame",
+    "name": "Produce Flame",
+    "level": 0,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "self" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 10, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "A flickering flame appears in your hand, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can hurl the flame at a creature within 30 feet as a ranged spell attack; on a hit it takes 1d8 fire damage. The spell ends if you cast it again or dismiss the flame.",
+      "damage_dice": "1d8",
+      "damage_type": "fire",
+      "healing_dice": null,
+      "area_shape": "radius",
+      "area_size": 10,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "classes": ["druid"],
+    "source_reference": "PHB p.269"
+  },
+  {
+    "spell_id": "programmed_illusion",
+    "name": "Programmed Illusion",
+    "level": 6,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 120, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A bit of fleece and jade dust worth at least 25 gp",
+        "cost": "25 gp",
+        "consumed": false
+      }
+    },
+    "duration": { "value": 0, "unit": "special", "concentration": false },
+    "effect": {
+      "description": "You create an illusion of an object, creature, or visible phenomenon within a 30-foot cube that is activated when a specific trigger occurs within 30 feet of the illusion. The illusion lasts up to 5 minutes once triggered and can include intelligible speech. Physical interaction reveals illusory nature. A creature can use its action to examine with Intelligence (Investigation) against your spell save DC.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "The illusion lasts until dispelled.",
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.269"
+  },
+  {
+    "spell_id": "project_image",
+    "name": "Project Image",
+    "level": 7,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 500, "unit": "miles" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Materials worth at least 5 gp that the spell consumes",
+        "cost": "5 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 1, "unit": "day", "concentration": true },
+    "effect": {
+      "description": "You create an illusory copy of yourself that lasts for the duration. The copy can appear at any place within range that you have seen before. You can switch between using your own senses and the copy's senses on your turn. You can cast spells as if you were in the copy's space, but you must use your own senses. Physical interaction reveals the illusion; a creature can examine it with Intelligence (Investigation) against your spell save DC.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "wizard"],
+    "source_reference": "PHB p.270"
+  },
+  {
+    "spell_id": "protection_from_energy",
+    "name": "Protection from Energy",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": true },
+    "effect": {
+      "description": "For the duration, the willing creature you touch has resistance to one type of damage of your choice: acid, cold, fire, lightning, or thunder.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "druid", "ranger", "sorcerer", "wizard"],
+    "source_reference": "PHB p.270"
+  },
+  {
+    "spell_id": "protection_from_evil_and_good",
+    "name": "Protection from Evil and Good",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Holy water or powdered silver and iron, which the spell consumes",
+        "cost": null,
+        "consumed": true
+      }
+    },
+    "duration": { "value": 10, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "Until the spell ends, one willing creature you touch is protected against aberrations, celestials, elementals, fey, fiends, and undead. Those creature types have disadvantage on attack rolls against the target. The target can't be charmed, frightened, or possessed by them.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "druid", "paladin", "warlock"],
+    "source_reference": "PHB p.270"
+  },
+  {
+    "spell_id": "protection_from_poison",
+    "name": "Protection from Poison",
+    "level": 2,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You touch a creature. If it is poisoned, you neutralize the poison. For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.",
+      "damage_dice": null,
+      "damage_type": "poison",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "druid", "paladin", "ranger"],
+    "source_reference": "PHB p.270"
+  },
+  {
+    "spell_id": "purify_food_and_drink",
+    "name": "Purify Food and Drink",
+    "level": 1,
+    "school": "transmutation",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 10, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "All nonmagical food and drink within a 5-foot-radius sphere centered on a point within range is purified and rendered free of poison and disease.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 5,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "druid", "paladin"],
+    "source_reference": "PHB p.270"
+  }
+]

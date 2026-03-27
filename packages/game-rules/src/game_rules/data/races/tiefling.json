@@ -1,0 +1,32 @@
+[
+  {
+    "race_id": "tiefling",
+    "name": "Tiefling",
+    "ability_score_increase": {
+      "CHA": 2,
+      "INT": 1
+    },
+    "size": "Medium",
+    "speed": 30,
+    "languages": ["Common", "Infernal"],
+    "traits": [
+      {
+        "trait_id": "darkvision",
+        "name": "Darkvision",
+        "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+      },
+      {
+        "trait_id": "hellish_resistance",
+        "name": "Hellish Resistance",
+        "description": "You have resistance to fire damage."
+      },
+      {
+        "trait_id": "infernal_legacy",
+        "name": "Infernal Legacy",
+        "description": "You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast hellish rebuke as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. Once you reach 5th level, you can also cast darkness once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+      }
+    ],
+    "subraces": [],
+    "source_reference": "PHB p.42"
+  }
+]

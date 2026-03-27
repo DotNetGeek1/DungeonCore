@@ -1,0 +1,1676 @@
+[
+  {
+    "spell_id": "sacred_flame",
+    "name": "Sacred Flame",
+    "level": 0,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Flame-like radiance descends on a creature you can see. Target makes a Dexterity saving throw (no benefit from cover). On a failure it takes 1d8 radiant damage.",
+      "damage_dice": "1d8",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 at 5th (2d8), 11th (3d8), and 17th (4d8) level.",
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.272"
+  },
+  {
+    "spell_id": "sanctuary",
+    "name": "Sanctuary",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small silver mirror"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Ward a creature against attack. Until the spell ends, anyone who targets the warded creature with an attack or harmful spell must first make a Wisdom saving throw. On a failed save the creature must choose a new target or the attack/spell is wasted. On a success the creature is immune to this ward for 1 minute.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.272"
+  },
+  {
+    "spell_id": "scorching_ray",
+    "name": "Scorching Ray",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.",
+      "damage_dice": "2d6",
+      "damage_type": "fire",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "You create one additional ray for each slot level above 2nd.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.273"
+  },
+  {
+    "spell_id": "scrying",
+    "name": "Scrying",
+    "level": 5,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 10,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A focus worth at least 1,000 gp, such as a crystal ball, mirror, or water-filled font",
+        "cost": "1,000 gp",
+        "consumed": false
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "See and hear a particular creature you choose on the same plane of existence. The target makes a Wisdom saving throw, modified by how well you know it and what connects you. On a failed save the spell creates an invisible sensor within 10 feet of the target; on a success the spell fails.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.273"
+  },
+  {
+    "spell_id": "see_invisibility",
+    "name": "See Invisibility",
+    "level": 2,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of talc and a small sprinkling of silver powder"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane to a range of 60 feet.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.274"
+  },
+  {
+    "spell_id": "seeming",
+    "name": "Seeming",
+    "level": 5,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "This spell allows you to change the appearance of any number of creatures you can see within range. An unwilling target can make a Charisma saving throw, and if it succeeds, it is unaffected.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CHA",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.274"
+  },
+  {
+    "spell_id": "sending",
+    "name": "Sending",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "unlimited_same_plane"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A short piece of fine copper wire"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you if it knows you, and can answer in kind immediately.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ],
+    "source_reference": "PHB p.274"
+  },
+  {
+    "spell_id": "sequester",
+    "name": "Sequester",
+    "level": 7,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes",
+        "cost": "5,000 gp",
+        "consumed": true
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "until_dispelled",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Hide a willing creature or object (up to Large) in magical stasis. It is invisible and can't be harmed or aged. Time ceases to flow for it until the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.274"
+  },
+  {
+    "spell_id": "shapechange",
+    "name": "Shapechange",
+    "level": 9,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A jade circlet worth at least 1,500 gp, which you must place on your head before you cast the spell"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Assume the form of a different creature for the duration. The new form can be any creature with a challenge rating equal to your level or lower. You retain alignment, Intelligence, Wisdom, and Charisma scores.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "wizard"
+    ],
+    "source_reference": "PHB p.274"
+  },
+  {
+    "spell_id": "shatter",
+    "name": "Shatter",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A chip of mica"
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A sudden loud ringing noise erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw, taking 3d8 thunder damage on a failed save or half on a success. Creatures made of inorganic materials have disadvantage on the save.",
+      "damage_dice": "3d8",
+      "damage_type": "thunder",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 10,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 2nd.",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.275"
+  },
+  {
+    "spell_id": "shield",
+    "name": "Shield",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "reaction"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "concentration": false
+    },
+    "effect": {
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.275"
+  },
+  {
+    "spell_id": "shield_of_faith",
+    "name": "Shield of Faith",
+    "level": 1,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A small parchment with a bit of holy text written on it"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.275"
+  },
+  {
+    "spell_id": "shillelagh",
+    "name": "Shillelagh",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Mistletoe, a shamrock leaf, and a club or quarterstaff"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for attack and damage rolls, and the weapon's damage die becomes a d8.",
+      "damage_dice": "1d8",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.275"
+  },
+  {
+    "spell_id": "shocking_grasp",
+    "name": "Shocking Grasp",
+    "level": 0,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn. You have advantage on the attack roll if the target is wearing metal armor.",
+      "damage_dice": "1d8",
+      "damage_type": "lightning",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "melee_spell_attack"
+    },
+    "at_higher_levels": "Damage increases by 1d8 at 5th (2d8), 11th (3d8), and 17th (4d8) level.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.275"
+  },
+  {
+    "spell_id": "silence",
+    "name": "Silence",
+    "level": 2,
+    "school": "illusion",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A bit of wool or a small tuft of cotton"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point within range. Creatures and objects inside are immune to thunder damage, and creatures inside are deafened. Casting a spell with a verbal component is impossible there.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "ranger"
+    ],
+    "source_reference": "PHB p.275"
+  },
+  {
+    "spell_id": "silent_image",
+    "name": "Silent Image",
+    "level": 1,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": false,
+      "somatic": true,
+      "material": {
+        "description": "A bit of fleece"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Create the image of an object, creature, or other visible phenomenon within a 15-foot cube. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects. Physical interaction reveals it to be an illusion.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 15,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.276"
+  },
+  {
+    "spell_id": "simulacrum",
+    "name": "Simulacrum",
+    "level": 7,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 12,
+      "unit": "hour"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Snow or ice in quantities sufficient to make a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature's body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed",
+        "cost": "1,500 gp",
+        "consumed": true
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "until_dispelled",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting. The duplicate is a creature, partially real, formed from ice or snow. It has half the original's hit point maximum and is formed without equipment.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.276"
+  },
+  {
+    "spell_id": "sleet_storm",
+    "name": "Sleet Storm",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of dust and a few drops of water"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Until the spell ends, sleet falls in a 40-foot-high cylinder with a 40-foot radius. The area is heavily obscured, and exposed flames are doused. Ground in the area is difficult terrain. When a creature enters or starts its turn in the area, it must succeed on a Dexterity saving throw or fall prone. Concentration checks in the area have disadvantage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 40,
+      "save_ability": "DEX",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.276"
+  },
+  {
+    "spell_id": "sleep",
+    "name": "Sleep",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A pinch of fine sand, rose petals, or a cricket"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose are affected in ascending order of their current hit points. A creature falls unconscious until the spell ends, it takes damage, or someone uses an action to shake or slap it awake.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "Roll an additional 2d8 hit points for each slot level above 1st.",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.276"
+  },
+  {
+    "spell_id": "slow",
+    "name": "Slow",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A drop of molasses"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You alter time around up to six creatures in a 40-foot cube. Each target must succeed on a Wisdom saving throw or be affected for the duration: -2 to AC and Dex saves, halved speed, no reactions, and it can use either an action or a bonus action on its turn, not both.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 40,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.277"
+  },
+  {
+    "spell_id": "spare_the_dying",
+    "name": "Spare the Dying",
+    "level": 0,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You touch a living creature that has 0 hit points. The creature becomes stable.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.277"
+  },
+  {
+    "spell_id": "speak_with_animals",
+    "name": "Speak with Animals",
+    "level": 1,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You gain the ability to comprehend and verbally communicate with beasts for the duration.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.277"
+  },
+  {
+    "spell_id": "speak_with_dead",
+    "name": "Speak with Dead",
+    "level": 3,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 10,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Burning incense"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You grant the semblance of life and intelligence to a corpse, allowing it to answer up to five questions you pose. Answers are brief, cryptic, or repetitive; the corpse knows only what it knew in life.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric"
+    ],
+    "source_reference": "PHB p.277"
+  },
+  {
+    "spell_id": "speak_with_plants",
+    "name": "Speak with Plants",
+    "level": 3,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You imbue plants within 30 feet with limited sentience and animation, allowing them to communicate with you and follow simple commands.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "spider_climb",
+    "name": "Spider Climb",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A drop of bitumen and a spider"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Until the spell ends, one willing creature gains a climbing speed equal to its walking speed and can climb difficult surfaces, including upside down on ceilings, without an ability check.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "spike_growth",
+    "name": "Spike Growth",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Seven sharp thorns or seven small twigs, each sharpened to a point"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "The ground in a 20-foot radius centered on a point within range sprouts hard spikes and thorns. The area becomes difficult terrain. When a creature moves through or within the area, it takes 2d4 piercing damage for every 5 feet moved.",
+      "damage_dice": "2d4",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 20,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "spirit_guardians",
+    "name": "Spirit Guardians",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A holy symbol"
+      }
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You call forth spirits to protect you. They flit around you to a distance of 15 feet until the spell ends. A creature hostile to you that starts its turn in the area must succeed on a Wisdom saving throw or take 3d8 radiant or necrotic damage (your choice). On a success it takes half damage. The area is difficult terrain for hostile creatures.",
+      "damage_dice": "3d8",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 15,
+      "save_ability": "WIS",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 3rd.",
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "spiritual_weapon",
+    "name": "Spiritual Weapon",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon, dealing force damage equal to 1d8 + your spellcasting ability modifier on a hit. As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack.",
+      "damage_dice": "1d8",
+      "damage_type": "force",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "melee_spell_attack"
+    },
+    "at_higher_levels": "Damage increases by 1d8 for every two slot levels above 2nd.",
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "staggering_smite",
+    "name": "Staggering Smite",
+    "level": 4,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces body and mind, dealing an extra 4d6 psychic damage, and the target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks until the end of your next turn.",
+      "damage_dice": "4d6",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "stinking_cloud",
+    "name": "Stinking Cloud",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A rotten egg or several skunk cabbage leaves"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point. The area is heavily obscured. A creature that starts its turn in the area must succeed on a Constitution saving throw or spend its action retching and reeling.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "CON",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "stone_shape",
+    "name": "Stone Shape",
+    "level": 4,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Soft clay, which must be worked into roughly the desired shape for the stone object"
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape you like.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "wizard"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "stoneskin",
+    "name": "Stoneskin",
+    "level": 4,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Diamond dust worth 100 gp, which the spell consumes",
+        "cost": "100 gp",
+        "consumed": true
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.278"
+  },
+  {
+    "spell_id": "storm_of_vengeance",
+    "name": "Storm of Vengeance",
+    "level": 9,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 360,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A churning storm cloud forms in a 360-foot radius. Each round you choose a storm effect: round 1 deafening thunder and acid rain; round 2 lightning; round 3 cold rain; round 4 hail; round 5–10 wind and lightning. Creatures in the area make saving throws as described in the spell text.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.279"
+  },
+  {
+    "spell_id": "suggestion",
+    "name": "Suggestion",
+    "level": 2,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": {
+        "description": "A snake's tongue and either a bit of honeycomb or a drop of sweet oil"
+      }
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You suggest a course of activity (limited to a sentence or two) to a creature that can hear and understand you. The suggestion must sound reasonable. The target makes a Wisdom saving throw; on a failed save, it pursues the course of action you described.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.279"
+  },
+  {
+    "spell_id": "sunbeam",
+    "name": "Sunbeam",
+    "level": 6,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A magnifying glass lens"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A beam of brilliant light flashes from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a Constitution saving throw, taking 6d8 radiant damage on a failed save or half on a success, and is blinded until your next turn on a failed save.",
+      "damage_dice": "6d8",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.279"
+  },
+  {
+    "spell_id": "sunburst",
+    "name": "Sunburst",
+    "level": 8,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Fire and a piece of sunstone"
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Brilliant sunlight flashes in a 60-foot-radius sphere centered on a point. Each creature in the area must make a Constitution saving throw, taking 12d6 radiant damage on a failed save or half on a success, and is blinded for 1 minute on a failed save.",
+      "damage_dice": "12d6",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 60,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.279"
+  },
+  {
+    "spell_id": "swift_quiver",
+    "name": "Swift Quiver",
+    "level": 5,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A quiver containing at least one piece of ammunition"
+      }
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You transmute your quiver so it produces an endless supply of nonmagical ammunition. As a bonus action on each of your turns until the spell ends, you can make two attacks with a weapon that uses ammunition from the quiver, ignoring the loading property if it has it.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "ranger"
+    ],
+    "source_reference": "PHB p.279"
+  },
+  {
+    "spell_id": "symbol",
+    "name": "Symbol",
+    "level": 7,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Mercury, phosphorus, and powdered diamond and opal worth at least 1,000 gp, which the spell consumes",
+        "cost": "1,000 gp",
+        "consumed": true
+      }
+    },
+    "duration": {
+      "value": 0,
+      "unit": "until_dispelled",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You inscribe a harmful glyph that triggers on a condition you set. When triggered, the glyph's effect reaches up to a 60-foot-radius sphere (depending on the chosen effect: death, discord, fear, hopelessness, insanity, pain, sleep, or stunning).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 60,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ],
+    "source_reference": "PHB p.280"
+  }
+]

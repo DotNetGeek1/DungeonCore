@@ -1,0 +1,43 @@
+[
+  {
+    "race_id": "human",
+    "name": "Human",
+    "ability_score_increase": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 1,
+      "CHA": 1
+    },
+    "size": "Medium",
+    "speed": 30,
+    "languages": ["Common", "One additional language of your choice"],
+    "traits": [],
+    "subraces": [
+      {
+        "subrace_id": "variant_human",
+        "name": "Variant Human",
+        "ability_score_increase": {},
+        "traits": [
+          {
+            "trait_id": "variant_ability_score_increase",
+            "name": "Ability Score Increase",
+            "description": "Two different ability scores of your choice increase by 1. This replaces the standard human +1 to all six abilities."
+          },
+          {
+            "trait_id": "variant_skills",
+            "name": "Skills",
+            "description": "You gain proficiency in one skill of your choice."
+          },
+          {
+            "trait_id": "variant_feat",
+            "name": "Feat",
+            "description": "You gain one feat of your choice."
+          }
+        ]
+      }
+    ],
+    "source_reference": "PHB pp.29-31"
+  }
+]

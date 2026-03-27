@@ -1,0 +1,166 @@
+[
+  {
+    "class_id": "druid",
+    "name": "Druid",
+    "hit_die": "d8",
+    "primary_ability": ["WIS"],
+    "saving_throws": ["INT", "WIS"],
+    "armor_proficiencies": [
+      "light armor (nonmetal)",
+      "medium armor (nonmetal)",
+      "shields (nonmetal)"
+    ],
+    "weapon_proficiencies": [
+      "clubs",
+      "daggers",
+      "darts",
+      "javelins",
+      "maces",
+      "quarterstaffs",
+      "scimitars",
+      "sickles",
+      "slings",
+      "spears"
+    ],
+    "tool_proficiencies": ["herbalism kit"],
+    "skill_choices": [
+      "Arcana",
+      "Animal Handling",
+      "Insight",
+      "Medicine",
+      "Nature",
+      "Perception",
+      "Religion",
+      "Survival"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "druidic",
+        "name": "Druidic",
+        "level": 1,
+        "description": "You know Druidic, the secret language of druids."
+      },
+      {
+        "feature_id": "druid_spellcasting",
+        "name": "Spellcasting",
+        "level": 1,
+        "description": "You can cast druid spells; your spellcasting ability is Wisdom."
+      },
+      {
+        "feature_id": "wild_shape",
+        "name": "Wild Shape",
+        "level": 2,
+        "description": "As an action, transform into a beast you have seen; duration and uses scale with level. CR, swim speed, and fly speed limits apply by druid level."
+      },
+      {
+        "feature_id": "timeless_body_druid",
+        "name": "Timeless Body",
+        "level": 18,
+        "description": "You age slowly; you no longer need food or water, and you age only one year for every ten that pass."
+      },
+      {
+        "feature_id": "beast_spells",
+        "name": "Beast Spells",
+        "level": 18,
+        "description": "You can cast many of your druid spells in any shape you assume using Wild Shape."
+      },
+      {
+        "feature_id": "archdruid",
+        "name": "Archdruid",
+        "level": 20,
+        "description": "You can use Wild Shape an unlimited number of times."
+      }
+    ],
+    "subclass_label": "Druid Circle",
+    "subclass_level": 2,
+    "subclasses": [
+      {
+        "subclass_id": "circle_of_the_land",
+        "name": "Circle of the Land",
+        "description": "Druids tied to a terrain type, gaining extra spells and recovery of magical energy from the land.",
+        "features": [
+          {
+            "feature_id": "land_bonus_cantrip",
+            "name": "Bonus Cantrip",
+            "level": 2,
+            "description": "You learn one additional druid cantrip of your choice."
+          },
+          {
+            "feature_id": "natural_recovery",
+            "name": "Natural Recovery",
+            "level": 2,
+            "description": "During a short rest, recover expended spell slots with combined level up to half your druid level (rounded up), none above 5th level."
+          },
+          {
+            "feature_id": "circle_spells_land",
+            "name": "Circle Spells",
+            "level": 3,
+            "description": "You gain bonus spells at certain levels based on the terrain type associated with your circle (arctic, coast, desert, forest, grassland, mountain, swamp, or underdark)."
+          },
+          {
+            "feature_id": "lands_stride",
+            "name": "Land's Stride",
+            "level": 6,
+            "description": "Moving through nonmagical difficult terrain costs you no extra movement; you have advantage on saving throws against plants that are magically created or manipulated to impede movement."
+          },
+          {
+            "feature_id": "natures_ward",
+            "name": "Nature's Ward",
+            "level": 10,
+            "description": "You are immune to charm and fright from elementals and fey, and you are immune to poison and disease."
+          },
+          {
+            "feature_id": "natures_sanctuary",
+            "name": "Nature's Sanctuary",
+            "level": 14,
+            "description": "Creatures of the natural world hesitate to attack you; when a beast or plant attacks you, it must make a Wisdom save or choose a different target."
+          }
+        ]
+      },
+      {
+        "subclass_id": "circle_of_the_moon",
+        "name": "Circle of the Moon",
+        "description": "Druids who emphasize combat in beast form and greater Wild Shape potency.",
+        "features": [
+          {
+            "feature_id": "combat_wild_shape",
+            "name": "Combat Wild Shape",
+            "level": 2,
+            "description": "Wild Shape can be used as a bonus action; while transformed, you can expend spell slots to regain hit points as a bonus action."
+          },
+          {
+            "feature_id": "circle_forms",
+            "name": "Circle Forms",
+            "level": 2,
+            "description": "You can transform into a beast with challenge rating 1 or lower (instead of 1/4 without swim, etc., at this level), subject to other Wild Shape limits."
+          },
+          {
+            "feature_id": "primal_strike",
+            "name": "Primal Strike",
+            "level": 6,
+            "description": "Your attacks in beast form count as magical for overcoming resistance and immunity to nonmagical attacks."
+          },
+          {
+            "feature_id": "elemental_wild_shape",
+            "name": "Elemental Wild Shape",
+            "level": 10,
+            "description": "You can expend two uses of Wild Shape at once to assume an air, earth, fire, or water elemental form."
+          },
+          {
+            "feature_id": "thousand_forms",
+            "name": "Thousand Forms",
+            "level": 14,
+            "description": "You can cast alter self at will, without expending a spell slot."
+          }
+        ]
+      }
+    ],
+    "spellcasting": {
+      "ability": "WIS",
+      "type": "prepared",
+      "cantrips": true
+    },
+    "source_reference": "PHB p.64"
+  }
+]

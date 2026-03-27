@@ -1,0 +1,1860 @@
+[
+  {
+    "spell_id": "call_lightning",
+    "name": "Call Lightning",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Storm cloud 60 ft wide; each turn you may use an action to call lightning to a point, dealing 3d10 lightning to each creature within 5 feet (Dexterity save for half).",
+      "damage_dice": "3d10",
+      "damage_type": "lightning",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "The damage increases by 1d10 for each slot level above 3rd.",
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.220"
+  },
+  {
+    "spell_id": "calm_emotions",
+    "name": "Calm Emotions",
+    "level": 2,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Suppress charmed or frightened on targets in a 20-foot sphere, or make humanoids indifferent. Charisma save to resist when hostile.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "CHA",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "chain_lightning",
+    "name": "Chain Lightning",
+    "level": 6,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Primary target takes 10d8 lightning; up to three other targets within 30 feet of the first each take 10d8 lightning. Dexterity save for half on each bolt.",
+      "damage_dice": "10d8",
+      "damage_type": "lightning",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "charm_person",
+    "name": "Charm Person",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "One humanoid you can see makes a Wisdom saving throw. If you or your companions are fighting it, it has advantage on the save. On a failed save, it is charmed by you.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "You can target one additional humanoid for each slot level above 1st.",
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "chill_touch",
+    "name": "Chill Touch",
+    "level": 0,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Ranged spell attack for 1d8 necrotic damage. Until the start of your next turn, the target can't regain hit points.",
+      "damage_dice": "1d8",
+      "damage_type": "necrotic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "Damage increases by 1d8 at 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "chromatic_orb",
+    "name": "Chromatic Orb",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Ranged spell attack. Choose acid, cold, fire, lightning, poison, or thunder; on a hit the target takes 3d8 damage of that type.",
+      "damage_dice": "3d8",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": "ranged_spell_attack"
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 1st.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "circle_of_death",
+    "name": "Circle of Death",
+    "level": 6,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Negative energy ripples in a 60-foot-radius sphere from a point within range. Creatures in the area take 8d6 necrotic damage; Constitution save for half.",
+      "damage_dice": "8d6",
+      "damage_type": "necrotic",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 60,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 2d6 for each slot level above 6th.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "circle_of_power",
+    "name": "Circle of Power",
+    "level": 5,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A 30-foot-radius aura emanates from you. Friendly creatures in the aura have advantage on saving throws against spells and other magical effects. When a friendly creature succeeds on such a save that allows half damage on a success, it instead takes no damage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.221"
+  },
+  {
+    "spell_id": "clairvoyance",
+    "name": "Clairvoyance",
+    "level": 3,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 10,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 1,
+      "unit": "mile"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Create an invisible sensor at a familiar location within range. You can see or hear through it (your choice).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.222"
+  },
+  {
+    "spell_id": "clone",
+    "name": "Clone",
+    "level": 8,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "hour"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "This spell grows an inert duplicate of a living creature as a safeguard against death. After 120 days the clone matures; if the original dies, its soul transfers to the clone if free and willing.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.222"
+  },
+  {
+    "spell_id": "cloud_of_daggers",
+    "name": "Cloud of Daggers",
+    "level": 2,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You fill a 5-foot cube with spinning daggers. A creature takes 4d4 slashing damage when it enters for the first time on a turn or starts its turn there.",
+      "damage_dice": "4d4",
+      "damage_type": "slashing",
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 5,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 2d4 for each slot level above 2nd.",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.222"
+  },
+  {
+    "spell_id": "cloudkill",
+    "name": "Cloudkill",
+    "level": 5,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create a 20-foot-radius sphere of poisonous, yellow-green fog. Creatures in it take 5d8 poison damage when it enters the area or starts its turn there (Constitution save for half). The fog moves 10 feet away from you at the start of each of your turns.",
+      "damage_dice": "5d8",
+      "damage_type": "poison",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 5th.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.222"
+  },
+  {
+    "spell_id": "color_spray",
+    "name": "Color Spray",
+    "level": 1,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A dazzling array flashes in a 15-foot cone. Roll 6d10; each creature in the area is affected in order of increasing current hit points until the total exceeds the roll. Affected creatures are blinded until the end of your next turn.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cone",
+      "area_size": 15,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "Roll an additional 2d10 for each slot level above 1st.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.222"
+  },
+  {
+    "spell_id": "command",
+    "name": "Command",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "round",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You speak a one-word command to a creature you can see. The target must succeed on a Wisdom saving throw or obey the command on its next turn.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "You can affect one additional creature for each slot level above 1st.",
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.223"
+  },
+  {
+    "spell_id": "commune",
+    "name": "Commune",
+    "level": 5,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.223"
+  },
+  {
+    "spell_id": "commune_with_nature",
+    "name": "Commune with Nature",
+    "level": 5,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 10,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You briefly become one with nature, gaining knowledge of the land and plants and animals within 3 miles (outdoors) or within 300 feet (indoors).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.223"
+  },
+  {
+    "spell_id": "compelled_duel",
+    "name": "Compelled Duel",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "One creature you can see must succeed on a Wisdom saving throw or has disadvantage on attack rolls against creatures other than you and must succeed on a Wisdom save to move more than 30 feet away from you.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.224"
+  },
+  {
+    "spell_id": "comprehend_languages",
+    "name": "Comprehend Languages",
+    "level": 1,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You understand the literal meaning of any spoken language and any written text you see.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.224"
+  },
+  {
+    "spell_id": "compulsion",
+    "name": "Compulsion",
+    "level": 4,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Creatures of your choice that you can see and that can hear you must succeed on a Wisdom saving throw or be affected; you choose a horizontal direction. Each affected target must move as far as it can in that direction on its next turn.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.224"
+  },
+  {
+    "spell_id": "cone_of_cold",
+    "name": "Cone of Cold",
+    "level": 5,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self_60ft_cone"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A blast of cold air erupts from your hands in a 60-foot cone. Each creature in the area takes 8d8 cold damage; Constitution save for half.",
+      "damage_dice": "8d8",
+      "damage_type": "cold",
+      "healing_dice": null,
+      "area_shape": "cone",
+      "area_size": 60,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d8 for each slot level above 5th.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.224"
+  },
+  {
+    "spell_id": "confusion",
+    "name": "Confusion",
+    "level": 4,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Creatures in a 10-foot-radius sphere centered on a point must succeed on a Wisdom saving throw or behave randomly (roll d10 each turn).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 10,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "The sphere's radius increases by 5 feet for each slot level above 4th.",
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.224"
+  },
+  {
+    "spell_id": "conjure_animals",
+    "name": "Conjure Animals",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Summon fey spirits that take the form of beasts; they obey verbal commands and roll their own initiative.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.225"
+  },
+  {
+    "spell_id": "conjure_barrage",
+    "name": "Conjure Barrage",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self_60ft_cone"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You throw a nonmagical weapon or fire a piece of ammunition to create a cone of duplicate weapons. Each creature in a 60-foot cone takes 3d8 damage of the same type as the weapon; Dexterity save for half.",
+      "damage_dice": "3d8",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cone",
+      "area_size": 60,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "ranger"
+    ],
+    "source_reference": "PHB p.225"
+  },
+  {
+    "spell_id": "conjure_celestial",
+    "name": "Conjure Celestial",
+    "level": 7,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Summon a celestial spirit with challenge rating 4 or lower, which appears in an unoccupied space. It is friendly and obeys verbal commands.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.225"
+  },
+  {
+    "spell_id": "conjure_elemental",
+    "name": "Conjure Elemental",
+    "level": 5,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Call an elemental spirit with challenge rating 5 or lower. It appears in an unoccupied space and obeys verbal commands.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "wizard"
+    ],
+    "source_reference": "PHB p.225"
+  },
+  {
+    "spell_id": "conjure_fey",
+    "name": "Conjure Fey",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Summon a fey creature of challenge rating 6 or lower in an unoccupied space; it obeys verbal commands.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "warlock"
+    ],
+    "source_reference": "PHB p.226"
+  },
+  {
+    "spell_id": "conjure_minor_elementals",
+    "name": "Conjure Minor Elementals",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 90,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Conjure elementals whose total challenge rating is 2 or lower, split among multiple creatures as the spell allows.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "wizard"
+    ],
+    "source_reference": "PHB p.226"
+  },
+  {
+    "spell_id": "conjure_volley",
+    "name": "Conjure Volley",
+    "level": 5,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You fire a piece of ammunition or throw a weapon, duplicating it to attack every creature within a 40-foot-radius cylinder centered on a point within range. Each creature takes 8d8 damage of the weapon's type; Dexterity save for half.",
+      "damage_dice": "8d8",
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 40,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "ranger"
+    ],
+    "source_reference": "PHB p.226"
+  },
+  {
+    "spell_id": "conjure_woodland_beings",
+    "name": "Conjure Woodland Beings",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Summon fey creatures whose total challenge rating is 2 or lower, appearing in unoccupied spaces and obeying verbal commands.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "source_reference": "PHB p.226"
+  },
+  {
+    "spell_id": "contact_other_plane",
+    "name": "Contact Other Plane",
+    "level": 5,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Mentally contact a demigod, spirit of a dead sage, or other entity on another plane. You can ask up to five questions; answers may be brief and cryptic, and the spell risks psychic damage and short-term madness on a failed Intelligence save.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.226"
+  },
+  {
+    "spell_id": "contagion",
+    "name": "Contagion",
+    "level": 5,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 7,
+      "unit": "day",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Make a melee spell attack. On a hit, the target is poisoned until the spell ends. At the end of each of the target's turns, it makes a Constitution saving throw; after failing three saves, a disease effect you choose takes hold for the duration.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "no_effect",
+      "attack_type": "melee_spell_attack"
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "source_reference": "PHB p.227"
+  },
+  {
+    "spell_id": "contingency",
+    "name": "Contingency",
+    "level": 6,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 10,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "day",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Choose a spell of 5th level or lower that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell\u2014called the contingent spell\u2014as part of casting contingency, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a circumstance you describe occurs. You can have only one contingency active at a time.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.227"
+  },
+  {
+    "spell_id": "continual_flame",
+    "name": "Continual Flame",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "until_dispelled",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A flame equivalent in brightness to a torch springs from an object you touch. The effect looks like fire but creates no heat and uses no oxygen; it can be covered.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "wizard"
+    ],
+    "source_reference": "PHB p.227"
+  },
+  {
+    "spell_id": "control_water",
+    "name": "Control Water",
+    "level": 4,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 300,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Until the spell ends, you control freestanding water inside a cube up to 100 feet on a side in one of several ways (flood, part water, redirect flow, whirlpool).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 100,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard"
+    ],
+    "source_reference": "PHB p.227"
+  },
+  {
+    "spell_id": "control_weather",
+    "name": "Control Weather",
+    "level": 8,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 10,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You take control of the weather within 5 miles. You can change precipitation, temperature, and wind. It takes 1d4 \u00d7 10 minutes for new conditions to take full effect.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard"
+    ],
+    "source_reference": "PHB p.228"
+  },
+  {
+    "spell_id": "cordon_of_arrows",
+    "name": "Cordon of Arrows",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 5,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Plant four pieces of ammunition in the ground in your space. The next time a Large or smaller creature comes within 30 feet of them for the first time on a turn, one piece flies toward it; make a ranged attack with +5 bonus. On a hit it takes 1d6 piercing damage; Dexterity save for half.",
+      "damage_dice": "1d6",
+      "damage_type": "piercing",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "ranger"
+    ],
+    "source_reference": "PHB p.228"
+  },
+  {
+    "spell_id": "counterspell",
+    "name": "Counterspell",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "reaction"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You attempt to interrupt a creature casting a spell. If the spell is 3rd level or lower, it fails. For a higher-level spell, make an ability check using your spellcasting ability (DC 10 + the spell's level); on a success the spell fails.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.228"
+  },
+  {
+    "spell_id": "create_food_and_water",
+    "name": "Create Food and Water",
+    "level": 3,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You create 45 pounds of food and 30 gallons of water, enough to sustain fifteen humanoids for 24 hours.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.229"
+  },
+  {
+    "spell_id": "create_or_destroy_water",
+    "name": "Create or Destroy Water",
+    "level": 1,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Create up to 10 gallons of clean water in an open container, or destroy fog in a 30-foot cube, or destroy water in an open container up to 30 gallons.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "You create or destroy an additional 10 gallons for each slot level above 1st.",
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "source_reference": "PHB p.229"
+  },
+  {
+    "spell_id": "create_undead",
+    "name": "Create Undead",
+    "level": 6,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 10,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids; each becomes a ghoul under your control. Higher-level slots allow wights or mummies per the spell text.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "wizard"
+    ],
+    "source_reference": "PHB p.229"
+  },
+  {
+    "spell_id": "creation",
+    "name": "Creation",
+    "level": 5,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "special",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter, stone, crystal, metal, or similar. Duration depends on material (up to 1 day for vegetable matter).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.229"
+  },
+  {
+    "spell_id": "crown_of_madness",
+    "name": "Crown of Madness",
+    "level": 2,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "One humanoid you can see must succeed on a Wisdom saving throw or be charmed. On each of your turns thereafter, you can use your action to maintain control; the target must use its action before moving to make a melee attack against a creature other than itself that you mentally choose.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.229"
+  },
+  {
+    "spell_id": "crusaders_mantle",
+    "name": "Crusader's Mantle",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Holy power radiates from you in a 30-foot aura. Whenever a friendly creature in the aura hits with a weapon attack, the attack deals an extra 1d4 radiant damage.",
+      "damage_dice": "1d4",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "cure_wounds",
+    "name": "Cure Wounds",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A creature you touch regains hit points equal to 1d8 + your spellcasting ability modifier.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "1d8",
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "Healing increases by 1d8 for each slot level above 1st.",
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "source_reference": "PHB p.230"
+  }
+]

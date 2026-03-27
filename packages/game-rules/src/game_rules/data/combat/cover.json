@@ -1,0 +1,23 @@
+[
+  {
+    "cover_id": "half",
+    "name": "Half Cover",
+    "ac_bonus": 2,
+    "dex_save_bonus": 2,
+    "description": "A target has half cover if an obstacle blocks at least half of its body, such as a low wall, large piece of furniture, or another creature."
+  },
+  {
+    "cover_id": "three_quarters",
+    "name": "Three-Quarters Cover",
+    "ac_bonus": 5,
+    "dex_save_bonus": 5,
+    "description": "A target has three-quarters cover if about three-quarters of it is covered by an obstacle, such as a portcullis, arrow slit, or thick tree trunk."
+  },
+  {
+    "cover_id": "total",
+    "name": "Total Cover",
+    "ac_bonus": 0,
+    "dex_save_bonus": 0,
+    "description": "A target with total cover cannot be targeted directly by an attack or spell. Completely concealed by an obstacle."
+  }
+]

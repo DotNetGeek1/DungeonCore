@@ -1,0 +1,31 @@
+[
+  {
+    "spell_id": "jump",
+    "name": "Jump",
+    "level": 1,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": { "description": "A grasshopper's hind leg" }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": false },
+    "effect": {
+      "description": "You touch a creature. The creature's jump distance is tripled until the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["druid", "ranger", "sorcerer", "wizard"],
+    "source_reference": "PHB p.254"
+  }
+]

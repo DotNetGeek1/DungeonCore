@@ -1,0 +1,399 @@
+[
+  {
+    "spell_id": "raise_dead",
+    "name": "Raise Dead",
+    "level": 5,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A diamond worth at least 500 gp, which the spell consumes",
+        "cost": "500 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You return a dead creature you touch to life, provided it has been dead no longer than 10 days and its soul is willing. The creature returns with 1 hit point. Coming back is a strain; until it finishes a long rest the creature takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time it finishes a long rest, the penalty is reduced by 1 until it disappears.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "cleric", "paladin"],
+    "source_reference": "PHB p.270"
+  },
+  {
+    "spell_id": "rarys_telepathic_bond",
+    "name": "Rary's Telepathic Bond",
+    "level": 5,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 30, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Pieces of eggshell from two different kinds of creatures",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected. Linked creatures can communicate telepathically through the bond regardless of known languages or distance on the same plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.270"
+  },
+  {
+    "spell_id": "ray_of_enfeeblement",
+    "name": "Ray of Enfeeblement",
+    "level": 2,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends. At the end of each of the target's turns, it can make a Constitution saving throw against the spell; on a success, the spell ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["warlock", "wizard"],
+    "source_reference": "PHB p.271"
+  },
+  {
+    "spell_id": "ray_of_frost",
+    "name": "Ray of Frost",
+    "level": 0,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.",
+      "damage_dice": "1d8",
+      "damage_type": "cold",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.271"
+  },
+  {
+    "spell_id": "ray_of_sickness",
+    "name": "Ray of Sickness",
+    "level": 1,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "A ray of sickening green energy lashes out toward a creature within range. Make a ranged spell attack. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is poisoned until the end of your next turn.",
+      "damage_dice": "2d8",
+      "damage_type": "poison",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CON",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+    "classes": ["sorcerer", "wizard"],
+    "source_reference": "PHB p.271"
+  },
+  {
+    "spell_id": "regenerate",
+    "name": "Regenerate",
+    "level": 7,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "minute" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A prayer wheel and holy water",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You touch a creature and stimulate its natural healing. The target regains 4d8 + 15 hit points. For the duration, the target regains 1 hit point at the start of each of its turns (10 hit points each minute). The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": "4d8+15",
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "cleric", "druid"],
+    "source_reference": "PHB p.271"
+  },
+  {
+    "spell_id": "reincarnate",
+    "name": "Reincarnate",
+    "level": 5,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Oils and unguents worth at least 1,000 gp, which the spell consumes",
+        "cost": "1,000 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You touch a dead humanoid or a piece of a dead humanoid that has been dead no longer than 10 days. Provided the creature's soul is free and willing, a new adult body is created and the soul inhabits it. The DM rolls a d100 on the reincarnation table to determine the new form; the creature retains its memories and experiences.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["druid"],
+    "source_reference": "PHB p.271"
+  },
+  {
+    "spell_id": "remove_curse",
+    "name": "Remove Curse",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": { "verbal": true, "somatic": true, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement so the item can be removed or discarded.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "cleric", "paladin", "warlock", "wizard"],
+    "source_reference": "PHB p.271"
+  },
+  {
+    "spell_id": "resistance",
+    "name": "Resistance",
+    "level": 0,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A miniature cloak",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "druid"],
+    "source_reference": "PHB p.272"
+  },
+  {
+    "spell_id": "resurrection",
+    "name": "Resurrection",
+    "level": 7,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "hour" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A diamond worth at least 1,000 gp, which the spell consumes",
+        "cost": "1,000 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points. Coming back takes a toll: until it finishes a long rest the creature takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every long rest reduces the penalty by 1 until it disappears. Casting this spell to restore life to a creature that has been dead for a year or longer taxes you; until you finish a long rest you can't cast spells and have disadvantage on attack rolls, ability checks, and saving throws.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["bard", "cleric"],
+    "source_reference": "PHB p.272"
+  },
+  {
+    "spell_id": "reverse_gravity",
+    "name": "Reverse Gravity",
+    "level": 7,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 100, "unit": "feet" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "A lodestone and iron filings",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "minute", "concentration": true },
+    "effect": {
+      "description": "This spell reverses gravity in a 50-foot-radius, 100-foot-high cylinder centered on a point within range. All creatures and objects that aren't anchored fall upward until they strike a solid object or the top of the cylinder, then fall normally. A creature can make a Dexterity saving throw to grab a fixed object it can reach to avoid falling.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cylinder",
+      "area_size": 50,
+      "save_ability": "DEX",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["druid", "sorcerer", "wizard"],
+    "source_reference": "PHB p.272"
+  },
+  {
+    "spell_id": "revivify",
+    "name": "Revivify",
+    "level": 3,
+    "school": "necromancy",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Diamonds worth 300 gp, which the spell consumes",
+        "cost": "300 gp",
+        "consumed": true
+      }
+    },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["cleric", "paladin"],
+    "source_reference": "PHB p.272"
+  },
+  {
+    "spell_id": "rope_trick",
+    "name": "Rope Trick",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": null, "unit": "touch" },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": {
+        "description": "Powdered corn extract and a twisted loop of parchment",
+        "cost": null,
+        "consumed": false
+      }
+    },
+    "duration": { "value": 1, "unit": "hour", "concentration": false },
+    "effect": {
+      "description": "You touch a length of rope up to 60 feet long. One end of the rope rises into the air until the whole rope hangs perpendicular to the ground. At the upper end, an invisible entrance opens to an extradimensional space that lasts until the spell ends. The space can hold up to eight Medium or smaller creatures. Attacks and spells can't pass in or out. When the spell ends, anything inside falls out.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": "",
+    "classes": ["wizard"],
+    "source_reference": "PHB p.272"
+  }
+]

@@ -1,0 +1,1155 @@
+[
+  {
+    "spell_id": "dancing_lights",
+    "name": "Dancing Lights",
+    "level": 0,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You create up to four torch-sized lights within range, appearing as torches, lanterns, or glowing orbs. You can move them up to 60 feet as a bonus action.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "darkness",
+    "name": "Darkness",
+    "level": 2,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Magical darkness fills a 15-foot-radius sphere, blocking darkvision and nonmagical light.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 15,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "darkvision",
+    "name": "Darkvision",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A willing creature you touch gains darkvision out to 60 feet for the duration.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "daylight",
+    "name": "Daylight",
+    "level": 3,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A 60-foot-radius sphere of bright light spreads from a point; it counts as sunlight for vulnerabilities.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 60,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "sorcerer"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "death_ward",
+    "name": "Death Ward",
+    "level": 4,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "The first time the target would drop to 0 hit points from damage, it drops to 1 hit point instead. The spell then ends. It also ends one time negating an effect that would kill outright without dealing damage.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "delayed_blast_fireball",
+    "name": "Delayed Blast Fireball",
+    "level": 7,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 150,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A glowing bead streaks to a point within range. When the spell ends (either from your concentration breaking or from you dismissing it), the bead erupts. Fire damage starts at 12d6 and increases by 1d6 at the end of each of your turns that the bead remains (max 22d6). Dexterity save for half.",
+      "damage_dice": "12d6",
+      "damage_type": "fire",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 20,
+      "save_ability": "DEX",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.230"
+  },
+  {
+    "spell_id": "demiplane",
+    "name": "Demiplane",
+    "level": 8,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You create a shadowy door on a flat solid surface leading to an empty demiplane 30 feet in each dimension, or to a demiplane you have visited before.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "cube",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.231"
+  },
+  {
+    "spell_id": "destructive_wave",
+    "name": "Destructive Wave",
+    "level": 5,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Divine energy ripples out from you. Each creature you choose within 30 feet takes 5d6 thunder damage and 5d6 radiant or necrotic damage (your choice) and is knocked prone; Constitution save for half damage and not prone.",
+      "damage_dice": "5d6",
+      "damage_type": "thunder",
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": "CON",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.231"
+  },
+  {
+    "spell_id": "detect_evil_and_good",
+    "name": "Detect Evil and Good",
+    "level": 1,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet, and where the creature is located.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.231"
+  },
+  {
+    "spell_id": "detect_magic",
+    "name": "Detect Magic",
+    "level": 1,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Sense the presence of magic within 30 feet. You learn its school if the effect is in line of sight and you use an action to study an aura.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.231"
+  },
+  {
+    "spell_id": "detect_poison_and_disease",
+    "name": "Detect Poison and Disease",
+    "level": 1,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 10,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "You sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet, and identify the kind of poison or disease.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "source_reference": "PHB p.231"
+  },
+  {
+    "spell_id": "detect_thoughts",
+    "name": "Detect Thoughts",
+    "level": 2,
+    "school": "divination",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "Sense the presence of thinking creatures within 30 feet. Read surface thoughts of one creature in range. As an action, you can shift focus or probe deeper; the target knows and can make a Wisdom saving throw to end the effect on itself.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.231"
+  },
+  {
+    "spell_id": "dimension_door",
+    "name": "Dimension Door",
+    "level": 4,
+    "school": "conjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 500,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You teleport from your current location to any other spot within range, arriving at exactly the spot desired. You can bring along objects and one willing creature your size or smaller.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.233"
+  },
+  {
+    "spell_id": "disguise_self",
+    "name": "Disguise Self",
+    "level": 1,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You make yourself\u2014including clothing, armor, weapons, and belongings\u2014look different until the spell ends or you dismiss it. Physical interaction reveals the illusion.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.233"
+  },
+  {
+    "spell_id": "disintegrate",
+    "name": "Disintegrate",
+    "level": 6,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "A thin green ray targets one creature or object. The target makes a Dexterity saving throw. On a failed save it takes 10d6 + 40 force damage; if this reduces a creature to 0 hit points, it is disintegrated.",
+      "damage_dice": "10d6+40",
+      "damage_type": "force",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "DEX",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 3d6 for each slot level above 6th.",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.233"
+  },
+  {
+    "spell_id": "dispel_evil_and_good",
+    "name": "Dispel Evil and Good",
+    "level": 5,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "A 30-foot aura protects you. End charm, frighten, or possession on a creature you touch, or use an action to make a melee spell attack on a fiend or undead to banish it (Charisma save negates banishment).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": "sphere",
+      "area_size": 30,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "source_reference": "PHB p.233"
+  },
+  {
+    "spell_id": "dispel_magic",
+    "name": "Dispel Magic",
+    "level": 3,
+    "school": "abjuration",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 120,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "End spells of 3rd level or lower on a target. For each spell of 4th level or higher, make an ability check using your spellcasting ability (DC 10 + spell level).",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.234"
+  },
+  {
+    "spell_id": "dissonant_whispers",
+    "name": "Dissonant Whispers",
+    "level": 1,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "One creature you can hear you takes 3d6 psychic damage and must immediately use its reaction to move away from you if it can; Wisdom save halves damage and avoids the forced movement.",
+      "damage_dice": "3d6",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "half_damage",
+      "attack_type": null
+    },
+    "at_higher_levels": "Damage increases by 1d6 for each slot level above 1st.",
+    "classes": [
+      "bard"
+    ],
+    "source_reference": "PHB p.234"
+  },
+  {
+    "spell_id": "divination",
+    "name": "Divination",
+    "level": 4,
+    "school": "divination",
+    "ritual": true,
+    "casting_time": {
+      "value": 10,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Your magic and an offering put you in contact with a god or god's servants. You ask one question concerning a goal, event, or activity to occur within 7 days. The DM offers a truthful reply, often couched in a short phrase or cryptic rhyme.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.234"
+  },
+  {
+    "spell_id": "divine_favor",
+    "name": "Divine Favor",
+    "level": 1,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": null,
+      "unit": "self"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "The next time you hit a creature with a weapon attack before this spell ends, the weapon deals an extra 1d4 radiant damage.",
+      "damage_dice": "1d4",
+      "damage_type": "radiant",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "paladin"
+    ],
+    "source_reference": "PHB p.234"
+  },
+  {
+    "spell_id": "divine_word",
+    "name": "Divine Word",
+    "level": 7,
+    "school": "evocation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "bonus_action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": false,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You utter a word of power. Each creature of your choice in range that can hear you suffers an effect based on its current hit points: deafened, blinded, stunned, or dropped to 0 hit points. Celestials, elementals, fey, and fiends that fail a Charisma save are banished to their home plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "CHA",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "cleric"
+    ],
+    "source_reference": "PHB p.234"
+  },
+  {
+    "spell_id": "dominate_beast",
+    "name": "Dominate Beast",
+    "level": 4,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "One beast you can see must succeed on a Wisdom saving throw or be charmed. You have telepathic link while on the same plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid",
+      "sorcerer"
+    ],
+    "source_reference": "PHB p.234"
+  },
+  {
+    "spell_id": "dominate_monster",
+    "name": "Dominate Monster",
+    "level": 8,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "hour",
+      "concentration": true
+    },
+    "effect": {
+      "description": "One creature you can see must succeed on a Wisdom saving throw or be charmed. You can issue telepathic commands while on the same plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.235"
+  },
+  {
+    "spell_id": "dominate_person",
+    "name": "Dominate Person",
+    "level": 5,
+    "school": "enchantment",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 60,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minute",
+      "concentration": true
+    },
+    "effect": {
+      "description": "One humanoid you can see must succeed on a Wisdom saving throw or be charmed. You can issue telepathic commands while on the same plane.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "source_reference": "PHB p.235"
+  },
+  {
+    "spell_id": "drawmijs_instant_summons",
+    "name": "Drawmij's Instant Summons",
+    "level": 6,
+    "school": "conjuration",
+    "ritual": true,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "touch"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "until_dispelled",
+      "concentration": false
+    },
+    "effect": {
+      "description": "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the object's name on a sapphire worth 1,000+ gp. Thereafter, you can use your action to speak the object's name and crush the gem; the object appears in your hand regardless of distance or planes.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "wizard"
+    ],
+    "source_reference": "PHB p.235"
+  },
+  {
+    "spell_id": "dream",
+    "name": "Dream",
+    "level": 5,
+    "school": "illusion",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "minute"
+    },
+    "range": {
+      "value": null,
+      "unit": "special"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 8,
+      "unit": "hour",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Shape a creature's dreams. The messenger can appear monstrous; then the target takes 3d6 psychic damage when it wakes if it slept through the dream. Wisdom save negates the damage.",
+      "damage_dice": "3d6",
+      "damage_type": "psychic",
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": "WIS",
+      "save_effect_on_success": "no_effect",
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ],
+    "source_reference": "PHB p.236"
+  },
+  {
+    "spell_id": "druidcraft",
+    "name": "Druidcraft",
+    "level": 0,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": {
+      "value": 1,
+      "unit": "action"
+    },
+    "range": {
+      "value": 30,
+      "unit": "feet"
+    },
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": null
+    },
+    "duration": {
+      "value": 0,
+      "unit": "instantaneous",
+      "concentration": false
+    },
+    "effect": {
+      "description": "Whisper to nature to create one minor effect: predict weather, make a flower bloom, light/snuff a candle, or create harmless sensory effects.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": [
+      "druid"
+    ],
+    "source_reference": "PHB p.236"
+  }
+]

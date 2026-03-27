@@ -1,0 +1,15 @@
+[
+  {"damage_type_id": "acid", "name": "Acid", "description": "Corrosive spray and digestive enzymes"},
+  {"damage_type_id": "bludgeoning", "name": "Bludgeoning", "description": "Blunt force from hammers, falling, constriction"},
+  {"damage_type_id": "cold", "name": "Cold", "description": "Infernal chill from ice storms and frigid blasts"},
+  {"damage_type_id": "fire", "name": "Fire", "description": "Red dragon breath and burning spells"},
+  {"damage_type_id": "force", "name": "Force", "description": "Pure magical energy focused into a damaging form"},
+  {"damage_type_id": "lightning", "name": "Lightning", "description": "Bolts of electricity"},
+  {"damage_type_id": "necrotic", "name": "Necrotic", "description": "Life-draining energy from undead and dark magic"},
+  {"damage_type_id": "piercing", "name": "Piercing", "description": "Puncturing and impaling from spears and teeth"},
+  {"damage_type_id": "poison", "name": "Poison", "description": "Venomous stings and toxic gas"},
+  {"damage_type_id": "psychic", "name": "Psychic", "description": "Mental damage from psionic abilities"},
+  {"damage_type_id": "radiant", "name": "Radiant", "description": "Searing light from a cleric's flame strike"},
+  {"damage_type_id": "slashing", "name": "Slashing", "description": "Swords, axes, and claws"},
+  {"damage_type_id": "thunder", "name": "Thunder", "description": "Concussive bursts of sound"}
+]

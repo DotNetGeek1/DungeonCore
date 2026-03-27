@@ -1,0 +1,27 @@
+[
+  {
+    "spell_id": "knock",
+    "name": "Knock",
+    "level": 2,
+    "school": "transmutation",
+    "ritual": false,
+    "casting_time": { "value": 1, "unit": "action" },
+    "range": { "value": 60, "unit": "feet" },
+    "components": { "verbal": true, "somatic": false, "material": null },
+    "duration": { "value": 0, "unit": "instantaneous", "concentration": false },
+    "effect": {
+      "description": "Choose an object that you can see within range. If the object is a door, a container, or a set of manacles, it becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked. If you choose a target that is held shut by arcane lock, that spell is suppressed for 10 minutes. When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.",
+      "damage_dice": null,
+      "damage_type": null,
+      "healing_dice": null,
+      "area_shape": null,
+      "area_size": null,
+      "save_ability": null,
+      "save_effect_on_success": null,
+      "attack_type": null
+    },
+    "at_higher_levels": null,
+    "classes": ["bard", "sorcerer", "wizard"],
+    "source_reference": "PHB p.254"
+  }
+]

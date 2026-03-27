@@ -1,0 +1,20 @@
+[
+  {"skill_id": "athletics", "name": "Athletics", "ability": "STR"},
+  {"skill_id": "acrobatics", "name": "Acrobatics", "ability": "DEX"},
+  {"skill_id": "sleight_of_hand", "name": "Sleight of Hand", "ability": "DEX"},
+  {"skill_id": "stealth", "name": "Stealth", "ability": "DEX"},
+  {"skill_id": "arcana", "name": "Arcana", "ability": "INT"},
+  {"skill_id": "history", "name": "History", "ability": "INT"},
+  {"skill_id": "investigation", "name": "Investigation", "ability": "INT"},
+  {"skill_id": "nature", "name": "Nature", "ability": "INT"},
+  {"skill_id": "religion", "name": "Religion", "ability": "INT"},
+  {"skill_id": "animal_handling", "name": "Animal Handling", "ability": "WIS"},
+  {"skill_id": "insight", "name": "Insight", "ability": "WIS"},
+  {"skill_id": "medicine", "name": "Medicine", "ability": "WIS"},
+  {"skill_id": "perception", "name": "Perception", "ability": "WIS"},
+  {"skill_id": "survival", "name": "Survival", "ability": "WIS"},
+  {"skill_id": "deception", "name": "Deception", "ability": "CHA"},
+  {"skill_id": "intimidation", "name": "Intimidation", "ability": "CHA"},
+  {"skill_id": "performance", "name": "Performance", "ability": "CHA"},
+  {"skill_id": "persuasion", "name": "Persuasion", "ability": "CHA"}
+]

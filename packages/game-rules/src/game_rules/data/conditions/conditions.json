@@ -1,0 +1,156 @@
+[
+  {
+    "condition_id": "blinded",
+    "name": "Blinded",
+    "effects": [
+      {"type": "auto_fail_check", "value": "sight"},
+      {"type": "attacks_against", "value": "advantage"},
+      {"type": "own_attacks", "value": "disadvantage"}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "charmed",
+    "name": "Charmed",
+    "effects": [
+      {"type": "cannot_attack_source", "value": true},
+      {"type": "source_social_checks", "value": "advantage"}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "deafened",
+    "name": "Deafened",
+    "effects": [
+      {"type": "auto_fail_check", "value": "hearing"}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "frightened",
+    "name": "Frightened",
+    "effects": [
+      {"type": "ability_checks", "value": "disadvantage", "condition": "source_visible"},
+      {"type": "own_attacks", "value": "disadvantage", "condition": "source_visible"},
+      {"type": "cannot_move_closer_to_source", "value": true}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "grappled",
+    "name": "Grappled",
+    "effects": [
+      {"type": "speed_set", "value": 0},
+      {"type": "ends_if", "value": "grappler_incapacitated"},
+      {"type": "ends_if", "value": "removed_from_reach"}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "incapacitated",
+    "name": "Incapacitated",
+    "effects": [
+      {"type": "cannot_take_actions", "value": true},
+      {"type": "cannot_take_reactions", "value": true}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "invisible",
+    "name": "Invisible",
+    "effects": [
+      {"type": "heavily_obscured", "value": true},
+      {"type": "own_attacks", "value": "advantage"},
+      {"type": "attacks_against", "value": "disadvantage"}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "paralyzed",
+    "name": "Paralyzed",
+    "effects": [
+      {"type": "includes_condition", "value": "incapacitated"},
+      {"type": "cannot_move", "value": true},
+      {"type": "cannot_speak", "value": true},
+      {"type": "auto_fail_save", "abilities": ["STR", "DEX"]},
+      {"type": "attacks_against", "value": "advantage"},
+      {"type": "melee_crit", "condition": "attacker_within_5ft"}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "petrified",
+    "name": "Petrified",
+    "effects": [
+      {"type": "includes_condition", "value": "incapacitated"},
+      {"type": "cannot_move", "value": true},
+      {"type": "cannot_speak", "value": true},
+      {"type": "unaware_of_surroundings", "value": true},
+      {"type": "attacks_against", "value": "advantage"},
+      {"type": "auto_fail_save", "abilities": ["STR", "DEX"]},
+      {"type": "resistance_all_damage", "value": true},
+      {"type": "immune_poison_disease", "value": true},
+      {"type": "weight_multiplier", "value": 10}
+    ],
+    "source_reference": "PHB p.267"
+  },
+  {
+    "condition_id": "poisoned",
+    "name": "Poisoned",
+    "effects": [
+      {"type": "own_attacks", "value": "disadvantage"},
+      {"type": "ability_checks", "value": "disadvantage"}
+    ],
+    "source_reference": "PHB p.268"
+  },
+  {
+    "condition_id": "prone",
+    "name": "Prone",
+    "effects": [
+      {"type": "movement_crawl_only", "value": true},
+      {"type": "own_attacks", "value": "disadvantage"},
+      {"type": "melee_attacks_against", "value": "advantage", "condition": "attacker_within_5ft"},
+      {"type": "ranged_attacks_against", "value": "disadvantage"}
+    ],
+    "source_reference": "PHB p.268"
+  },
+  {
+    "condition_id": "restrained",
+    "name": "Restrained",
+    "effects": [
+      {"type": "speed_set", "value": 0},
+      {"type": "attacks_against", "value": "advantage"},
+      {"type": "own_attacks", "value": "disadvantage"},
+      {"type": "dex_saves", "value": "disadvantage"}
+    ],
+    "source_reference": "PHB p.268"
+  },
+  {
+    "condition_id": "stunned",
+    "name": "Stunned",
+    "effects": [
+      {"type": "includes_condition", "value": "incapacitated"},
+      {"type": "cannot_move", "value": true},
+      {"type": "speak_falteringly", "value": true},
+      {"type": "auto_fail_save", "abilities": ["STR", "DEX"]},
+      {"type": "attacks_against", "value": "advantage"}
+    ],
+    "source_reference": "PHB p.268"
+  },
+  {
+    "condition_id": "unconscious",
+    "name": "Unconscious",
+    "effects": [
+      {"type": "includes_condition", "value": "incapacitated"},
+      {"type": "cannot_move", "value": true},
+      {"type": "cannot_speak", "value": true},
+      {"type": "unaware_of_surroundings", "value": true},
+      {"type": "drops_held_items", "value": true},
+      {"type": "falls_prone", "value": true},
+      {"type": "auto_fail_save", "abilities": ["STR", "DEX"]},
+      {"type": "attacks_against", "value": "advantage"},
+      {"type": "melee_crit", "condition": "attacker_within_5ft"}
+    ],
+    "source_reference": "PHB p.268"
+  }
+]

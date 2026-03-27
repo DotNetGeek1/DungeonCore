@@ -1,0 +1,3 @@
+-- DungeonCore bootstrap SQL placeholder.
+-- Phase 2 schema management is now handled by Alembic under infra/alembic.
+-- Leave this file as a no-op bootstrap marker for local Postgres initialization.

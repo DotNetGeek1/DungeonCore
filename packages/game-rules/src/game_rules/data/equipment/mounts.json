@@ -1,0 +1,21 @@
+[
+  {"mount_id": "camel", "name": "Camel", "cost": "50 gp", "speed": "50 ft.", "carrying_capacity": "480 lb."},
+  {"mount_id": "donkey", "name": "Donkey or Mule", "cost": "8 gp", "speed": "40 ft.", "carrying_capacity": "420 lb."},
+  {"mount_id": "elephant", "name": "Elephant", "cost": "200 gp", "speed": "40 ft.", "carrying_capacity": "1320 lb."},
+  {"mount_id": "horse_draft", "name": "Horse, Draft", "cost": "50 gp", "speed": "40 ft.", "carrying_capacity": "540 lb."},
+  {"mount_id": "horse_riding", "name": "Horse, Riding", "cost": "75 gp", "speed": "60 ft.", "carrying_capacity": "480 lb."},
+  {"mount_id": "mastiff", "name": "Mastiff", "cost": "25 gp", "speed": "40 ft.", "carrying_capacity": "195 lb."},
+  {"mount_id": "pony", "name": "Pony", "cost": "30 gp", "speed": "40 ft.", "carrying_capacity": "225 lb."},
+  {"mount_id": "warhorse", "name": "Warhorse", "cost": "400 gp", "speed": "60 ft.", "carrying_capacity": "540 lb."},
+  {"mount_id": "carriage", "name": "Carriage", "cost": "100 gp", "speed": "-", "carrying_capacity": "-"},
+  {"mount_id": "cart", "name": "Cart", "cost": "15 gp", "speed": "-", "carrying_capacity": "-"},
+  {"mount_id": "chariot", "name": "Chariot", "cost": "250 gp", "speed": "-", "carrying_capacity": "-"},
+  {"mount_id": "sled", "name": "Sled", "cost": "20 gp", "speed": "-", "carrying_capacity": "-"},
+  {"mount_id": "wagon", "name": "Wagon", "cost": "35 gp", "speed": "-", "carrying_capacity": "-"},
+  {"mount_id": "galley", "name": "Galley", "cost": "30000 gp", "speed": "4 mph", "carrying_capacity": "-"},
+  {"mount_id": "keelboat", "name": "Keelboat", "cost": "3000 gp", "speed": "1 mph", "carrying_capacity": "-"},
+  {"mount_id": "longship", "name": "Longship", "cost": "10000 gp", "speed": "3 mph", "carrying_capacity": "-"},
+  {"mount_id": "rowboat", "name": "Rowboat", "cost": "50 gp", "speed": "1.5 mph", "carrying_capacity": "-"},
+  {"mount_id": "sailing_ship", "name": "Sailing Ship", "cost": "10000 gp", "speed": "2 mph", "carrying_capacity": "-"},
+  {"mount_id": "warship", "name": "Warship", "cost": "25000 gp", "speed": "2.5 mph", "carrying_capacity": "-"}
+]

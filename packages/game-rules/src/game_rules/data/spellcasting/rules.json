@@ -1,0 +1,82 @@
+[
+  {
+    "rule_id": "spell_slots",
+    "name": "Spell Slots",
+    "description": "To cast a spell of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots on a long rest. Some classes and features let you regain slots on a short rest."
+  },
+  {
+    "rule_id": "cantrips",
+    "name": "Cantrips",
+    "description": "A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared. Repeated practice has fixed the spell in the caster's mind. A cantrip's spell level is 0."
+  },
+  {
+    "rule_id": "casting_at_higher_level",
+    "name": "Casting a Spell at a Higher Level",
+    "description": "When a spellcaster casts a spell using a slot of a higher level than the spell, the spell assumes the higher level for that casting. Many spells have enhanced effects when cast at a higher level, as detailed in the spell's 'At Higher Levels' entry."
+  },
+  {
+    "rule_id": "known_vs_prepared",
+    "name": "Known and Prepared Spells",
+    "description": "Some classes (bard, ranger, sorcerer, warlock) know a fixed number of spells. Other classes (cleric, druid, paladin, wizard) prepare spells from a larger list each day. The number of spells you can prepare equals your spellcasting ability modifier + your class level (minimum 1)."
+  },
+  {
+    "rule_id": "ritual_casting",
+    "name": "Ritual Casting",
+    "description": "A spell with the ritual tag can be cast as a ritual if the caster has the Ritual Casting feature. Casting a spell as a ritual adds 10 minutes to its casting time and does not expend a spell slot. You must have the spell prepared or in your spellbook (wizard) to cast it as a ritual."
+  },
+  {
+    "rule_id": "concentration",
+    "name": "Concentration",
+    "description": "Some spells require concentration. You can concentrate on only one spell at a time. Casting another concentration spell ends the current one. Taking damage requires a CON saving throw (DC 10 or half the damage, whichever is higher). Being incapacitated or killed also ends concentration."
+  },
+  {
+    "rule_id": "casting_time",
+    "name": "Casting Time",
+    "description": "Most spells require a single action. Some require a bonus action, a reaction, or minutes/hours. A spell cast as a bonus action is especially swift; you can't cast another spell during the same turn except a cantrip with a casting time of 1 action."
+  },
+  {
+    "rule_id": "components_verbal",
+    "name": "Verbal Components",
+    "description": "Most spells require the chanting of mystic words. Being unable to speak (e.g., gagged, in an area of silence) prevents casting spells with verbal components."
+  },
+  {
+    "rule_id": "components_somatic",
+    "name": "Somatic Components",
+    "description": "Spellcasting gestures might include a forceful gesticulation or an intricate set of movements. You must have at least one hand free to perform somatic components (or use the same hand holding a material component or focus)."
+  },
+  {
+    "rule_id": "components_material",
+    "name": "Material Components",
+    "description": "Casting some spells requires particular objects, specified in parentheses. A character can use a component pouch or a spellcasting focus in place of material components, unless the component has a cost indicated or is consumed by the spell."
+  },
+  {
+    "rule_id": "spell_attack_rolls",
+    "name": "Spell Attack Rolls",
+    "description": "Some spells require you to make an attack roll. Your spell attack modifier = proficiency bonus + spellcasting ability modifier. Melee spell attacks use your reach; ranged spell attacks follow ranged attack rules."
+  },
+  {
+    "rule_id": "spell_save_dc",
+    "name": "Spell Save DC",
+    "description": "Many spells specify that a target makes a saving throw. Spell save DC = 8 + proficiency bonus + spellcasting ability modifier."
+  },
+  {
+    "rule_id": "areas_of_effect",
+    "name": "Areas of Effect",
+    "description": "Spells can have areas of effect: Cone (originates from caster, widens), Cube (point of origin on face), Cylinder (point of origin at center of top or bottom), Line (extends in a straight line), Sphere (point of origin at center). A spell's effect expands in straight lines from the point of origin; if no unblocked path, an area is not affected."
+  },
+  {
+    "rule_id": "combining_magical_effects",
+    "name": "Combining Magical Effects",
+    "description": "The effects of different spells add together. The effects of the same spell cast multiple times don't combine; instead, the most potent effect (such as the highest bonus) applies while the durations overlap."
+  },
+  {
+    "rule_id": "schools_of_magic",
+    "name": "Schools of Magic",
+    "description": "Every spell belongs to one of eight schools of magic: Abjuration (protective), Conjuration (transport/summon), Divination (reveal information), Enchantment (influence minds), Evocation (manipulate energy), Illusion (deceive senses), Necromancy (life/death/undead), Transmutation (change properties)."
+  },
+  {
+    "rule_id": "pact_magic",
+    "name": "Pact Magic (Warlock)",
+    "description": "Warlocks have a small number of spell slots that recharge on a short or long rest. All warlock spell slots are the same level (the highest available). Warlock slots and regular spell slots can be used interchangeably for casting but are tracked and recharged separately for multiclass characters."
+  }
+]

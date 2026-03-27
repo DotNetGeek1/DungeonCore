@@ -1,0 +1,62 @@
+[
+  {
+    "class_id": "barbarian",
+    "ability_minimums": {"STR": 13},
+    "proficiencies_gained": ["shields", "simple weapons", "martial weapons"]
+  },
+  {
+    "class_id": "bard",
+    "ability_minimums": {"CHA": 13},
+    "proficiencies_gained": ["light armor", "one skill of your choice", "one musical instrument of your choice"]
+  },
+  {
+    "class_id": "cleric",
+    "ability_minimums": {"WIS": 13},
+    "proficiencies_gained": ["light armor", "medium armor", "shields"]
+  },
+  {
+    "class_id": "druid",
+    "ability_minimums": {"WIS": 13},
+    "proficiencies_gained": ["light armor", "medium armor", "shields"]
+  },
+  {
+    "class_id": "fighter",
+    "ability_minimums": {"STR": 13},
+    "proficiencies_gained": ["light armor", "medium armor", "shields", "simple weapons", "martial weapons"]
+  },
+  {
+    "class_id": "monk",
+    "ability_minimums": {"DEX": 13, "WIS": 13},
+    "proficiencies_gained": ["simple weapons", "shortswords"]
+  },
+  {
+    "class_id": "paladin",
+    "ability_minimums": {"STR": 13, "CHA": 13},
+    "proficiencies_gained": ["light armor", "medium armor", "shields", "simple weapons", "martial weapons"]
+  },
+  {
+    "class_id": "ranger",
+    "ability_minimums": {"DEX": 13, "WIS": 13},
+    "proficiencies_gained": ["light armor", "medium armor", "shields", "simple weapons", "martial weapons", "one skill from the class skill list"]
+  },
+  {
+    "class_id": "rogue",
+    "ability_minimums": {"DEX": 13},
+    "proficiencies_gained": ["light armor", "one skill from the class skill list", "thieves' tools"]
+  },
+  {
+    "class_id": "sorcerer",
+    "ability_minimums": {"CHA": 13},
+    "proficiencies_gained": []
+  },
+  {
+    "class_id": "warlock",
+    "ability_minimums": {"CHA": 13},
+    "proficiencies_gained": ["light armor", "simple weapons"]
+  },
+  {
+    "class_id": "wizard",
+    "ability_minimums": {"INT": 13},
+    "proficiencies_gained": []
+  }
+]

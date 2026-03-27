@@ -1,0 +1,172 @@
+[
+  {
+    "class_id": "fighter",
+    "name": "Fighter",
+    "hit_die": "d10",
+    "primary_ability": ["STR", "DEX"],
+    "saving_throws": ["STR", "CON"],
+    "armor_proficiencies": ["light armor", "medium armor", "heavy armor", "shields"],
+    "weapon_proficiencies": ["simple weapons", "martial weapons"],
+    "tool_proficiencies": [],
+    "skill_choices": [
+      "Acrobatics",
+      "Animal Handling",
+      "Athletics",
+      "History",
+      "Insight",
+      "Intimidation",
+      "Perception",
+      "Survival"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "fighting_style",
+        "name": "Fighting Style",
+        "level": 1,
+        "description": "You adopt a particular style of fighting as your specialty (choose one fighting style option)."
+      },
+      {
+        "feature_id": "second_wind",
+        "name": "Second Wind",
+        "level": 1,
+        "description": "On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
+      },
+      {
+        "feature_id": "action_surge",
+        "name": "Action Surge",
+        "level": 2,
+        "description": "On your turn, you can take one additional action. Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
+      },
+      {
+        "feature_id": "extra_attack_fighter",
+        "name": "Extra Attack",
+        "level": 5,
+        "description": "You can attack twice whenever you take the Attack action on your turn. The number of attacks increases to three at 11th level and four at 20th level."
+      },
+      {
+        "feature_id": "indomitable",
+        "name": "Indomitable",
+        "level": 9,
+        "description": "You can reroll a saving throw that you fail; you must use the new roll. You can use this feature once, then must finish a long rest before you can use it again. You can use it twice between long rests starting at 13th level and three times starting at 17th level."
+      }
+    ],
+    "subclass_label": "Martial Archetype",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "champion",
+        "name": "Champion",
+        "description": "A fighter who combines raw physical excellence with reliable, devastating strikes.",
+        "features": [
+          {
+            "feature_id": "improved_critical",
+            "name": "Improved Critical",
+            "level": 3,
+            "description": "Your weapon attacks score a critical hit on a roll of 19 or 20."
+          },
+          {
+            "feature_id": "remarkable_athlete",
+            "name": "Remarkable Athlete",
+            "level": 7,
+            "description": "You can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus; when making a running long jump, the distance increases by a number of feet equal to your Strength modifier."
+          },
+          {
+            "feature_id": "additional_fighting_style",
+            "name": "Additional Fighting Style",
+            "level": 10,
+            "description": "You can choose a second option from the Fighting Style class feature."
+          },
+          {
+            "feature_id": "superior_critical",
+            "name": "Superior Critical",
+            "level": 15,
+            "description": "Your weapon attacks score a critical hit on a roll of 18–20."
+          },
+          {
+            "feature_id": "survivor",
+            "name": "Survivor",
+            "level": 18,
+            "description": "At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left."
+          }
+        ]
+      },
+      {
+        "subclass_id": "battle_master",
+        "name": "Battle Master",
+        "description": "A fighter who uses tactical maneuvers and superiority dice to control the battlefield.",
+        "features": [
+          {
+            "feature_id": "combat_superiority",
+            "name": "Combat Superiority",
+            "level": 3,
+            "description": "You learn maneuvers fueled by superiority dice (d8). You have four dice per short or long rest; you know three maneuvers and learn more as you gain levels. A maneuver is spent when you use it and replenishes on a rest."
+          },
+          {
+            "feature_id": "student_of_war",
+            "name": "Student of War",
+            "level": 3,
+            "description": "You gain proficiency with one type of artisan's tools of your choice."
+          },
+          {
+            "feature_id": "know_your_enemy",
+            "name": "Know Your Enemy",
+            "level": 7,
+            "description": "If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information compared to your own capabilities (class levels, relative stats, etc.)."
+          },
+          {
+            "feature_id": "improved_combat_superiority",
+            "name": "Improved Combat Superiority",
+            "level": 10,
+            "description": "Your superiority dice become d10s."
+          },
+          {
+            "feature_id": "relentless",
+            "name": "Relentless",
+            "level": 15,
+            "description": "When you roll initiative and have no superiority dice remaining, you regain one superiority die."
+          }
+        ]
+      },
+      {
+        "subclass_id": "eldritch_knight",
+        "name": "Eldritch Knight",
+        "description": "A fighter who blends weapon mastery with abjuration and evocation magic.",
+        "features": [
+          {
+            "feature_id": "eldritch_knight_spellcasting",
+            "name": "Spellcasting",
+            "level": 3,
+            "description": "You learn to cast wizard spells; spellcasting ability is Intelligence. Spell selection is mostly from abjuration and evocation, with limited spells from any school as you advance."
+          },
+          {
+            "feature_id": "war_magic",
+            "name": "War Magic",
+            "level": 7,
+            "description": "When you use your action to cast a cantrip, you can make one weapon attack as a bonus action."
+          },
+          {
+            "feature_id": "eldritch_strike",
+            "name": "Eldritch Strike",
+            "level": 10,
+            "description": "When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+          },
+          {
+            "feature_id": "arcane_charge",
+            "name": "Arcane Charge",
+            "level": 15,
+            "description": "When you use Action Surge, you can teleport up to 30 feet to an unoccupied space you can see before or after the additional action."
+          },
+          {
+            "feature_id": "improved_war_magic",
+            "name": "Improved War Magic",
+            "level": 18,
+            "description": "When you use your action to cast a spell, you can make one weapon attack as a bonus action."
+          }
+        ]
+      }
+    ],
+    "spellcasting": null,
+    "source_reference": "PHB p.70"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "class_id": "monk",
+    "name": "Monk",
+    "hit_die": "d8",
+    "primary_ability": ["DEX", "WIS"],
+    "saving_throws": ["STR", "DEX"],
+    "armor_proficiencies": [],
+    "weapon_proficiencies": ["simple weapons", "shortswords"],
+    "tool_proficiencies": ["one type of artisan's tools or one musical instrument"],
+    "skill_choices": [
+      "Acrobatics",
+      "Athletics",
+      "History",
+      "Insight",
+      "Religion",
+      "Stealth"
+    ],
+    "num_skill_choices": 2,
+    "features": [
+      {
+        "feature_id": "unarmored_defense_monk",
+        "name": "Unarmored Defense",
+        "level": 1,
+        "description": "While wearing no armor and wielding no shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
+      },
+      {
+        "feature_id": "martial_arts",
+        "name": "Martial Arts",
+        "level": 1,
+        "description": "You can use Dexterity instead of Strength for attack and damage with unarmed strikes and monk weapons; when you use the Attack action with an unarmed strike or monk weapon, you can make one unarmed strike as a bonus action. Unarmed strike damage die scales (e.g. d4 at 1st, up to d10 at 17th)."
+      },
+      {
+        "feature_id": "ki",
+        "name": "Ki",
+        "level": 2,
+        "description": "Your training lets you harness mystic energy (ki); ki points equal your monk level. You can spend ki on Flurry of Blows (two unarmed strikes as a bonus action), Patient Defense (Dodge as a bonus action), or Step of the Wind (Dash or Disengage as a bonus action), each for 1 ki. Ki recharges on a short or long rest."
+      },
+      {
+        "feature_id": "unarmored_movement",
+        "name": "Unarmored Movement",
+        "level": 2,
+        "description": "Your speed increases by 10 feet while you are not wearing armor or wielding a shield; the bonus increases at higher levels."
+      },
+      {
+        "feature_id": "deflect_missiles",
+        "name": "Deflect Missiles",
+        "level": 3,
+        "description": "When hit by a ranged weapon attack, you can use your reaction to reduce damage; if you reduce it to 0, you can catch the missile and throw it back by spending 1 ki."
+      },
+      {
+        "feature_id": "slow_fall",
+        "name": "Slow Fall",
+        "level": 4,
+        "description": "You can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level."
+      },
+      {
+        "feature_id": "extra_attack_monk",
+        "name": "Extra Attack",
+        "level": 5,
+        "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn."
+      },
+      {
+        "feature_id": "stunning_strike",
+        "name": "Stunning Strike",
+        "level": 5,
+        "description": "When you hit another creature with a melee weapon attack, you can spend 1 ki to attempt a stunning strike; the target must succeed on a Constitution saving throw or be stunned until the end of your next turn."
+      },
+      {
+        "feature_id": "ki_empowered_strikes",
+        "name": "Ki-Empowered Strikes",
+        "level": 6,
+        "description": "Your unarmed strikes count as magical for overcoming resistance and immunity to nonmagical attacks."
+      },
+      {
+        "feature_id": "evasion_monk",
+        "name": "Evasion",
+        "level": 7,
+        "description": "When subjected to an effect that allows a Dexterity save for half damage, you take no damage on a success and only half on a failure."
+      },
+      {
+        "feature_id": "stillness_of_mind",
+        "name": "Stillness of Mind",
+        "level": 7,
+        "description": "You can use your action to end one effect on yourself that is causing you to be charmed or frightened."
+      },
+      {
+        "feature_id": "purity_of_body",
+        "name": "Purity of Body",
+        "level": 10,
+        "description": "Your mastery of ki makes you immune to disease and poison."
+      },
+      {
+        "feature_id": "tongue_of_the_sun_and_moon",
+        "name": "Tongue of the Sun and Moon",
+        "level": 13,
+        "description": "You understand all spoken languages you hear. Any creature that can understand a language can understand what you say."
+      },
+      {
+        "feature_id": "diamond_soul",
+        "name": "Diamond Soul",
+        "level": 14,
+        "description": "Your mastery of ki grants you proficiency in all saving throws; when you fail a save, you can spend 1 ki to reroll and take the new result."
+      },
+      {
+        "feature_id": "timeless_body_monk",
+        "name": "Timeless Body",
+        "level": 15,
+        "description": "Your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically; you can still die of old age, however."
+      },
+      {
+        "feature_id": "empty_body",
+        "name": "Empty Body",
+        "level": 18,
+        "description": "You can spend 4 ki to become invisible for 1 minute and gain resistance to all damage except force; during that time, you can spend 8 ki to cast astral projection, requiring no material components."
+      },
+      {
+        "feature_id": "perfect_self",
+        "name": "Perfect Self",
+        "level": 20,
+        "description": "When you roll initiative and have no ki, you regain 4 ki."
+      }
+    ],
+    "subclass_label": "Monastic Tradition",
+    "subclass_level": 3,
+    "subclasses": [
+      {
+        "subclass_id": "way_of_the_open_hand",
+        "name": "Way of the Open Hand",
+        "description": "Monks who learn to manipulate ki to disrupt and harm foes through precise strikes.",
+        "features": [
+          {
+            "feature_id": "open_hand_technique",
+            "name": "Open Hand Technique",
+            "level": 3,
+            "description": "When you hit a creature with Flurry of Blows, you can impose one effect: knock prone, push 15 feet, or deny reactions until the end of your next turn."
+          },
+          {
+            "feature_id": "wholeness_of_body",
+            "name": "Wholeness of Body",
+            "level": 6,
+            "description": "You can heal yourself for three times your monk level as an action; once you use this feature, you must finish a long rest before you can use it again."
+          },
+          {
+            "feature_id": "tranquility",
+            "name": "Tranquility",
+            "level": 11,
+            "description": "At the end of a long rest, you gain the effect of a sanctuary spell until the start of your next long rest (DC based on your save DC)."
+          },
+          {
+            "feature_id": "quivering_palm",
+            "name": "Quivering Palm",
+            "level": 17,
+            "description": "When you hit a creature with an unarmed strike, you can set up lethal vibrations; at any time within a number of days equal to your monk level, you can use an action to deal 10d10 necrotic damage or reduce the target to 0 hit points if it fails a Constitution save."
+          }
+        ]
+      },
+      {
+        "subclass_id": "way_of_shadow",
+        "name": "Way of Shadow",
+        "description": "Monks who use illusion and stealth, drawing power from darkness and shadow.",
+        "features": [
+          {
+            "feature_id": "shadow_arts",
+            "name": "Shadow Arts",
+            "level": 3,
+            "description": "You know minor illusion; you can spend 2 ki to cast darkness, darkvision, pass without trace, or silence without material components."
+          },
+          {
+            "feature_id": "shadow_step",
+            "name": "Shadow Step",
+            "level": 6,
+            "description": "As a bonus action when in dim light or darkness, you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness, then make one melee attack."
+          },
+          {
+            "feature_id": "cloak_of_shadows",
+            "name": "Cloak of Shadows",
+            "level": 11,
+            "description": "While in dim light or darkness, you can use your action to become invisible until you attack, cast a spell, or enter bright light."
+          },
+          {
+            "feature_id": "opportunist",
+            "name": "Opportunist",
+            "level": 17,
+            "description": "When a creature within 5 feet of you is hit by an attack from a creature other than you, you can use your reaction to make a melee attack against that creature."
+          }
+        ]
+      },
+      {
+        "subclass_id": "way_of_the_four_elements",
+        "name": "Way of the Four Elements",
+        "description": "Monks who channel elemental forces through ki by learning elemental disciplines.",
+        "features": [
+          {
+            "feature_id": "disciple_of_the_elements",
+            "name": "Disciple of the Elements",
+            "level": 3,
+            "description": "You learn elemental disciplines that cost ki; you choose additional disciplines at 6th, 11th, and 17th level."
+          }
+        ]
+      }
+    ],
+    "spellcasting": null,
+    "source_reference": "PHB p.76"
+  }
+]
